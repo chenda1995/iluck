@@ -371,10 +371,7 @@
 
 
                 <!-- 订单 -->
-                <li class="sidebar-nav-link">
-                    <a href="javascript:;" class="sidebar-nav-sub-title">
-                        <i class="am-icon-table sidebar-nav-link-logo"></i> 订单管理
-
+                
                 <!-- 评论管理 -->
                 <li class="sidebar-nav-link">
                     <a href="javascript:;" class="sidebar-nav-sub-title">
@@ -391,25 +388,20 @@
                 </li>
 
                 <!-- 收藏管理 -->
-                <li class="sidebar-nav-link">
+				<li class="sidebar-nav-link">
                     <a href="javascript:;" class="sidebar-nav-sub-title">
-                        <i class="am-icon-table sidebar-nav-link-logo" id="house"></i> 收藏管理
-
+                        <i class="am-icon-table sidebar-nav-link-logo" id="comment"></i> 订单管理 
                         <span class="am-icon-chevron-down am-fr am-margin-right-sm sidebar-nav-sub-ico"></span>
                     </a>
                     <ul class="sidebar-nav sidebar-nav-sub">
                         <li class="sidebar-nav-link">
-
                             <a href="/admin/orders">
                                 <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 订单列表
-
-                            <a href="/admin/house">
-                                <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 收藏列表
-
                             </a>
                         </li>
                     </ul>
                 </li>
+                
 
 
 

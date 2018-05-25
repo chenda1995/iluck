@@ -57,6 +57,7 @@ class TypeController extends Controller
             //获取path路径
             $foo = explode(',',$v->path);     
             $level = count($foo)-2;
+			
             $v->cname = str_repeat('&nbsp;&nbsp;&nbsp;',$level).'|--'.$v->cname; 
         }
 

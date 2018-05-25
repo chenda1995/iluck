@@ -11,9 +11,9 @@
 |
 */
 //后台登录
-<<<<<<< HEAD
 
-=======
+
+
 Route::get('admin/login','admin\LoginController@login');// 登录页面
 Route::post('admin/dologin','admin\LoginController@dologin');// 登录
 Route::get('admin/signout','admin\LoginController@signout'); //退出
@@ -29,7 +29,7 @@ Route::get('home/register','home\RegisterController@register');  //注册页面
 Route::post('home/zhuce','home\RegisterController@zhuce');  // 注册
 
 Route::post('home/ycode','home\RegisterController@ycode');  //手机验证码
->>>>>>> origin/lize
+
 
 
 
