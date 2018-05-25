@@ -1,4 +1,4 @@
-@extends('layout.home')
+@extends('layout.home1')
 
 
 @section('title',$title)
@@ -19,7 +19,7 @@
       
       <!-- 表格 end -->
     </script>
-      <div class="g-wrap wrap">
+      <div class="g-wrap wrap" style="width: 1200px;margin:0 auto;">
         <ul class="clearfix cart_slide" id="cartSlide">
             <li>
                 <a href="javascript:;" url="0" class="mr55 cart_slide_item cartSlideItemAll cart_slide_item_cur  ">
@@ -105,7 +105,7 @@
                 <div class="cart_num cart_counter">
                     <span class="cart_num_reduce">
                     </span>
-                    <input class="cnt" type="text" name="quantity" value="1" class="qty" style="width: 30px;height: 23px; text-align: center;">
+                    <input class="cnt" type="text" name="quantity" value="{{$v->cnt}}" class="qty" style="width: 30px;height: 27px; text-align: center;">
                     <span class="cart_num_add">
                     </span>
                 </div>
@@ -113,7 +113,7 @@
             <td class="cart_alcenter" style="text-align: center">
                 ¥
                 <span class="xiaoji">
-                    {{$v->price}}
+                    {{$v->price*$v->cnt}}
                 </span>
             </td>
             <td class="cart-product-remove" style="text-align: center">
@@ -338,20 +338,20 @@
 
               $('#e').html(`<a href="#" class="cart_paybtn fr cart_paybtn_disable"  id="e">去付款</a>`);
             } else {
-              $('#e').html(`<a href="##/home/car/scdz" class="cart_paybtn fr"  id="e">去付款</a>`);
+              $('#e').html(`<a href="/home/car/scdz" class="cart_paybtn fr"  id="e">去付款</a>`);
             
                $('#e').click(function(){
                
                $('.txt:checked').each(function(){
                 
                   
-                
+                 var gid = [];
                var gid =  $(this).attr('cid');
 
-               console.log(gid);
 
-
-                
+                // var uid = {{$uid}};
+      
+                  //console.log(gid);
                  $.get('/home/car/scdz',{id:gid},function(data){
 
                     console.log(data);

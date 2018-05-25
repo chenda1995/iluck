@@ -47,7 +47,7 @@ class LoginController extends Controller
         }
     
 
-        session(['uid'=>$data->id]);
+        session(['id'=>$data->id]);
 
     	return redirect('admin/index');
     }
@@ -57,7 +57,7 @@ class LoginController extends Controller
     {
 
         //删除session
-        $request->session()->forget('uid');
+        $request->session()->forget('id');
 
         return redirect('admin/login');
     }
@@ -79,7 +79,7 @@ class LoginController extends Controller
         //获取旧密码
         $pass = $request->input('oldpass');
 
-        $res = DB::table('admin')->where('id',session('uid'))->first();
+        $res = DB::table('admin')->where('id',session('id'))->first();
 
         //哈希
         if(!Hash::check($pass,$res->password)){
@@ -89,7 +89,7 @@ class LoginController extends Controller
 
         $foo['password'] = Hash::make($request->input('password'));
 
-        $data = DB::table('admin')->where('id',session('uid'))->update($foo);
+        $data = DB::table('admin')->where('id',session('id'))->update($foo);
 
         if($data){
 

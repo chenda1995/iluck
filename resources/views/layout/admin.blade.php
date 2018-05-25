@@ -114,7 +114,7 @@
 
                 <?php
 
-                    $res = DB::table('admin')->where('id',session('uid'))->first();
+                    $res = DB::table('admin')->where('id',session('id'))->first();
 
                     // dd($res);
                 ?>

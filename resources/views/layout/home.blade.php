@@ -11,17 +11,17 @@
 
 
     <!-- 商品列表css -->
-    <link rel="stylesheet" href="/home/css/nav-mogu-act.css">
-    <link href="/home/css/TopNavSideBar.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/home/css/pc_selection_wall.css">
-    <link rel="stylesheet" href="/home/css/index.css">
+    <link rel="stylesheet" href="/home/sycss/css/nav-mogu-act.css">
+    <link href="/home/sycss/css/TopNavSideBar.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/home/sycss/css/pc_selection_wall.css">
+    <link rel="stylesheet" href="/home/sycss/css/index.css">
 
     <!-- 商品详情css -->
-    <link href="/home/css/xqindex.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="/home/css/bottom.css" media="all">
-    <link href="/home/css/index_002.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/home/css/icon.css">
-    <link rel="stylesheet" type="text/css" href="/home/css/shopHeader.css">
+    <link href="/home/sycss/css/xqindex.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/home/sycss/css/bottom.css" media="all">
+    <link href="/home/sycss/css/index_002.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/home/sycss/css/icon.css">
+    <link rel="stylesheet" type="text/css" href="/home/sycss/css/shopHeader.css">
 
 
     <link rel="stylesheet" type="text/css" href="/home/car/index.css">
@@ -32,7 +32,7 @@
 
 
 
-    <link rel="stylesheet" type="text/css" href="/home/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/home/sycss/css/index.css">
 
 
 

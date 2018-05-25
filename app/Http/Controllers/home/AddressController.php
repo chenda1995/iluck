@@ -5,13 +5,13 @@ namespace App\Http\Controllers\home;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use DB;
-use session;
+
 
 class AddressController extends Controller
 {
     public function index()
     {
-                session(['uid'=>'85']);	
+                
     	return view('home.dizhi.dizhi',['title'=>'地址目录']);
     }
 
