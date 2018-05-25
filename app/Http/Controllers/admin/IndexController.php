@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Http\Controllers\admin;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use DB;
+
+class IndexController extends Controller
+{
+    //
+    public function index()
+    {
+    	
+
+    	return view('admin.index',['title'=>'商城后台首页']);
+
+    }
+}
