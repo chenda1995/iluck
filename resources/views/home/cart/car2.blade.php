@@ -1,7 +1,7 @@
 @extends('layout.home')
 
 
-@section('title',$title);
+@section('title',$title)
 
 
 
