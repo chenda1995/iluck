@@ -69,7 +69,7 @@ class CarController extends Controller
 		$a['auth'] =  '1';
 		$b['auth'] = '0';
 		
-		session(['uid'=>'85']);
+		
 		$res = DB::table('car')->where('uid',session('uid'))->update($b);
 		  $arr = DB::table('car')->where($arr)->update($a);
 
