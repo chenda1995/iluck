@@ -6,6 +6,7 @@
 @section('content')
 
 <link rel="stylesheet" href="/sanji/pick-pcc.min.1.0.1.css">
+<script src="/home/oiDRP1K45KG4TlCsxhUzeDq.js"></script>
 					
 
 

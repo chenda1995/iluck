@@ -44,7 +44,7 @@
         media="all">
         <link href="/home/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_files/index_002.css"
         rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_files/pkg-pc-base.js">
+        <script type="text/javascript" src="/home/grzx/pkg-pc-base.js">
         </script>
         <script type="text/javascript">
             if (window.require) {
@@ -55,7 +55,7 @@
 
             MOGUPROFILE = {};
         </script>
-        <link rel="stylesheet" href="%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_files/index_003.css">
+        <link rel="stylesheet" href="/home/grzx/index_003.css">
         <style type="text/css">
             .nohl { -webkit-user-select: none; -moz-user-select: none; -ms-user-select:
             none; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -134,7 +134,7 @@
             <div class="sidebar-item mgj-my-avatar">
                 <a target="_blank" href="http://www.mogujie.com/member" rel="nofollow">
                     <div class="img">
-                        <img src="%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_files/180510_2550ff6c5bb50j282eghac68ge3h1_132x132_002.jpg"
+                        <img src="/home/grzx/180510_2550ff6c5bb50j282eghac68ge3h1_132x132_002.jpg"
                         alt="" height="20" width="20">
                     </div>
                 </a>
@@ -468,13 +468,13 @@
         <script>
             window.isDev = !!0;
         </script>
-        <script type="text/javascript" src="%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_files/index_003.js">
+        <script type="text/javascript" src="/home/grzx/index_003.js">
         </script>
-        <script type="text/javascript" src="/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_files/index.js">
+        <script type="text/javascript" src="/home/grzx/index.js">
         </script>
-        <script src="%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_files/index_002.js">
+        <script src="/home/grzx/index_002.js">
         </script>
-        <script src="%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_files/getcapjs" id="shieldcaptain-bootstrap"
+        <script src="/home/grzx/getcapjs" id="shieldcaptain-bootstrap"
         type="text/javascript">
         </script>
     </body>
