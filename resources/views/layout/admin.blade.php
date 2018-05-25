@@ -17,35 +17,68 @@
     <link rel="stylesheet" href="/admin/assets/css/amazeui.min.css" />
     <link rel="stylesheet" href="/admin/assets/css/amazeui.datatables.min.css" />
     <link rel="stylesheet" href="/admin/assets/css/app.css">
-    <script src="/admin/assets/js/jquery.min.js"></script>
+
+
+
+   
+    
+   
     <script src="/admin/assets/js/layer.js"></script>
-
-
-
+ <script src="/admin/assets/js/jquery.min.js"></script>
     
     <style>
-        #detele{
-            border: 1px solid #f35842;
-            color: #f35842;
-            text-decoration: none;
-            background: transparent;
-
-            text-decoration: none;
-            display: inline-block;
-            padding: 5px 6px;
-            font-size: 12px;
-            line-height: 12px;
+        
+            #user-weibo{
+                width: 400px;
         }
-        #bj {
-            border: 1px solid #f35842;  
-            color: #7b878d;
 
-            text-decoration: none;
-            display: inline-block;
-            padding: 5px 6px;
-            font-size: 12px;
-            line-height: 12px;
+
+            .pagination li{
+                float: left;
+                height: 20px;
+                padding: 0 10px;
+                display: block;
+                font-size: 12px;
+                line-height: 20px;
+                text-align: center;
+                cursor: pointer;
+                outline: none;
+                background-color: #444444;
+               
+                text-decoration: none;
+                border-right: 1px solid #232323;
+                border-left: 1px solid #666666;
+                border-right: 1px solid rgba(0, 0, 0, 0.5);
+                border-left: 1px solid rgba(255, 255, 255, 0.15);
+                -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5), inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+                -moz-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5), inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+                box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5), inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+
         }
+
+            .pagination li a{
+                color: #fff;
+            }
+
+           .pagination .active{
+               background-color: #88a9eb;
+               color: #323232;
+               border: none;
+               background-image: none;
+               box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+                                            }
+            .pagination .disabled{
+
+                color: #666666;
+                    cursor: default;
+            }
+            .pagination{
+                margin:0px;
+            }
+
+            .am-btn-group-xs{
+                font-size: 1.2rem;
+            }
 
 
     </style>
@@ -80,8 +113,9 @@
 
 
                 <?php
-                    
-                    $res = DB::table('admin')->where('id',session('id'))->first();
+
+                    $res = DB::table('admin')->where('id',session('uid'))->first();
+
                     // dd($res);
                 ?>
 
@@ -335,16 +369,43 @@
 
 
 
+
                 <!-- 订单 -->
                 <li class="sidebar-nav-link">
                     <a href="javascript:;" class="sidebar-nav-sub-title">
                         <i class="am-icon-table sidebar-nav-link-logo"></i> 订单管理
+
+                <!-- 评论管理 -->
+                <li class="sidebar-nav-link">
+                    <a href="javascript:;" class="sidebar-nav-sub-title">
+                        <i class="am-icon-table sidebar-nav-link-logo" id="comment"></i> 评论管理 
                         <span class="am-icon-chevron-down am-fr am-margin-right-sm sidebar-nav-sub-ico"></span>
                     </a>
                     <ul class="sidebar-nav sidebar-nav-sub">
                         <li class="sidebar-nav-link">
+                            <a href="/admin/comment">
+                                <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 评论列表
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- 收藏管理 -->
+                <li class="sidebar-nav-link">
+                    <a href="javascript:;" class="sidebar-nav-sub-title">
+                        <i class="am-icon-table sidebar-nav-link-logo" id="house"></i> 收藏管理
+
+                        <span class="am-icon-chevron-down am-fr am-margin-right-sm sidebar-nav-sub-ico"></span>
+                    </a>
+                    <ul class="sidebar-nav sidebar-nav-sub">
+                        <li class="sidebar-nav-link">
+
                             <a href="/admin/orders">
                                 <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 订单列表
+
+                            <a href="/admin/house">
+                                <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 收藏列表
+
                             </a>
                         </li>
                     </ul>
@@ -418,9 +479,11 @@
     <script src="/admin/assets/js/amazeui.datatables.min.js"></script>
     <script src="/admin/assets/js/dataTables.responsive.min.js"></script>
     <script src="/admin/assets/js/app.js"></script>
-    <script src='/admin/assets/bs/js/jquery.js'></script>
-    <script src='/admin/assets/bs/js/bootstrap.min.js'></script>
-    <script src='/admin/assets/bs/js/holder.min.js'></script>
+
+    <script src='/bs/js/jquery.js'></script>
+    <script src='/bs/js/bootstrap.min.js'></script>
+    <script src='/bs/js/holder.js'></script>
+
     <!-- <link rel="stylesheet" href="/bs/css/bootstrap.min.css"> -->
 
 

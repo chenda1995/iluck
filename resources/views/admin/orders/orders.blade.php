@@ -1,7 +1,9 @@
 @extends('layout.admin')
 
 
+
 @section('title',$title)
+
 
 
 

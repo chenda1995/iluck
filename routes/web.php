@@ -11,7 +11,25 @@
 |
 */
 //后台登录
+<<<<<<< HEAD
 
+=======
+Route::get('admin/login','admin\LoginController@login');// 登录页面
+Route::post('admin/dologin','admin\LoginController@dologin');// 登录
+Route::get('admin/signout','admin\LoginController@signout'); //退出
+Route::get('admin/code','admin\LoginController@captcha'); // 验证码
+
+//前台登录
+Route::get('home/login','home\LoginController@login');
+Route::post('home/logindo','home\LoginController@logindo');  //登录
+Route::get('home/loginout','home\LoginController@loginout');  //退出
+Route::get('home/code','home\LoginController@code');  //验证码
+
+Route::get('home/register','home\RegisterController@register');  //注册页面
+Route::post('home/zhuce','home\RegisterController@zhuce');  // 注册
+
+Route::post('home/ycode','home\RegisterController@ycode');  //手机验证码
+>>>>>>> origin/lize
 
 
 
@@ -20,15 +38,28 @@ Route::get('/', function () {
 });
 
 //后台控制组
-Route::group([],function(){
+
+
+Route::group(['middleware'=>'login'],function(){
 
 	//后台首页
 	Route::get('admin/index','admin\IndexController@index');
-
+	// 修改管理员密码
+	Route::get('admin/pass','admin\LoginController@pass');
+	Route::post('admin/changepass','admin\LoginController@changePass');
 	
 
+	//用户管理
+	Route::resource('admin/user','admin\UserController');
 
 
+	Route::post('admin/user/ajaxState','admin\UserController@ajaxState');
+
+
+	//商品分类  商品品牌  商品
+	Route::resource('admin/type','admin\TypeController');
+	Route::resource('admin/brand','admin\BrandController');
+	Route::resource('admin/goods','admin\GoodsController');
 
 
 	//订单管理
@@ -42,6 +73,22 @@ Route::group([],function(){
 
 
 
+	//评论管理
+	Route::get('admin/comment','admin\CommentController@index');
+	Route::post('admin/comment/ajaxStatu','admin\CommentController@ajaxStatu');
+
+	//收藏管理
+	Route::get('admin/house','admin\HouseController@index');
+
+
+
+
+	//后台友情链接
+    Route::resource('admin/friendlinks','admin\FriendlinksController');
+
+    //后台轮播图
+    Route::resource('admin/show','admin\ShowController');
+
 
 });
 
@@ -51,6 +98,7 @@ Route::group([],function(){
 	//前台首页
 	Route::get('home/index','home\IndexController@index');
 	Route::get('home/userdetails','home\UserDetailsController@userdetails');
+
 
 	//个人中心
 	Route::post('home/userdetails/update','home\UserDetailsController@update');
@@ -72,7 +120,9 @@ Route::group([],function(){
 
 	Route::get('home/dizhidel/{id}','home\AddressController@dizhidel');
 
+
 	Route::get('home/dizhi/auth','home\AddressController@auth');
+
 
 	//购物车
 	Route::get('home/cart','home\CarController@index');
@@ -94,6 +144,16 @@ Route::group([],function(){
 
 	//订单
 	Route::get('home/orderindex','home\OrderController@index');
+
+
+	
+	//商品列表页
+	Route::get('home/list','home\ListController@index');
+	//商品详情页
+	Route::get('home/spxq','home\SpxqController@index');
+
+
+
 
 
 });
