@@ -698,17 +698,8 @@
                 }
             })();
         </script>
-        <!-- <script src="/home/js/mwp.pc.js"> -->
-        </script>
-        <!-- <script type="text/javascript" src="/home/js/doT.js"> -->
-        </script>
-        <!-- <script type="text/javascript" src="/home/js/imageLazyload.js"> -->
-        </script>
-        <!-- this page js-->
-        <!-- <script src="/home/js/pc_selection_wall.js"> -->
-        </script>
-        <!-- <script src="/home/js/index.js"> -->
-        </script>
+
+        
         <script>
             (function(i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
