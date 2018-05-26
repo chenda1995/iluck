@@ -100,7 +100,7 @@
             <!-- footer显示价格 -->
             <div>
                 <div class="cart_paybar">
-                    <a href="javascript:;" class="cart_surebtn fr">
+                    <a href="javascript:;" class="cart_surebtn fr" style="background: #ffa701;font-size: 18px;">
                         确认并付款 &gt;
                     </a>
                 </div>

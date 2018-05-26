@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 class SpxqController extends Controller
 {
     //
-    public function index($id)
+    public function index()
     {
     	// dd($id)
     	//查询商品对应评论

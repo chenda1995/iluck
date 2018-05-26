@@ -898,11 +898,11 @@
                                         </div>
                                     </div>
                                     <div class="goods-social clearfix">
-                                        <div class=" fav  item" goodsid="0" tradeitemid="1k12j9s" tid="0">
+                                        <div class=" fav  item" goodsid="0"  tid="0">
                                             <span class=" isfav  m-icon m-icon-star ">
                                             </span>
                                             <span class="fav-num">
-                                                34947
+                                                加入收藏
                                             </span>
                                         </div>
                                         <div class="share item">
@@ -910,13 +910,13 @@
                                             </b>
                                             分享
                                             <div class="share-w clearfix">
-                                                <a target="_blank" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fwww.mogujie.com%2Fcps%2Fopen%2Ftrack%3Fchannel%3D19%26uid%3D128yxgi%26target%3Dhttp%253A%252F%252Fshop.mogujie.com%252Fdetail%252F1k12j9s&amp;title=%E6%9E%97%E5%85%81%E5%84%BF%E5%90%8C%E6%AC%BE%E5%B8%86%E5%B8%83%E9%9E%8B%EF%BC%8C%E4%B8%8A%E8%84%9A%E8%88%92%E9%80%82%E3%80%82&amp;pics=http://s3.mogucdn.com/p2/uni/160807/1tc4hs_3akhe4je7idjbehcl14fe8hcjb77g_640x960.jpg_468x468.jpg"
+                                                <a target="_blank" href=""
                                                 class="forqzone" title="关注QQ空间" rel="nofollow">
                                                 </a>
-                                                <a target="_blank" href="http://widget.renren.com/dialog/share?resourceUrl=http%3A%2F%2Fwww.mogujie.com%2Fcps%2Fopen%2Ftrack%3Fchannel%3D19%26uid%3D128yxgi%26target%3Dhttp%253A%252F%252Fshop.mogujie.com%252Fdetail%252F1k12j9s&amp;title=%E6%9E%97%E5%85%81%E5%84%BF%E5%90%8C%E6%AC%BE%E5%B8%86%E5%B8%83%E9%9E%8B%EF%BC%8C%E4%B8%8A%E8%84%9A%E8%88%92%E9%80%82%E3%80%82&amp;thumbnail_url=http://s3.mogucdn.com/p2/uni/160807/1tc4hs_3akhe4je7idjbehcl14fe8hcjb77g_640x960.jpg_468x468.jpg"
+                                                <a target="_blank" href=""
                                                 class="forrenren" title="关注人人" rel="nofollow">
                                                 </a>
-                                                <a target="_blank" href="http://service.weibo.com/share/share.php?url=http%3A%2F%2Fwww.mogujie.com%2Fcps%2Fopen%2Ftrack%3Fchannel%3D19%26uid%3D128yxgi%26target%3Dhttp%253A%252F%252Fshop.mogujie.com%252Fdetail%252F1k12j9s&amp;title=%E6%9E%97%E5%85%81%E5%84%BF%E5%90%8C%E6%AC%BE%E5%B8%86%E5%B8%83%E9%9E%8B%EF%BC%8C%E4%B8%8A%E8%84%9A%E8%88%92%E9%80%82%E3%80%82&amp;pic=http://s3.mogucdn.com/p2/uni/160807/1tc4hs_3akhe4je7idjbehcl14fe8hcjb77g_640x960.jpg_468x468.jpg"
+                                                <a target="_blank" href=""
                                                 class="forsina" title="关注sina" rel="nofollow">
                                                 </a>
                                                 <a target="_blank" href="http://www.mogujie.com/group/topic/1grvy/" class="forweixin"
@@ -925,7 +925,7 @@
                                             </div>
                                         </div>
                                         <div class="report">
-                                            <a target="_blank" href="http://cs.mogujie.com/dispute/report/add.html?itemid=1k12j9s"
+                                            <a target="_blank" href=""
                                             class="goods_report fl" rel="nofollow">
                                                 举报
                                             </a>
@@ -3059,46 +3059,13 @@
         <div class="foot J_siteFooter" data-ptp="_foot">
         </div>
 
-         <script type="text/javascript" src="/home/js/index_002.js"> </script>
+         <!-- <script type="text/javascript" src="/home/js/index_002.js"> </script> -->
         
          <script type="text/javascript" src="/home/js/bottom.js"> </script>
         
          <script type="text/javascript" src="/home/js/index(2).js"> </script>
         
-        <!-- 数据部门(晓海)要求在PC模板中添加ga统计信息， -->
-        <script type="text/javascript">
-            (function(i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] ||
-                function() { (i[r].q = i[r].q || []).push(arguments)
-                },
-                i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-            ga('create', 'UA-25590490-1', 'auto');
-            ga('send', 'pageview');
-
-            //临时删除旧版指纹cookie，后面可以干掉这段代码，By奇云，17.02.15
-            M.fn.removeCookie('FRMS_FINGERPRINT', {
-                domain: '.mogujie.com',
-                path: '/'
-            });
-        </script>
-        <script type="text/javascript">
-            if (window._trace && window._trace.config) {
-                _trace.config.customUrl = function() {
-                    return location.hostname + '/detail';
-                }
-            }
-        </script>
-        <script src="/home/js/getcapjs" id="shieldcaptain-bootstrap"
-        type="text/javascript">
-        </script>
+        
     </body>
 
 </html>

@@ -153,6 +153,11 @@ Route::group([],function(){
 	Route::get('home/spxq','home\SpxqController@index');
 
 
+	//我的收藏
+	Route::get('home/house','home\HouseController@index');
+
+
+
 
 
 

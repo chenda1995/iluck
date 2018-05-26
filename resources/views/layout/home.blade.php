@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -11,10 +10,10 @@
 
 
     <!-- 商品列表css -->
-    <link rel="stylesheet" href="/home/sycss/css/nav-mogu-act.css">
-    <link href="/home/sycss/css/TopNavSideBar.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/home/sycss/css/pc_selection_wall.css">
-    <link rel="stylesheet" href="/home/sycss/css/index.css">
+    <link rel="stylesheet" href="/home/css/nav-mogu-act.css">
+    <link href="/home/css/TopNavSideBar.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/home/css/pc_selection_wall.css">
+    <link rel="stylesheet" href="/home/css/index.css">
 
     <!-- 商品详情css -->
     <link href="/home/sycss/css/xqindex.css" rel="stylesheet" type="text/css">
@@ -22,6 +21,13 @@
     <link href="/home/sycss/css/index_002.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/home/sycss/css/icon.css">
     <link rel="stylesheet" type="text/css" href="/home/sycss/css/shopHeader.css">
+
+
+<link href="/home/%E6%88%91%E7%9A%84%E6%94%B6%E8%97%8F_files/index.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="/home/%E6%88%91%E7%9A%84%E6%94%B6%E8%97%8F_files/bottom.css" media="all">
+<link href="/home/%E6%88%91%E7%9A%84%E6%94%B6%E8%97%8F_files/index_002.css" rel="stylesheet" type="text/css">
+
+
 
 
     <link rel="stylesheet" type="text/css" href="/home/car/index.css">
@@ -61,7 +67,7 @@
 
 </head>
 
-<body>
+<body style="background: transparent">
     
     <div class="mgj_rightbar">
         <div class="mgj-my-cart">

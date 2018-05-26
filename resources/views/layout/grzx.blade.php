@@ -44,8 +44,7 @@
         media="all">
         <link href="/home/grzx/index_002.css"
         rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="/home/grzx/pkg-pc-base.js">
-        </script>
+        
         <script type="text/javascript">
             if (window.require) {
                 require.config({
