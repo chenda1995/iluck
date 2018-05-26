@@ -60,6 +60,8 @@ Route::group(['middleware'=>'login'],function(){
 	Route::resource('admin/type','admin\TypeController');
 	Route::resource('admin/brand','admin\BrandController');
 	Route::resource('admin/goods','admin\GoodsController');
+	
+	
 
 
 	//订单管理

@@ -5,6 +5,7 @@
 			return '顶级分类';
 		}else{
 			$res = DB::table('goods_type')->where('cid',$pid)->first();
-			return $res->cname;
+			// dd($pid);die;
+			return empty($res->cname) ? '' : $res->cname;
 		}
 	}
