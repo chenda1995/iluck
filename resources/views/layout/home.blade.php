@@ -61,7 +61,8 @@
     <script src="/home/car/bottom.js"></script>
     <script src="/home/car/index_002.js"></script>
     <script src="/home/car/pkg-pc-base.js"></script> -->
-
+    
+    <style></style>
 
      
 
@@ -130,7 +131,20 @@
                 </a>
           </li>
           <li class="dingdan"><a class="dd" href="#">我的订单</a></li>
-          <li ><a class="dl" href="/home/userdetails" style="color: red">{{$res->uname}}</a></li>
+          <li >
+
+            
+            @if(session('uid'))
+                <li><a href="/home/loginout">退出</a></li>
+
+                <li><a href="/home/userdetails" style="color: red">欢迎{{$res->uname}}<span>|</span> </a></li>
+            @else
+                <li><a href="/home/login">请登录</a></li>
+            @endif
+            
+
+            </a>
+        </li>
           <li ><a class="zc" href="/home/register">注册</a></li>
                 
           </ul>

@@ -24,6 +24,10 @@ Route::get('home/login','home\LoginController@login');
 Route::post('home/logindo','home\LoginController@logindo');  //登录
 Route::get('home/loginout','home\LoginController@loginout');  //退出
 Route::get('home/code','home\LoginController@code');  //验证码
+Route::any('home/zhaohui','home\LoginController@zhaohui');  //找回密码  any支持多种方法
+Route::any('home/savePass/{uid}','home\LoginController@savePass');  //修改密码
+
+
 
 Route::get('home/register','home\RegisterController@register');  //注册页面
 Route::post('home/zhuce','home\RegisterController@zhuce');  // 注册
@@ -150,7 +154,7 @@ Route::group([],function(){
 	//商品列表页
 	Route::get('home/list','home\ListController@index');
 	//商品详情页
-	Route::get('home/spxq','home\SpxqController@index');
+	Route::get('home/spxq/{gid}','home\SpxqController@index');
 
 
 	//我的收藏

@@ -10,6 +10,8 @@ class HouseController extends Controller
     //
     public function index()
     {
+
+    	
     	return view('home.house.house',['title'=>'我的收藏']);
     }
 }

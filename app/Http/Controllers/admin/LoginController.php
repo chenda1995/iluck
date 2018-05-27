@@ -48,11 +48,12 @@ class LoginController extends Controller
     
 
         session(['id'=>$data->id]);
+        session(['username'=>$data->username]);
 
     	return redirect('admin/index');
     }
 
-
+    //退出
     public function signout(Request $request)
     {
 

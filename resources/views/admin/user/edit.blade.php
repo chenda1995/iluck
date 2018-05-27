@@ -33,8 +33,6 @@
                                         <label for="user-name" class="am-u-sm-3 am-form-label">用户名 <span class="tpl-form-line-small-title">User name</span></label>
                                         <div class="am-u-sm-9">
 
-                                            <input type="text" name="uname" value="{{$res->uname}}" class="tpl-form-input" id="user-name" placeholder="请输入用户名">
-
                                             <input type="text" name="uname" value="{{$res->uname}}" class="tpl-form-input" id="user-name" placeholder="请输入用户名" disabled>
 
                                         </div>
