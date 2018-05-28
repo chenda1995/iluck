@@ -38,14 +38,13 @@
             var MOGU_DEV = 0 || "online" == "pre";
             var M_ENV = "online";
         </script>
-        <link href="/home/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_files/index.css"
+        <link href="/home/grzx/index.css"
         rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="/home/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_files/bottom.css"
+        <link rel="stylesheet" type="text/css" href="/home/grzx/bottom.css"
         media="all">
-        <link href="/home/%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83_files/index_002.css"
+        <link href="/home/grzx/index_002.css"
         rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="/home/grzx/pkg-pc-base.js">
-        </script>
+        
         <script type="text/javascript">
             if (window.require) {
                 require.config({

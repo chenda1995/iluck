@@ -74,6 +74,10 @@
 					<dd>
                           地区选择：
                     </dd>
+                    <style>
+                        
+                        a{display:inline;}
+                    </style>
                     <dt class="unick uname" style="padding-top:5px;">
 						<div class="a" style="margin-left: 103px;">
 							<a href="javascript:void(0)" style="
@@ -83,12 +87,12 @@
 							background:#fff;
 							text-decoration:none;
 							cursor:default;
-							" class="pick-area qwe" name="省\直辖市/市\值/兰陵县" ></a>
+							" class="pick-area qwe" name="省\市\县/省\市/区\县" ></a>
 
 							<input type="text" value="" name="diqu" readonly style="margin-top: 15px;">
 						
 
-							<script src="/sanji/jquery.min.js"></script>
+							<script src="/sanji/jquery-3.2.1.min.js"></script>
 							<script src="/sanji/pick-pcc.min.1.0.1.js"></script>
 							
 							<script>
