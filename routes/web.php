@@ -163,6 +163,9 @@ Route::group([],function(){
 
 	Route::get('home/order/del','home\OrderController@del');
 
+	//订单回收
+	Route::get('home/rec/index','home\RecoveryController@index');
+
 
 	
 	//商品列表页

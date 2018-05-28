@@ -142,7 +142,12 @@
             @if(session('uid'))
                 <li><a href="/home/loginout">退出</a></li>
 
-                <li><a href="/home/userdetails" style="color: red">欢迎{{$res->uname}}<span>|</span> </a></li>
+                <li><a href="/home/userdetails" style="color: red">
+
+                    
+                    欢迎
+
+                    {{$res->uname}}<span>|</span> </a></li>
             @else
                 <li><a href="/home/login">请登录</a></li>
             @endif

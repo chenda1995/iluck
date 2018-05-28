@@ -10,7 +10,7 @@ class CarController extends Controller
 {
     public function index()
 	{
-		$res = DB::table('car')->orderBy('id','asc')->get();
+		$res = DB::table('car')->where('uid',session('uid'))->orderBy('id','asc')->get();
 
 		
 			
@@ -111,7 +111,7 @@ class CarController extends Controller
 
 
 
-		 return view('home.cart.car2',['title'=>'确认订单']);
+		 // return view('home.cart.car2',['title'=>'确认订单']);
 
 
 		

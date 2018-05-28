@@ -133,11 +133,13 @@ type="text/css">
                                         等待发货
                                         @endif
                                         @if($v1->status == '2')
-                                        <a href="#" class="shouhuo" gid="{{$v1->id}}">>>确认收货<<</a>
+                                        <a href="#" class="shouhuo" gid="{{$v1->id}}" cid="{{$v1->gid}}">>>确认收货<<</a>
                                         @endif
                                         @if($v1->status == '3')
                                         交易完成
-                                        <a href="/home/pingjia">|去评价吧</a>
+
+                                        <a href="/home/pingjia/{{$v1->gid}}">|去评价吧</a>
+
                                         @endif
                                     </p>
                                     <a href="/home/order/xq/{{$v1->id}}"
@@ -155,7 +157,7 @@ type="text/css">
                                     </ul>
                                 </td>
                             </tr>
-                             <?php }?>
+                             <?php   $gid = $v1->gid; }?>
                         </tbody>
                     </table>
                 </div>
@@ -167,6 +169,8 @@ type="text/css">
       
        <?php } ?> 
     </div>
+    
+    <script src="/sanji/jquery-3.2.1.min.js"></script>
    
     <script>
         $('.order-link').click(function(){
@@ -190,14 +194,20 @@ type="text/css">
         })
 
         $('.shouhuo').click(function(){
+
+            //alert(123);
             $(this).each(function(){
 
                 var id = $(this).attr('gid');
 
+                var gid = $(this).attr('cid');
+
+                console.log(gid);
+
                 $.get('/home/order/shouhuo',{id:id},function(data){
-                    console.log(data);
+                    //console.log(data);
                 })
-            $(this).parent('.p').html('交易完成<a href="#">&nbsp;|去评价吧</a>');
+            $(this).parent('.p').html("交易完成<a href='/home/pingjia/{{$gid}}'>&nbsp;|去评价</a>");
 
             })
         })

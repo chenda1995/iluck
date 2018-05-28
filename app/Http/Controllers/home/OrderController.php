@@ -69,6 +69,7 @@ class OrderController extends Controller
     	//订单详情
     	
     	foreach ($car as $k3 => $v3) {
+            $details['gid'] = $v3->gid;
     		$details['time'] = $orders['otime'];
     		$details['oid'] = $orders['oid'];
     		$details['gname'] = $v3->gname;
