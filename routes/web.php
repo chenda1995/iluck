@@ -166,6 +166,10 @@ Route::group([],function(){
 	//订单回收
 	Route::get('home/rec/index','home\RecoveryController@index');
 
+	Route::get('home/rec/huanyuan/{id}','home\RecoveryController@huanyuan');
+
+	Route::get('home/rec/del/{id}','home\RecoveryController@del');
+
 
 	
 	//商品列表页

@@ -1,4 +1,4 @@
-@extends('layout.home1')
+@extends('layout.grzx')
 
 
 @section('title',$title)
@@ -8,13 +8,23 @@
 @section('content')
 
 <!DOCTYPE html>
-<link href="./订单列表_蘑菇街_files/index.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="./订单列表_蘑菇街_files/bottom.css"
+
+
+<link href="/home/rec/index.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="/home/rec/bottom.css"
 media="all">
-<link href="./订单列表_蘑菇街_files/index.css-1220b6f4.css" rel="stylesheet"
+<link href="/home/rec/index.css-1220b6f4.css" rel="stylesheet"
 type="text/css">
-<div class="mu_content_wrap">
+<div class="mu_content_wrap" style="width: 800px;">
     <div class="order-title">
+<?php
+    	$order = DB::table('orders_details')->where([
+    		['uid',session('uid')],
+    		['auth','1']
+    		])->get();
+
+    	
+    	?>
         <ul class="order-title-column clearfix">
             <li class="goods">
                 商品
@@ -52,8 +62,10 @@ type="text/css">
                 批量还原
             </a>
         </div>
+        @foreach($order as $v)
         <div class="order-list">
             <div class="order-section finished" data-payid="77265909793570">
+            	
                 <table class="order-table">
                     <tbody>
                         <tr class="order-table-header">
@@ -63,11 +75,11 @@ type="text/css">
                                     <span class="no">
                                         订单编号：
                                         <span class="order_num">
-                                            77265909803570
+                                            {{$v->oid}}
                                         </span>
                                     </span>
                                     <span class="deal-time">
-                                        成交时间：2018-05-24 16:18:59
+                                        成交时间：{{date('Y-m-d H:i:s',$v->time)}}
                                     </span>
                                     
                                 </div>
@@ -84,15 +96,15 @@ type="text/css">
                                 <div class="desc">
                                     <p>
                                         <a href="#" target="_blank">
-                                            LUC 不锈钢保温杯男女士咖啡杯学生随行水杯子
+                                            {{$v->gname}}
                                         </a>
                                         
                                     </p>
                                     <p>
-                                        颜色：浅棕色
+                                        颜色：{{$v->color}}
                                     </p>
                                     <p>
-                                        规格：380ML
+                                        规格：{{$v->size}}
                                     </p>
                                     <ul class="ui-tags-list clearfix">
                                         <li class="ui-tags-item">
@@ -108,17 +120,17 @@ type="text/css">
                             <td class="price">
                                
                                 <p>
-                                    49.00
+                                    {{$v->price}}
                                 </p>
                             </td>
                             <td class="quantity">
-                                1
+                                {{$v->cnt}}
                             </td>
                             <td class="aftersale">
                             </td>
                             <td class="total" rowspan="1">
                                 <p class="total-price">
-                                    ￥ 49.00
+                                    ￥ {{$v->price*$v->cnt}}
                                 </p>
                                 <p>
                                     <span>
@@ -128,23 +140,31 @@ type="text/css">
                             </td>
                             <td class="status" rowspan="1">
                                 <p class="">
-                                    交易取消
+                                    @if($v->status == '1')
+                                        等待发货
+                                        @endif
+                                        @if($v->status == '2')
+                                        <a href="#" class="shouhuo" gid="{{$v->id}}" cid="{{$v->gid}}">>>确认收货<<</a>
+                                        @endif
+                                        @if($v->status == '3')
+                                        交易完成
+                                        
+                                        @endif
                                 </p>
-                                <a href="http://order.mogujie.com/order/detail4buyer?orderId=77265909803570"
-                                class="order-link go-detail-link" target="_blank">
-                                    订单详情
-                                </a>
+                                 <a href="/home/order/xq/{{$v->id}}"
+                                    class="order-link go-detail-link" target="_blank" gid="{{$v->id}}">
+                                        订单详情
+                                    </a>
                             </td>
                             <td class="other" rowspan="1">
                                 <ul>
                                     <li>
-                                        <a class="order-link order-recover recover-btn" href="javascript:;" data-url="/trade/order/recoveryrecycleorder"
-                                        data-shopid="77265909803570">
+                                        <a href="/home/rec/huanyuan/{{$v->id}}" >
                                             还原订单
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="order-link order-delete delete-btn" href="javascript:;" data-shopid="77265909803570">
+                                        <a  href="/home/rec/del/{{$v->id}}" >
                                             永久删除
                                         </a>
                                     </li>
@@ -154,8 +174,14 @@ type="text/css">
                             </td>
                         </tr>
                     </tbody>
+
                 </table>
+
             </div>
         </div>
+        @endforeach
+    </div>
+</div>
+         
 
 @endsection
