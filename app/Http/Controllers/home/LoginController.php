@@ -110,6 +110,7 @@ class LoginController extends Controller
   }
 
 
+  //找回密码
   public function zhaohui()
   {
     // var_export($_POST);
@@ -120,7 +121,7 @@ class LoginController extends Controller
       $email = $_POST['email'];
       // 获取数据
       // $data = DB::table('user')->where('email','$email')->first();
-      $data = DB::table('user',$email)->first();
+      $data = DB::table('user')->select('email','uid')->first();
       // dd($data);
 
       //判断数据是否正确

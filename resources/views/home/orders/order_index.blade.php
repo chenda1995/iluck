@@ -137,7 +137,7 @@ type="text/css">
                                         @endif
                                         @if($v1->status == '3')
                                         交易完成
-                                        <a href="#">|去评价吧</a>
+                                        <a href="/home/pingjia">|去评价吧</a>
                                         @endif
                                     </p>
                                     <a href="/home/order/xq/{{$v1->id}}"

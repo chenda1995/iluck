@@ -29,8 +29,11 @@ class SpxqController extends Controller
 
     	// dd($comment);
 
-    	$comment = DB::table('user_evaluate')->where('gid',$gid)->orderBy('etime', 'desc')->get();
-
+    	$comment = DB::table('user_evaluate')
+                        ->select("user_evaluate.*","user.uic","user.uname")
+                        ->join('user','user.uid','user_evaluate.uid')   
+                        ->orderBy('etime', 'desc')
+                        ->paginate(20);
 
 
     	//数据格式化
@@ -43,7 +46,7 @@ class SpxqController extends Controller
 
 
  
-    	return view('home.spxq.spxq',['title'=>'商品详情'])->with($data);
+    	return view('home.spxq.spxq',['title'=>'商品详情','comment'=>$comment])->with($data);
 
     }
 

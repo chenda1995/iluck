@@ -166,6 +166,7 @@
             .img-con .img-list li:nth-child(4) { background-position: 100% 0; margin-right:
             0 }
         </style>
+    
     </head>
     
     <body class="media_screen_1200">
@@ -1957,13 +1958,14 @@
                                                                 <div class="info-t clearfix">
                                                                     <div><span class="am-text-middle" style="color: #FDC724;font-size:18px;vertical-align:middle; ">{{str_repeat("★",$com->start)}}{{str_repeat("☆",5-$com->start)}}</span>
                                                                      <span class="name" style="vertical-align:middle; ">
-                                                                        匿名
+                                                                         {{$com->uname}}
                                                                     </span>
-                                                                    </div>
-                                                                   
                                                                     <span class="date">
                                                                         {{date('Y-m-d H:i:s',$com->etime)}}
                                                                     </span>
+                                                                    </div>
+                                                                   
+                                                                    
                                                                 </div>
                                                                 <!-- 评价内容 -->
                                                                 <div class="info-m">
@@ -1972,16 +1974,19 @@
                                                             </div>
                                                         </div>
                                                         <div class="face">
-                                                            <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/upload_73289ki0h6j92ck3f3gec621gc60g_1080x1440.jpg">
+                                                            <img src="{{$com->uic}}">
                                                         </div>
                                                     </div> 
                                                 </div>
                                                 @endforeach
-
                                             </div>
                                         </div>
                                     </div>
                                 @endif
+
+                                <div class="fy">{{$comment->links()}}</div>
+
+
                                 <!-- 本店同类商品 -->
                                 <div class="module-panel module-recommend" id="J_ModuleRecommend">
                                 </div>
