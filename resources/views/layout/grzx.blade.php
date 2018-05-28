@@ -377,6 +377,12 @@
                                                 全部订单
                                             </a>
                                         </li>
+
+                                        <li>
+                                            <a href="/home/rec/index">
+                                                订单回收
+                                            </a>
+                                        </li>
                                       
                                          
                                        
@@ -384,22 +390,7 @@
                                         
                                     </ul>
                                 </div>
-                                <div class="mu_nav mu_expand">
-                                    <div class="mu_title">
-                                        回收站
-                                    </div>
-                                    <ul class="mu_nav_item">
-                                        <li>
-                                            <a href="#">
-                                                订单
-                                            </a>
-                                        </li>
-                                      
-                                         
-                                       
-                                        
-                                    </ul>
-                                </div>
+                                
                                 
                              <div class="mu_nav pb40 mu_expand">
                                     <div class="mu_title">

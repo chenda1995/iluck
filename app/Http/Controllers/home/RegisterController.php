@@ -47,7 +47,7 @@ class RegisterController extends Controller
              $aa = DB::table('user')->where('uname',$a)->get();
              foreach ($aa as $k => $v) {
                 $a2['uid'] = $v->uid;
-                // $a2['born'] = ',,';
+                $a2['born'] = ',,';
                 $arr = DB::table('user_details')->insert($a2);
              }
 
