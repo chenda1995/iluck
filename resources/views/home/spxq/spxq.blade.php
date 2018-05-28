@@ -360,7 +360,7 @@
                 <div class="J-user-info-box">
                     <div class="J-shop-user-info J-show-user-detail">
                         <a href="http://shop.mogujie.com/1oy202" class="avatar" title="Penta KIll shoes">
-                            <img class="face fl" src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/1v1w1h_2fefch9jc0fa0hl3h9hee5iicci12_200x200.jpg">
+                            <img class="face fl" src="/home/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/1v1w1h_2fefch9jc0fa0hl3h9hee5iicci12_200x200.jpg">
                         </a>
                         <div class="name-score-wrap">
                             <div class="name-wrap fl">
@@ -898,11 +898,11 @@
                                         </div>
                                     </div>
                                     <div class="goods-social clearfix">
-                                        <div class=" fav  item" goodsid="0" tradeitemid="1k12j9s" tid="0">
+                                        <div class=" fav  item" goodsid="0"  tid="0">
                                             <span class=" isfav  m-icon m-icon-star ">
                                             </span>
-                                            <span class="fav-num">
-                                                34947
+                                            <span class="fav-num" onclick="house(this,)">
+                                                加入收藏
                                             </span>
                                         </div>
                                         <div class="share item">
@@ -910,13 +910,13 @@
                                             </b>
                                             分享
                                             <div class="share-w clearfix">
-                                                <a target="_blank" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Fwww.mogujie.com%2Fcps%2Fopen%2Ftrack%3Fchannel%3D19%26uid%3D128yxgi%26target%3Dhttp%253A%252F%252Fshop.mogujie.com%252Fdetail%252F1k12j9s&amp;title=%E6%9E%97%E5%85%81%E5%84%BF%E5%90%8C%E6%AC%BE%E5%B8%86%E5%B8%83%E9%9E%8B%EF%BC%8C%E4%B8%8A%E8%84%9A%E8%88%92%E9%80%82%E3%80%82&amp;pics=http://s3.mogucdn.com/p2/uni/160807/1tc4hs_3akhe4je7idjbehcl14fe8hcjb77g_640x960.jpg_468x468.jpg"
+                                                <a target="_blank" href=""
                                                 class="forqzone" title="关注QQ空间" rel="nofollow">
                                                 </a>
-                                                <a target="_blank" href="http://widget.renren.com/dialog/share?resourceUrl=http%3A%2F%2Fwww.mogujie.com%2Fcps%2Fopen%2Ftrack%3Fchannel%3D19%26uid%3D128yxgi%26target%3Dhttp%253A%252F%252Fshop.mogujie.com%252Fdetail%252F1k12j9s&amp;title=%E6%9E%97%E5%85%81%E5%84%BF%E5%90%8C%E6%AC%BE%E5%B8%86%E5%B8%83%E9%9E%8B%EF%BC%8C%E4%B8%8A%E8%84%9A%E8%88%92%E9%80%82%E3%80%82&amp;thumbnail_url=http://s3.mogucdn.com/p2/uni/160807/1tc4hs_3akhe4je7idjbehcl14fe8hcjb77g_640x960.jpg_468x468.jpg"
+                                                <a target="_blank" href=""
                                                 class="forrenren" title="关注人人" rel="nofollow">
                                                 </a>
-                                                <a target="_blank" href="http://service.weibo.com/share/share.php?url=http%3A%2F%2Fwww.mogujie.com%2Fcps%2Fopen%2Ftrack%3Fchannel%3D19%26uid%3D128yxgi%26target%3Dhttp%253A%252F%252Fshop.mogujie.com%252Fdetail%252F1k12j9s&amp;title=%E6%9E%97%E5%85%81%E5%84%BF%E5%90%8C%E6%AC%BE%E5%B8%86%E5%B8%83%E9%9E%8B%EF%BC%8C%E4%B8%8A%E8%84%9A%E8%88%92%E9%80%82%E3%80%82&amp;pic=http://s3.mogucdn.com/p2/uni/160807/1tc4hs_3akhe4je7idjbehcl14fe8hcjb77g_640x960.jpg_468x468.jpg"
+                                                <a target="_blank" href=""
                                                 class="forsina" title="关注sina" rel="nofollow">
                                                 </a>
                                                 <a target="_blank" href="http://www.mogujie.com/group/topic/1grvy/" class="forweixin"
@@ -925,7 +925,7 @@
                                             </div>
                                         </div>
                                         <div class="report">
-                                            <a target="_blank" href="http://cs.mogujie.com/dispute/report/add.html?itemid=1k12j9s"
+                                            <a target="_blank" href=""
                                             class="goods_report fl" rel="nofollow">
                                                 举报
                                             </a>
@@ -939,7 +939,7 @@
                                             <ul class="fl clearfix list">
                                                 <li class="item">
                                                     <span class="link" title="实拍认证">
-                                                        <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/upload_4feh98909481a8805bbdal579kg79_60x60.png"
+                                                        <img src="/home/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/upload_4feh98909481a8805bbdal579kg79_60x60.png"
                                                         height="24" width="24">
                                                         实拍认证
                                                     </span>
@@ -954,7 +954,7 @@
                                                 <li class="item">
                                                     <a class="link" href="http://www.mogujie.com/rule/mogu?categoryId=326&amp;ruleId=895"
                                                     target="_blank" title="" rel="nofollow">
-                                                        <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/idid_ie3tmyjxhfrtgzbzmezdambqgayde_40x40.png"
+                                                        <img src="/home/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/idid_ie3tmyjxhfrtgzbzmezdambqgayde_40x40.png"
                                                         height="24" width="24">
                                                         全国包邮
                                                     </a>
@@ -962,7 +962,7 @@
                                                 <li class="item">
                                                     <a class="link" href="http://www.mogujie.com/rule/mogu?categoryId=326&amp;ruleId=892"
                                                     target="_blank" title="" rel="nofollow">
-                                                        <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/idid_ifrtgojygu2dgzbzmezdambqhayde_40x40.png"
+                                                        <img src="/home/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/idid_ifrtgojygu2dgzbzmezdambqhayde_40x40.png"
                                                         height="24" width="24">
                                                         7天无理由退货
                                                     </a>
@@ -970,7 +970,7 @@
                                                 <li class="item">
                                                     <a class="link" href="http://www.mogujie.com/rule/mogu?categoryId=326&amp;ruleId=893"
                                                     target="_blank" title="" rel="nofollow">
-                                                        <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/idid_ifrdqobzmq3dizbzmezdambqmeyde_40x40.png"
+                                                        <img src="/home/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/idid_ifrdqobzmq3dizbzmezdambqmeyde_40x40.png"
                                                         height="24" width="24">
                                                         72小时发货
                                                     </a>
@@ -978,7 +978,7 @@
                                                 <li class="item">
                                                     <a class="link" href="http://www.mogujie.com/rule/mogu?categoryId=326&amp;ruleId=927"
                                                     target="_blank" title="" rel="nofollow">
-                                                        <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/idid_ie4timrzmq3tkzbzmezdambqgqyde_40x40.png"
+                                                        <img src="/home/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/idid_ie4timrzmq3tkzbzmezdambqgqyde_40x40.png"
                                                         height="24" width="24">
                                                         退货补运费
                                                     </a>
@@ -998,7 +998,7 @@
                             <div class="fl goods-topimg" id="J_GoodsImg">
                                 <div class="big-img">
                                     <button class="middle">
-                                        <img id="J_BigImg" src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/1tc4hs_3akhe4je7idjbehcl14fe8hcjb77g_640x960_004.jpg"
+                                        <img id="J_BigImg" src="/home/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/1tc4hs_3akhe4je7idjbehcl14fe8hcjb77g_640x960_004.jpg"
                                         data-main="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_3akhe4je7idjbehcl14fe8hcjb77g_640x960.jpg_468x468.jpg"
                                         alt="小白鞋,平底,运动鞋,学院风,单鞋" width="400">
                                     </button>
@@ -1538,7 +1538,7 @@
                                         <a href="javascript:;">
                                             累计评价
                                             <em>
-                                                7119
+                                                {{$arr['commentTot']}}
                                             </em>
                                         </a>
                                     </li>
@@ -1670,13 +1670,13 @@
                                             <div class="graphic-pic">
                                                 <div class="pic-box" style="padding-bottom:137.14285714285714%;">
                                                     <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_3akhe4je7idjbehcl14fe8hcjb77g_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
+                                                    src="/home/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
                                                 </div>
                                             </div>
                                             <div class="graphic-pic">
                                                 <div class="pic-box" style="padding-bottom:137.14285714285714%;">
                                                     <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_3jb8cf549gfckb9133aj9diik8aak_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
+                                                    src="/home/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
                                                 </div>
                                             </div>
                                             <div class="graphic-pic">
@@ -1875,6 +1875,7 @@
                                     </div>
                                 </div>
                                 <!-- 累计评价 -->
+                                @if($arr['commentTot'])
                                 <div class="module-panel module-rates ui-none" id="J_ModuleRates">
                                     <!-- 买家评价 -->
                                     <div id="J_RatesBuyer">
@@ -1896,41 +1897,12 @@
                                                         </span>
                                                         <span class="numbox">
                                                             <b class="num-v">
-                                                                4.8
+                                                                {{round(($arr['goodTot']/$arr['commentTot']*100))}}
                                                             </b>
                                                             <span class="num-s">
-                                                                分
+                                                                %
                                                             </span>
                                                         </span>
-                                                    </li>
-                                                    <!-- ## 描述、价格、商品 -->
-                                                    <li class="">
-                                                        <div class="title">
-                                                            描述相符
-                                                        </div>
-                                                        <div class="cont">
-                                                            <span class="comment-star">
-                                                                <b style="width: 77px;">
-                                                                </b>
-                                                            </span>
-                                                            <span class="num-v">
-                                                                4.81
-                                                            </span>
-                                                        </div>
-                                                    </li>
-                                                    <li class="">
-                                                        <div class="title">
-                                                            商品质量
-                                                        </div>
-                                                        <div class="cont">
-                                                            <span class="comment-star">
-                                                                <b style="width: 77px;">
-                                                                </b>
-                                                            </span>
-                                                            <span class="num-v">
-                                                                4.79
-                                                            </span>
-                                                        </div>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1942,7 +1914,7 @@
                                                         <!-- ## 好评标签个数 -->
                                                         <!-- ## 好评 -->
                                                         <a href="javascript:;" class="best" data-emotion="positive" data-property="质量">
-                                                            质量很好 (1030)
+                                                            好评({{$arr['goodTot']}})
                                                         </a>
                                                         <b>
                                                             |
@@ -1950,7 +1922,7 @@
                                                         <!-- ## 差评 -->
                                                         <!-- ## 好评 -->
                                                         <a href="javascript:;" class="best" data-emotion="positive" data-property="服务">
-                                                            卖家服务很好 (473)
+                                                            中评 ({{$arr['zhongTot']}})
                                                         </a>
                                                         <b>
                                                             |
@@ -1958,156 +1930,24 @@
                                                         <!-- ## 差评 -->
                                                         <!-- ## 好评 -->
                                                         <a href="javascript:;" class="best" data-emotion="positive" data-property="物流">
-                                                            物流快 (394)
-                                                        </a>
-                                                        <b>
-                                                            |
-                                                        </b>
-                                                        <!-- ## 差评 -->
-                                                        <!-- ## 好评 -->
-                                                        <a href="javascript:;" class="best" data-emotion="positive" data-property="性价比">
-                                                            性价比高 (389)
-                                                        </a>
-                                                        <b>
-                                                            |
-                                                        </b>
-                                                        <!-- ## 差评 -->
-                                                        <!-- ## 好评 -->
-                                                        <a href="javascript:;" class="best" data-emotion="positive" data-property="款式">
-                                                            款式好 (298)
-                                                        </a>
-                                                        <b>
-                                                            |
-                                                        </b>
-                                                        <!-- ## 差评 -->
-                                                        <!-- ## 好评 -->
-                                                        <a href="javascript:;" class="best" data-emotion="positive" data-property="尺码">
-                                                            尺寸无偏差 (258)
-                                                        </a>
-                                                        <b>
-                                                            |
-                                                        </b>
-                                                        <!-- ## 差评 -->
-                                                        <!-- ## 好评 -->
-                                                        <a href="javascript:;" class="best" data-emotion="positive" data-property="做工">
-                                                            做工不错 (88)
-                                                        </a>
-                                                        <b>
-                                                            |
-                                                        </b>
-                                                        <!-- ## 差评 -->
-                                                        <!-- ## 好评 -->
-                                                        <a href="javascript:;" class="best" data-emotion="positive" data-property="气味">
-                                                            没异味 (87)
-                                                        </a>
-                                                        <b>
-                                                            |
-                                                        </b>
-                                                        <!-- ## 差评 -->
-                                                        <!-- ## 好评 -->
-                                                        <a href="javascript:;" class="best" data-emotion="positive" data-property="发货">
-                                                            发货速度快 (76)
-                                                        </a>
-                                                        <b>
-                                                            |
-                                                        </b>
-                                                        <!-- ## 差评 -->
-                                                        <!-- ## 好评 -->
-                                                        <a href="javascript:;" class="best" data-emotion="positive" data-property="颜色">
-                                                            颜色正 (72)
-                                                        </a>
-                                                        <b>
-                                                            |
-                                                        </b>
-                                                        <!-- ## 差评 -->
-                                                        <!-- ## 好评 -->
-                                                        <a href="javascript:;" class="best" data-emotion="positive" data-property="描述">
-                                                            和描述的一样 (61)
-                                                        </a>
-                                                        <b>
-                                                            |
-                                                        </b>
-                                                        <!-- ## 差评 -->
-                                                        <!-- ## 好评 -->
-                                                        <a href="javascript:;" class="best" data-emotion="positive" data-property="整体">
-                                                            整体感觉不错 (39)
-                                                        </a>
-                                                        <b>
-                                                            |
-                                                        </b>
-                                                        <!-- ## 差评 -->
-                                                        <!-- ## 好评 -->
-                                                        <!-- ## 差评 -->
-                                                        <!-- ## 好评 -->
-                                                        <!-- ## 差评 -->
-                                                        <!-- ## 好评 -->
-                                                        <!-- ## 差评 -->
-                                                        <!-- ## 好评 -->
-                                                        <!-- ## 差评 -->
-                                                        <a href="javascript:;" data-emotion="negative" data-property="质量">
-                                                            质量一般 (44)
-                                                        </a>
-                                                        <b>
-                                                            |
-                                                        </b>
-                                                        <!-- ## 好评 -->
-                                                        <!-- ## 差评 -->
-                                                        <a href="javascript:;" data-emotion="negative" data-property="物流">
-                                                            物流有点慢 (30)
-                                                        </a>
-                                                        <b>
-                                                            |
-                                                        </b>
-                                                        <!-- ## 好评 -->
-                                                        <!-- ## 差评 -->
-                                                        <a href="javascript:;" data-emotion="negative" data-property="服务">
-                                                            服务态度不好 (6)
-                                                        </a>
-                                                        <b>
-                                                            |
-                                                        </b>
-                                                        <!-- ## 好评 -->
-                                                        <!-- ## 差评 -->
-                                                        <a href="javascript:;" data-emotion="negative" data-property="发货">
-                                                            发货速度有点慢 (6)
-                                                        </a>
-                                                        <b>
-                                                            |
-                                                        </b>
-                                                        <!-- ## 好评 -->
-                                                        <!-- ## 差评 -->
-                                                        <a href="javascript:;" data-emotion="negative" data-property="性价比">
-                                                            性价比一般 (5)
-                                                        </a>
-                                                        <b>
-                                                            |
-                                                        </b>
-                                                        <!-- ## 好评 -->
-                                                        <!-- ## 差评 -->
-                                                        <a href="javascript:;" data-emotion="negative" data-property="气味">
-                                                            有异味 (4)
-                                                        </a>
-                                                        <b>
-                                                            |
-                                                        </b>
+                                                            差评 ({{$arr['chaTot']}})
+                                                             
+                                                        </a>    
                                                     </div>
-                                                    <div class="all">
-                                                        全部
-                                                        <b>
-                                                        </b>
-                                                    </div>
+                                                   
                                                 </div>
                                                 <!-- 导航 -->
                                                 <div class="nav clearfix">
-                                                    <!-- div class="comment-sort"> <input type="radio" class="J_CommentSort" data-type="1" id="J_CommentSortDefault" name="commentSort" checked /><label for="J_CommentSortDefault"> 默认排序</label> <input type="radio" class="J_CommentSort ml15" data-type="0" id="J_CommentSortTime" name="commentSort" /><label for="J_CommentSortTime"> 时间排序</label> </div> -->
+                        
                                                     <a href="javascript:;" data-type="all" class="c">
-                                                        全部评价（7119）
+                                                        全部评价{{$arr['commentTot']}}
+
                                                     </a>
-                                                    <a href="javascript:;" data-type="img" class="">
-                                                        晒图（3457）
-                                                    </a>
+                                                 
                                                 </div>
                                                 <!-- 列表 -->
+                                                @foreach($comment as $com)
+    
                                                 <div id="J_RatesBuyerList" class="comments">
                                                     <!--详情页交易评价列表-->
                                                     <div class="item clearfix" data-id="1vix4z0">
@@ -2115,193 +1955,33 @@
                                                             <div class="info-w">
                                                                 <!-- 评价用户、时间 -->
                                                                 <div class="info-t clearfix">
-                                                                    <span class="name">
-                                                                        王鹏利
+                                                                    <div><span class="am-text-middle" style="color: #FDC724;font-size:18px;vertical-align:middle; ">{{str_repeat("★",$com->start)}}{{str_repeat("☆",5-$com->start)}}</span>
+                                                                     <span class="name" style="vertical-align:middle; ">
+                                                                        匿名
                                                                     </span>
+                                                                    </div>
+                                                                   
                                                                     <span class="date">
-                                                                        2017年06月27日
+                                                                        {{date('Y-m-d H:i:s',$com->etime)}}
                                                                     </span>
                                                                 </div>
                                                                 <!-- 评价内容 -->
                                                                 <div class="info-m">
-                                                                    鞋子美美的，穿着很舒服，也很百搭
+                                                                    {{$com->text}}
                                                                 </div>
-                                                                <!-- 商品属性 -->
-                                                                <div class="info-b clearfix">
-                                                                    <p>
-                                                                        <span class="sku-choose">
-                                                                            颜色:白绿 尺码:36
-                                                                        </span>
-                                                                    </p>
-                                                                    <p>
-                                                                        <span class="height-weight">
-                                                                            鞋码: 36
-                                                                        </span>
-                                                                        <span class="height-weight">
-                                                                            是否合脚: 合脚
-                                                                        </span>
-                                                                    </p>
-                                                                    <!-- <a href="//www.mogujie.com/apps" target="_blank" class="from-ios
-                                                                    shop-detail-icons comment-mt">来自iOS客户端</a> -->
-                                                                    <!-- <a href="//www.mogujie.com/apps" target="_blank" class="from-android
-                                                                    shop-detail-icons comment-mt">来自Android客户端</a> -->
-                                                                </div>
-                                                                <!-- 晒图 S -->
-                                                                <div class="info-k show-img">
-                                                                    <ul class="list clearfix">
-                                                                        <li>
-                                                                            <div class="img-box">
-                                                                                <span>
-                                                                                    <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/170627_1df7cbcil5kb2lf9ef63609ih2799_1080x1078.jpg"
-                                                                                    width="40">
-                                                                                </span>
-                                                                            </div>
-                                                                        </li>
-                                                                    </ul>
-                                                                    <div class="big-img">
-                                                                        <div class="img-box">
-                                                                            <span>
-                                                                                <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/a" height="400">
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- 晒图 E -->
-                                                                <!-- 商家回复输入 -->
                                                             </div>
                                                         </div>
                                                         <div class="face">
                                                             <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/upload_73289ki0h6j92ck3f3gec621gc60g_1080x1440.jpg">
                                                         </div>
-                                                    </div>
-                                                    <div class="item clearfix" data-id="1uu59vw">
-                                                        <div class="info">
-                                                            <div class="info-w">
-                                                                <!-- 评价用户、时间 -->
-                                                                <div class="info-t clearfix">
-                                                                    <span class="name">
-                                                                        前任说过不离开
-                                                                    </span>
-                                                                    <span class="date">
-                                                                        2017年05月24日
-                                                                    </span>
-                                                                </div>
-                                                                <!-- 评价内容 -->
-                                                                <div class="info-m">
-                                                                    宝贝已收到，美美哒试了也比较合脚店家还送了袜子包装也非常完美
-                                                                </div>
-                                                                <!-- 商品属性 -->
-                                                                <div class="info-b clearfix">
-                                                                    <p>
-                                                                        <span class="sku-choose">
-                                                                            颜色:白绿 尺码:36
-                                                                        </span>
-                                                                    </p>
-                                                                    <p>
-                                                                        <span class="height-weight">
-                                                                            鞋码: 36
-                                                                        </span>
-                                                                        <span class="height-weight">
-                                                                            是否合脚: 合脚
-                                                                        </span>
-                                                                    </p>
-                                                                    <!-- <a href="//www.mogujie.com/apps" target="_blank" class="from-ios
-                                                                    shop-detail-icons comment-mt">来自iOS客户端</a> -->
-                                                                    <!-- <a href="//www.mogujie.com/apps" target="_blank" class="from-android
-                                                                    shop-detail-icons comment-mt">来自Android客户端</a> -->
-                                                                </div>
-                                                                <!-- 晒图 S -->
-                                                                <div class="info-k show-img">
-                                                                    <ul class="list clearfix">
-                                                                        <li>
-                                                                            <div class="img-box">
-                                                                                <span>
-                                                                                    <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/170524_31609efkh4d14070d7caaa7il3961_720x970.jpg"
-                                                                                    width="40">
-                                                                                </span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div class="img-box">
-                                                                                <span>
-                                                                                    <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/170524_7c10ka5ba2ja7eii585lf785l54e9_720x970.jpg"
-                                                                                    width="40">
-                                                                                </span>
-                                                                            </div>
-                                                                        </li>
-                                                                        <li>
-                                                                            <div class="img-box">
-                                                                                <span>
-                                                                                    <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/170524_03gad4958e8a9j6iel9a7e1aa3gc9_720x970.jpg"
-                                                                                    width="40">
-                                                                                </span>
-                                                                            </div>
-                                                                        </li>
-                                                                    </ul>
-                                                                    <div class="big-img">
-                                                                        <div class="img-box">
-                                                                            <span>
-                                                                                <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/a" height="400">
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <!-- 晒图 E -->
-                                                                <!-- 商家回复输入 -->
-                                                            </div>
-                                                        </div>
-                                                        <div class="face">
-                                                            <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/1fsfvp_ieygmnjygq4gmnbzmqytambqgyyde_120x160.jpg">
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="pagination">
-                                                        <a class="c">
-                                                            1
-                                                        </a>
-                                                        <a href="http://rate.mogujie.com/jsonp/pc.rate.ratelist/v2?pageSize=20&amp;sort=1&amp;isNewDetail=1&amp;itemId=1k12j9s&amp;type=1&amp;marketType=market_mogujie&amp;page=2"
-                                                        rel="nofollow">
-                                                            2
-                                                        </a>
-                                                        <a href="http://rate.mogujie.com/jsonp/pc.rate.ratelist/v2?pageSize=20&amp;sort=1&amp;isNewDetail=1&amp;itemId=1k12j9s&amp;type=1&amp;marketType=market_mogujie&amp;page=3"
-                                                        rel="nofollow">
-                                                            3
-                                                        </a>
-                                                        <a href="http://rate.mogujie.com/jsonp/pc.rate.ratelist/v2?pageSize=20&amp;sort=1&amp;isNewDetail=1&amp;itemId=1k12j9s&amp;type=1&amp;marketType=market_mogujie&amp;page=4"
-                                                        rel="nofollow">
-                                                            4
-                                                        </a>
-                                                        <a href="http://rate.mogujie.com/jsonp/pc.rate.ratelist/v2?pageSize=20&amp;sort=1&amp;isNewDetail=1&amp;itemId=1k12j9s&amp;type=1&amp;marketType=market_mogujie&amp;page=5"
-                                                        rel="nofollow">
-                                                            5
-                                                        </a>
-                                                        <i>
-                                                            ...
-                                                        </i>
-                                                        <a href="http://rate.mogujie.com/jsonp/pc.rate.ratelist/v2?pageSize=20&amp;sort=1&amp;isNewDetail=1&amp;itemId=1k12j9s&amp;type=1&amp;marketType=market_mogujie&amp;page=2"
-                                                        rel="nofollow">
-                                                            下一页&gt;
-                                                        </a>
-                                                    </div>
+                                                    </div> 
                                                 </div>
+                                                @endforeach
+
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- 成交记录 -->
-                                    <div id="J_RatesOrder">
-                                        <div class="panel-title rates-title">
-                                            <h1>
-                                                成交记录
-                                            </h1>
-                                        </div>
-                                        <!-- 成交记录 -->
-                                        <div class="rates-order">
-                                            <!-- 列表 -->
-                                            <div class="sale-list" id="J_RatesOrderList">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endif
                                 <!-- 本店同类商品 -->
                                 <div class="module-panel module-recommend" id="J_ModuleRecommend">
                                 </div>
@@ -2379,7 +2059,7 @@
                                         <i class="arrow">
                                         </i>
                                         <a class="pic" href="javascript:;">
-                                            <img class="img-lazyload" src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/upload_ie2dsmbsmyydcmtbgmzdambqgiyde_150x26.png"
+                                            <img class="img-lazyload" src="/home/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/upload_ie2dsmbsmyydcmtbgmzdambqgiyde_150x26.png"
                                             height="26" width="150">
                                         </a>
                                     </div>
@@ -3059,46 +2739,13 @@
         <div class="foot J_siteFooter" data-ptp="_foot">
         </div>
 
-         <script type="text/javascript" src="/home/js/index_002.js"> </script>
+         <!-- <script type="text/javascript" src="/home/js/index_002.js"> </script> -->
         
          <script type="text/javascript" src="/home/js/bottom.js"> </script>
         
          <script type="text/javascript" src="/home/js/index(2).js"> </script>
         
-        <!-- 数据部门(晓海)要求在PC模板中添加ga统计信息， -->
-        <script type="text/javascript">
-            (function(i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] ||
-                function() { (i[r].q = i[r].q || []).push(arguments)
-                },
-                i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-            ga('create', 'UA-25590490-1', 'auto');
-            ga('send', 'pageview');
-
-            //临时删除旧版指纹cookie，后面可以干掉这段代码，By奇云，17.02.15
-            M.fn.removeCookie('FRMS_FINGERPRINT', {
-                domain: '.mogujie.com',
-                path: '/'
-            });
-        </script>
-        <script type="text/javascript">
-            if (window._trace && window._trace.config) {
-                _trace.config.customUrl = function() {
-                    return location.hostname + '/detail';
-                }
-            }
-        </script>
-        <script src="/home/js/getcapjs" id="shieldcaptain-bootstrap"
-        type="text/javascript">
-        </script>
+        
     </body>
 
 </html>

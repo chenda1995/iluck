@@ -23,8 +23,9 @@
                 52px; 
                 } 
             .y_regist_model{ 
-                width: 1000px; height: 500px; background-color:
-                #ffeceb; opacity: .9; 
+                width: 1000px; height: 600px; 
+                background-color:#ffeceb; 
+                opacity: .9; 
                 } 
 
             .y_same_item { 
@@ -135,6 +136,25 @@
                                     <input class="ysame_input" id="userName" type="text" name="uname">
                                     <span class="y_same_label">
                                         用户名
+                                    </span>
+                                </div>
+                                <div class="y_regist_tips y_regist_tips_black" style="top: 16px;">
+                                    <div class="y_regtip_rel">
+                                        <i class="jt">
+                                        </i>
+                                        <div class="y_tips_words">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="y_regist_right">
+                                </div>
+                                <!--提示信息end -->
+                            </li>
+                            <li>
+                                <div class="y_same_item">
+                                    <input class="ysame_input" id="Email" type="text" name="email">
+                                    <span class="y_same_label">
+                                        邮箱
                                     </span>
                                 </div>
                                 <div class="y_regist_tips y_regist_tips_black" style="top: 16px;">

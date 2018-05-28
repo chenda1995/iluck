@@ -100,8 +100,10 @@
             <!-- footer显示价格 -->
             <div>
                 <div class="cart_paybar">
+
                     <a href="/home/orderddxq" class="cart_surebtn fr">
                         确认去付款 &gt;
+
                     </a>
                 </div>
             </div>

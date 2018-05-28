@@ -188,7 +188,7 @@
                                         </div>
                                     </div>
                                     <div class="lg_reg">
-                                        <a class="findpwd" href="">
+                                        <a class="findpwd" href="/home/zhaohui">
                                             忘记密码
                                         </a>
                                     </div>

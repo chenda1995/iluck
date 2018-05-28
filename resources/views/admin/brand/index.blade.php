@@ -137,7 +137,7 @@
                                 
             
                                 <div class="am-fr">
-                                    {{ $res->appends(['num' => $num,'search'=>$search])->links() }} 
+                                    {{ $res->appends(['search'=>$search])->links() }} 
                                 </div>
                                 </div>
                             </div>

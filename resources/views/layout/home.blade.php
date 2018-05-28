@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -12,7 +11,9 @@
 
     <!-- 商品列表css -->
     <link rel="stylesheet" href="/home/css/nav-mogu-act.css">
+
     <link href="/home/css/css/TopNavSideBar.css" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" href="/home/css/pc_selection_wall.css">
     <link rel="stylesheet" href="/home/css/index.css">
 
@@ -24,9 +25,19 @@
     <link rel="stylesheet" type="text/css" href="/home/css/css/shopHeader.css">
 
 
+
     <link rel="stylesheet" type="text/css" href="/home/css/index.css">
     <link rel="stylesheet" type="text/css" href="/home/css/bottom.css">
     <link rel="stylesheet" type="text/css" href="/home/css/index.css-709a8a6f.css">
+
+<link href="/home/%E6%88%91%E7%9A%84%E6%94%B6%E8%97%8F_files/index.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="/home/%E6%88%91%E7%9A%84%E6%94%B6%E8%97%8F_files/bottom.css" media="all">
+<link href="/home/%E6%88%91%E7%9A%84%E6%94%B6%E8%97%8F_files/index_002.css" rel="stylesheet" type="text/css">
+
+
+
+
+
     <!-- <link rel="stylesheet" type="text/css" href="/home/car/index.css-aff6006a.css"> -->
     <link rel="stylesheet" type="text/css" href="/home/css/index_002.css">
 
@@ -55,13 +66,14 @@
     <script src="/home/car/bottom.js"></script>
     <script src="/home/car/index_002.js"></script>
     <script src="/home/car/pkg-pc-base.js"></script> -->
-
+    
+    <style></style>
 
      
 
 </head>
 
-<body>
+<body style="background: transparent">
     
     <div class="mgj_rightbar">
         <div class="mgj-my-cart">
@@ -124,7 +136,20 @@
                 </a>
           </li>
           <li class="dingdan"><a class="dd" href="#">我的订单</a></li>
-          <li ><a class="dl" href="/home/userdetails" style="color: red">{{$res->uname}}</a></li>
+          <li >
+
+            
+            @if(session('uid'))
+                <li><a href="/home/loginout">退出</a></li>
+
+                <li><a href="/home/userdetails" style="color: red">欢迎{{$res->uname}}<span>|</span> </a></li>
+            @else
+                <li><a href="/home/login">请登录</a></li>
+            @endif
+            
+
+            </a>
+        </li>
           <li ><a class="zc" href="/home/register">注册</a></li>
                 
           </ul>

@@ -47,7 +47,7 @@ class RegisterController extends Controller
              $aa = DB::table('user')->where('uname',$a)->get();
              foreach ($aa as $k => $v) {
                 $a2['uid'] = $v->uid;
-                $a2['born'] = ',,';
+                // $a2['born'] = ',,';
                 $arr = DB::table('user_details')->insert($a2);
              }
 
@@ -62,7 +62,7 @@ class RegisterController extends Controller
 
     }
 
-
+    //手机验证码
     public function ycode()
     {
     	//引入类文件
