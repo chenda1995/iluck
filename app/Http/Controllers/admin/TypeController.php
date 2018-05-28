@@ -5,7 +5,6 @@ namespace App\Http\Controllers\admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use DB;
-use common;
 
 class TypeController extends Controller
 {
@@ -21,7 +20,7 @@ class TypeController extends Controller
         select(DB::raw('*,concat(path,cid) as paths'))->
         orderBy('paths')->
         where('cname','like','%'.$request->input('search').'%')->
-        paginate($request->input('num',10));
+        paginate(5);
 
         foreach($res as $k => $v){
             //获取path路径
@@ -35,7 +34,6 @@ class TypeController extends Controller
       
         return view('admin.type.index',[
             'title'=>'分类列表页面',
-            'num'=>$num,
             'search'=>$search,
             'res'=>$res,
             'request'=>$request
@@ -56,8 +54,7 @@ class TypeController extends Controller
         foreach($res as $k=>$v){
             //获取path路径
             $foo = explode(',',$v->path);     
-            $level = count($foo)-2;
-			
+            $level = count($foo)-1;
             $v->cname = str_repeat('&nbsp;&nbsp;&nbsp;',$level).'|--'.$v->cname; 
         }
 
@@ -135,6 +132,11 @@ class TypeController extends Controller
         $res = $request->except('_token','_method');
 
         $data = DB::table('goods_type')->where('cid',$id)->update($res);
+
+        if(isset($res['status'])) {
+            return ['code' => 1];
+
+        }
 
         if($data){
             return redirect('/admin/type')->with('msg','修改成功');

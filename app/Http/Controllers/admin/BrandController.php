@@ -20,7 +20,7 @@ class BrandController extends Controller
         $res = DB::table('goods_brand')->
         where('bname','like','%'.$request->input('search').'%')->
         orderBy('bid', 'desc')->
-        paginate($request->input('num',10));
+        paginate(5);
 
         $num = $request->input('num');
         $search = $request->input('search');
@@ -28,7 +28,6 @@ class BrandController extends Controller
         return view('admin.brand.index',[
             'title'=>'品牌浏览页面',
             'res'=>$res,
-            'num'=>$num,
             'request'=>$request,
             'search'=>$search
         ]);

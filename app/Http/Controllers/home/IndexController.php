@@ -5,12 +5,11 @@ namespace App\Http\Controllers\home;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use DB;
+use Common;
 
 class IndexController extends Controller
 {
-
-
-    
+    //显示首页
     public function index()
     {
         //查询轮播图

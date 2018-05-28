@@ -109,7 +109,10 @@ class CarController extends Controller
 
 		
 
-		 //
+
+
+		 return view('home.cart.car2',['title'=>'确认订单']);
+
 
 		
 	}
