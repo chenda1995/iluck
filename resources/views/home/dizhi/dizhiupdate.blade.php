@@ -75,7 +75,7 @@
 							background:#fff;
 							text-decoration:none;
 							cursor:default;
-							" class="pick-area qwe" name="省\直辖市/市\市辖区/市辖区\县" ></a>
+							" class="pick-area qwe" name="省\市\县/省\市/区\县" ></a>
 
 							<input type="text" value="{{$v->diqu}}" name="diqu" readonly style="margin-top: 15px;">
 						

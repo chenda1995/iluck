@@ -4,24 +4,31 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>@yield('title')</title>
 
-     <link href="/home/sycss/image/favicon.ico" type="/home/sycss/image/x-icon" rel="shortcut icon"/> 
+     <link href="/home/image/favicon.ico" type="/home/sycss/image/x-icon" rel="shortcut icon"/> 
      <link type="text/css" rel="stylesheet" href="/home/sycss/styles/index.css" />
 
 
 
     <!-- 商品列表css -->
     <link rel="stylesheet" href="/home/css/nav-mogu-act.css">
-    <link href="/home/css/TopNavSideBar.css" rel="stylesheet" type="text/css">
+
+    <link href="/home/css/css/TopNavSideBar.css" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" href="/home/css/pc_selection_wall.css">
     <link rel="stylesheet" href="/home/css/index.css">
 
     <!-- 商品详情css -->
-    <link href="/home/sycss/css/xqindex.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="/home/sycss/css/bottom.css" media="all">
-    <link href="/home/sycss/css/index_002.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/home/sycss/css/icon.css">
-    <link rel="stylesheet" type="text/css" href="/home/sycss/css/shopHeader.css">
+    <link href="/home/css/css/xqindex.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/home/css/css/bottom.css" media="all">
+    <link href="/home/css/css/index_002.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/home/css/css/icon.css">
+    <link rel="stylesheet" type="text/css" href="/home/css/css/shopHeader.css">
 
+
+
+    <link rel="stylesheet" type="text/css" href="/home/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/home/css/bottom.css">
+    <link rel="stylesheet" type="text/css" href="/home/css/index.css-709a8a6f.css">
 
 <link href="/home/%E6%88%91%E7%9A%84%E6%94%B6%E8%97%8F_files/index.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="/home/%E6%88%91%E7%9A%84%E6%94%B6%E8%97%8F_files/bottom.css" media="all">
@@ -30,15 +37,13 @@
 
 
 
-    <link rel="stylesheet" type="text/css" href="/home/car/index.css">
-    <link rel="stylesheet" type="text/css" href="/home/car/bottom.css">
-    <link rel="stylesheet" type="text/css" href="/home/car/index.css-709a8a6f.css">
+
     <!-- <link rel="stylesheet" type="text/css" href="/home/car/index.css-aff6006a.css"> -->
-    <link rel="stylesheet" type="text/css" href="/home/car/index_002.css">
+    <link rel="stylesheet" type="text/css" href="/home/css/index_002.css">
 
 
 
-    <link rel="stylesheet" type="text/css" href="/home/sycss/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/home/css/index.css">
 
 
 

@@ -70,9 +70,7 @@
        $(this).click(function(){
        var id =  $(this).attr('cid');
        $.get('/home/dizhi/auth',{id:id},function(data){
-            if(data){
-                alert('默认设置成功啦');
-                 }
+            
              });
        $(this).text('默认地址');
        $(this).parents('.addr_edit').siblings().find('.moren').text('设为默认地址');

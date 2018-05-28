@@ -64,6 +64,8 @@ Route::group(['middleware'=>'login'],function(){
 	Route::resource('admin/type','admin\TypeController');
 	Route::resource('admin/brand','admin\BrandController');
 	Route::resource('admin/goods','admin\GoodsController');
+	
+	
 
 
 	//订单管理
@@ -137,6 +139,8 @@ Route::group([],function(){
 
 	Route::get('home/car/jian','home\CarController@jian');
 
+	Route::get('home/car/gid','home\CarController@gid');
+
 	//购物车生成地址
 	Route::get('home/car/scdz','home\CarController@scdz');
 
@@ -146,8 +150,18 @@ Route::group([],function(){
 
 	Route::post('home/carupdatedo','home\CarController@carupdatedo');
 
+	Route::get('home/cardddz','home\CarController@dddz');
+
 	//订单
 	Route::get('home/orderindex','home\OrderController@index');
+
+	Route::get('home/orderddxq','home\OrderController@ddxq');
+
+	Route::get('home/order/shouhuo','home\OrderController@shouhuo');
+
+	Route::get('home/order/xq/{id}','home\OrderController@xq');
+
+	Route::get('home/order/del','home\OrderController@del');
 
 
 	

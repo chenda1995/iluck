@@ -9,33 +9,13 @@
                     <div class="am-u-sm-12 am-u-md-12 am-u-lg-12">
                         <div class="widget am-cf">
                             <div class="widget-head am-cf">
-                                <div class="widget-title  am-cf">分类列表</div>
+                                <div class="widget-title  am-cf">{{$title}}</div>
                             </div>
                             <div class="widget-body  am-fr">
 
-                                <div class="am-u-sm-12 am-u-md-6 am-u-lg-6">
-                                    <div class="am-form-group">
-                                        <div class="am-btn-toolbar">
-                                            <div class="am-btn-group am-btn-group-xs">
-                                                <button type="button" class="am-btn am-btn-default am-btn-success"><span class="am-icon-plus"></span> 新增</button>
-                                                <button type="button" class="am-btn am-btn-default am-btn-secondary"><span class="am-icon-save"></span> 保存</button>
-                                                <button type="button" class="am-btn am-btn-default am-btn-warning"><span class="am-icon-archive"></span> 审核</button>
-                                                <button type="button" class="am-btn am-btn-default am-btn-danger"><span class="am-icon-trash-o"></span> 删除</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
-                                    <div class="am-form-group tpl-table-list-select">
-                                        <select data-am-selected="{btnSize: 'sm'}" >
-                                              <option value="option1">所有类别</option>      
-												@foreach($res as $k=>$v)
-			                                    <option value="{{$v->cid}}">{{$v->cname}}</option>
-			                                    @endforeach
-                                            </select>
-                                    </div>
-                                </div>
-                            	<form action="/admin/type" method="get">
+                                <div class="am-u-sm-12 am-u-md-6 am-u-lg-6"></div>
+                               
+                            	<form action="/admin/goods" method="get">
 	                                <div class="am-u-sm-12 am-u-md-12 am-u-lg-3">
 	                                    <div class="am-input-group am-input-group-sm tpl-form-border-form cl-p">
 	                                        <input type="text" class="am-form-field " name='search' value="{{$search}}">
@@ -44,48 +24,56 @@
 				                          </span>
 	                                    </div>
 	                                </div>
+	                                {{ csrf_field() }}
                             	</form>
 
                                 <div class="am-u-sm-12">
-                                    <input type="hidden" name="_token" value="{{csrf_token()}}">
+                                	<input type="hidden" name="_token" value="{{csrf_token()}}">
                                     <table width="100%" class="am-table am-table-compact am-table-striped tpl-table-black " id="">
                                         <thead>
                                             <tr>
-                                                <th style="width: 150px;">ID编号</th>
-                                                <th style="width: 222px;">分类名称</th>
-                                                <th style="width: 200px;">父级ID</th>
-                                                <th style="width: 200px;">状态</th>
+                                                <th>商品ID</th>
+                                                <th>名称</th>
+                                                <th>图片</th>
+                                                <th>类别</th>
+                                                <th>价格</th>
+                                                <th>库存</th>
+                                                <th>状态</th>
                                                 <th>操作</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                         	@foreach($res as $k=>$v)
                                             <tr class="gradeX">
-	                                            <td class="">{{$v->cid}}</td>
-							                    <td class="uname">{{$v->cname}}</td>
-	                                            <td class="">{{getName($v->pid)}}</td>
-							                    <td class="sta">
-							                    	@if($v->status==1)
-							                    	<button type="button" class="am-btn am-btn-default am-btn-danger" id="{{$v->cid}}" onclick="upstat({{$v->cid}},0)" style="font-size: 1.2rem">禁用</button>
-							                    	@else
-							                    	<button type="button" class="am-btn am-btn-default am-btn-success" id="{{$v->cid}}" onclick="upstat({{$v->cid}},1)" style="font-size: 1.2rem">启用</button>
-							                    	@endif
-							                    </td>
+	                                            <td class="">{{$v->gid}}</td>
+            							                    <td class="uname">{{$v->gname}}</td>
+            							                    <td class="uname">
+							                    	          <img src="{{ URL::asset($v->gpic[0]) }}" class="tpl-table-line-img" alt="">
+							                               </td>
+	                                            <td class="">{{getName($v->tid)}}</td>
+	                                            <td class="">{{$v->price}}</td>
+	                                            <td class="">{{$v->stock}}</td>
+            							                    <td class=" ">
+            							                    	@if($v->status==1)
+            							                    	<button type="button" class="am-btn am-btn-default am-btn-danger" onclick="upstat({{$v->gid}},0)" style="font-size: 1.2rem">下架</button>
+            							                    	@else
+            							                    	<button type="button"  class="am-btn am-btn-default am-btn-success" onclick="upstat({{$v->gid}},1)" style="font-size: 1.2rem">上架</button>
+            							                    	@endif
+            							                    </td>
                                                 <td>
                                                     <div class="tpl-table-black-operation">
-                                                        <a href="/admin/type/{{$v->cid}}/edit">
+                                                        <a href="/admin/goods/{{$v->gid}}/edit">
                                                             <i class="am-icon-pencil"></i> 修改
                                                         </a>
-                                                        <a href="/admin/type/{{$v->cid}}" class="tpl-table-black-operation-del">
-                                                            <i class="am-icon-trash"></i> 删除
-                                                        </a>
-													
+                                                         <a href="javascript:void(0)" id="del" onclick="del({{$v->gid}})" class=" tpl-table-black-operation-del">
+                                                            <i class="am-icon-trash"></i>删除
+                                                    	</a>										
                                                     </div>
                                                 </td>
                                             </tr>
                                             @endforeach
-                                            
-                                            <!-- more data -->
+
+							               <!-- more data -->
                                         </tbody>
                                     </table>
                                 </div>
@@ -131,15 +119,13 @@
 										color: #666666;
 				    					cursor: default;
 									}
-
-									
-
+								
 									.pagination{
 										margin:0px;
 									}
 							
-							     </style>
-			
+							</style>
+
                                 <div class="am-fr">
                                     {{ $res->appends(['search'=>$search])->links() }} 
                                 </div>
@@ -149,31 +135,46 @@
                     </div>
                 </div>
             </div>
-        <script>
-             function upstat(id,sta){
+         <script>
+                
+               function del(id){
                    $.ajax(
                        {
-                           url: "/admin/type/" + id,
+                           url: "/admin/goods/" + id,
                            method : "POST", // Or POST : result is the same
                            headers:{'X-CSRF-TOKEN':$("input[name=_token]").val()},
-                           data :{ 
-                                _method : 'PUT',
-                                status : sta,
-                            },
-                           success: function(data, textStatus, jqXHR ){                      
+                           data :{ _method : 'DELETE' },
+                           success: function(data, textStatus, jqXHR ){
                                 if (data.code > 0){
-                                    if(sta == 0){
-                                        $("#"+id).parent('td').html('<button type="button" class="am-btn am-btn-default am-btn-success" id="'+id+'" onclick="upstat('+id+',1)" style="font-size: 1.2rem">启用<tton>');   
-                                    }else{
-                                         $("#"+id).parent('td').html('<button type="button" class="am-btn am-btn-default am-btn-danger" id="'+id+'" onclick="upstat('+id+',0)" style="font-size: 1.2rem">禁用<tton>');   
-
-                                    }
-                                    
+                                    alert('删除成功');
+                                    location.reload();
+                                  // $("#"+data.id).remove();
                                 }
                             }
                         }
                     );
                 }
 
-        </script>
+            function upstat(id,sta){
+                   $.ajax(
+                       {
+                           url: "/admin/goods/" + id,
+                           method : "POST", // Or POST : result is the same
+                           headers:{'X-CSRF-TOKEN':$("input[name=_token]").val()},
+                           data :{ 
+                           		_method : 'PUT',
+                                status : sta,
+                            },
+                           success: function(data, textStatus, jqXHR ){                      
+                                if (data.code > 0){
+                                location.reload();
+                                // $("#"+[图片]data.id).remove();
+                                }
+                            }
+                        }
+                    );
+                }
+
+            </script>
+
 @endsection
