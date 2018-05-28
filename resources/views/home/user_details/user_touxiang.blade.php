@@ -45,7 +45,7 @@
                                         <div >
                                             <div>
                                                 <div>
-                                                    <img src="{{$res->uic}}" alt="暂无图片">
+                                                    <img src="{{$res->uic}}" alt="暂无图片" width="100px" height="100px">
                                                 </div>
                                                 
                                                      

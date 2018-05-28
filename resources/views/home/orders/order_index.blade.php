@@ -1,4 +1,4 @@
-@extends('layout.home1')
+@extends('layout.grzx')
 
 
 @section('title',$title)
@@ -11,7 +11,7 @@
 <link href="/home/orders/index.css-1220b6f4.css" rel="stylesheet"
 type="text/css">
 
-    <div class="mu_content_wrap" style="margin-left: 150px;">
+    <div class="mu_content_wrap" style="width:800px;">
 
         <div class="order-title">
             <ul class="order-title-column clearfix">

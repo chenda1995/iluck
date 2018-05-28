@@ -373,39 +373,31 @@
                                     </div>
                                     <ul class="mu_nav_item">
                                         <li>
-                                            <a href="#">
+                                            <a href="/home/orderindex">
                                                 全部订单
                                             </a>
                                         </li>
                                       
-                                            <a href="#">
-                                                待收货
-                                                <i id="unReceivedOrder" class="mu_nav_count">
-                                                    <i class="mu_nav_count_arw">
-                                                    </i>
-                                                </i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                待评价
-                                                <i id="waitingRateOrder" class="mu_nav_count">
-                                                    <i class="mu_nav_count_arw">
-                                                    </i>
-                                                </i>
-                                            </a>
-                                        </li>
+                                         
                                        
                                         <!-- 新增，stage=8 回收站订单 -->
+                                        
+                                    </ul>
+                                </div>
+                                <div class="mu_nav mu_expand">
+                                    <div class="mu_title">
+                                        回收站
+                                    </div>
+                                    <ul class="mu_nav_item">
                                         <li>
                                             <a href="#">
-                                                订单回收站
-                                                <i id="recyleOrder" class="mu_nav_count">
-                                                    <i class="mu_nav_count_arw">
-                                                    </i>
-                                                </i>
+                                                订单
                                             </a>
                                         </li>
+                                      
+                                         
+                                       
+                                        
                                     </ul>
                                 </div>
                                 
