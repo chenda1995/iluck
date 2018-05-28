@@ -901,7 +901,7 @@
                                         <div class=" fav  item" goodsid="0"  tid="0">
                                             <span class=" isfav  m-icon m-icon-star ">
                                             </span>
-                                            <span class="fav-num" onclick="house(this,)">
+                                            <span class="fav-num" onclick="house(this)">
                                                 加入收藏
                                             </span>
                                         </div>
@@ -2745,7 +2745,14 @@
         
          <script type="text/javascript" src="/home/js/index(2).js"> </script>
         
-        
+        <script>
+
+            function house(obj,uid,gid)
+            {
+                //发送ajax
+             
+            }
+        </script>
     </body>
 
 </html>

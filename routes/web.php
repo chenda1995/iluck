@@ -158,10 +158,12 @@ Route::group([],function(){
 
 
 	//我的收藏
-	Route::get('home/house','home\HouseController@index');
+	Route::post('home/house','home\HouseController@house');
 
 
-
+	//商品评价
+	Route::get('home/pingjia','home\PingjiaController@pingjia');
+	Route::post('home/pjdo','home\PingjiaController@pjdo');
 
 
 

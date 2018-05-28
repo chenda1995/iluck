@@ -29,7 +29,7 @@ class SpxqController extends Controller
 
     	// dd($comment);
 
-    	$comment = DB::table('user_evaluate')->where('gid',$gid)->get();
+    	$comment = DB::table('user_evaluate')->where('gid',$gid)->orderBy('etime', 'desc')->get();
 
 
 
@@ -39,7 +39,19 @@ class SpxqController extends Controller
     		'comment'=>$comment,
     	);
 
+
+
+
+ 
     	return view('home.spxq.spxq',['title'=>'商品详情'])->with($data);
 
+    }
+
+
+    public function house()
+    {
+
+        $info = DB::table('collection')->where('gid',$gid)->get();
+        dd($info); 
     }
 }

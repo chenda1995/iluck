@@ -47,7 +47,7 @@
                                             <tr class="gradeX">
                                             	<td class="am-text-middle">{{$v->id}}</td>
                                             	<td class="am-text-middle">{{$v->uname}}</td>
-                                                <td class="am-text-middle">{{$v->gname}}</td>
+                                                <td class="am-text-middle" style="width: 320px;">{{$v->gname}}</td>
 
                                                 <td>
                                                     <img src="{{$v->gimg}}" class="tpl-table-line-img" alt="" width="70px" height="70px">
