@@ -982,14 +982,33 @@
                                 <div id="J_SmallImgs" class="small-img">
                                     <div class="box">
                                         <div style="width: 350px; height: 59px;" class="list">
-                                            <ul class="clearfix carousel">
-                                            @foreach($goods->gpic as $k=>$v)
-                                                <li class="c">
-                                                    <img src="{{ URL::asset($v)}}">
+                                            <ul class="clearfix carousel" id="listimgs">
+                                           
+                                                <li>
+                                                    <img src="{{ URL::asset($goods->gpic[0])}}" >
                                                     <i>
                                                     </i>
                                                 </li>
-                                           @endforeach
+                                                <li id="listimgs">
+                                                    <img src="{{ URL::asset($goods->gpic[1])}}" >
+                                                    <i>
+                                                    </i>
+                                                </li>
+                                                <li id="listimgs">
+                                                    <img src="{{ URL::asset($goods->gpic[2])}}" >
+                                                    <i>
+                                                    </i>
+                                                </li>
+                                                <li id="listimgs">
+                                                    <img src="{{ URL::asset($goods->gpic[3])}}" >
+                                                    <i>
+                                                    </i>
+                                                </li>
+                                                <li id="listimgs">
+                                                    <img src="{{ URL::asset($goods->gpic[4])}}" >
+                                                    <i>
+                                                    </i>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -2926,6 +2945,27 @@
                 }
             }
             // $('.pic-box').html($('.pic-box').text());
+        </script>
+        <script type="text/javascript">
+            var imgs = document.getElementById('listimgs').getElementsByTagName('img');
+            var bigImg = document.getElementById('J_BigImg');
+
+            for (var i = 0; i < imgs.length; i++) {
+                
+                imgs[i].onmouseover = function(){
+                    //获取当前的img里面src的值
+                    var limgs = this.getAttribute('src');
+
+                    $(this).parent().addClass('c');
+                    bigImg.setAttribute('src',limgs);
+                }
+
+                imgs[i].onmouseout = function(){
+
+                    $(this).parent().removeClass('c');
+
+                }
+            }
         </script>
         <script src="/home/js/getcapjs" id="shieldcaptain-bootstrap"
         type="text/javascript">
