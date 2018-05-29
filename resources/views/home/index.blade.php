@@ -15,22 +15,24 @@
             <input class="s3" type="button" />
              <div class="sao">
             <img src="/home/sycss/image/leftlogin.png" style="width:160px;height:80px" />
+
             <span class="mgj">iluck客户端</span>
         </div>        
+
         <ul>
             <li><a href="#">毛衣</a></li>
-            <li><a href="#">雪地靴</a></li> 
+            <li><a href="#">雪地靴</a></li>
             <li><a href="#">羽绒服</a></li>
-            <li><a href="#">毛呢外套</a></li> 
-            <li><a href="#">连衣裙</a></li> 
-            <li><a href="#">家居服</a></li> 
-            <li><a href="#">打底裤</a></li> 
-            <li><a href="#">包包</a></li> 
+            <li><a href="#">毛呢外套</a></li>
+            <li><a href="#">连衣裙</a></li>
+            <li><a href="#">家居服</a></li>
+            <li><a href="#">打底裤</a></li>
+            <li><a href="#">包包</a></li>
             <li><a href="#">打底衫</a></li>
-        </ul>  
-        </div>  
+        </ul>
+        </div>
         <div class="head-foot">
-            
+
             <ul class="daohang">
                 <li class="sk">全部商品</li>
                 <li><a href="#">团购</a></li>
@@ -38,7 +40,7 @@
                 <li><a href="#">海淘馆</a></li>
                 <li><a href="#">红人Bazaar</a></li>
             </ul>
-        </div> 
+        </div>
     </div>
     <div class="banner">
 <!--    banner左侧结构=======================================-->
@@ -62,10 +64,10 @@
                                         <li><a href="#">长袖T恤</a></li>
                                         <li><a href="#">棒球外套</a></li>
                                         <li><a href="#">牛仔外套</a></li>
-                                        <li><a href="#">开衫</a></li>                    
-                                    </ul>                
+                                        <li><a href="#">开衫</a></li>
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">当季热卖</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -80,9 +82,9 @@
                                         <li><a href="#">运动套装</a></li>
                                         <li><a href="#">西装外套</a></li>
                                         <li><a href="#">雪纺衫</a></li>
-                                    </ul>                
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">流行元素</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -96,13 +98,13 @@
                                         <li><a href="#">蕾丝</a></li>
                                         <li><a href="#">波点</a></li>
                                         <li><a href="#">纯色</a></li>
-                                        <li><a href="#">前短后长</a></li>                    
-                                    </ul>                
+                                        <li><a href="#">前短后长</a></li>
+                                    </ul>
                                 </dd>
                                 <div class="xiao-banner"><a href="#"><img src="/home/sycss//home/sycss/image/xiao-banner1.jpg"  /></a></div>
-                                
+
                             </dl>
-                    </div> 
+                    </div>
                 <li class="li">
                     <dl>
                         <dt class="dt"><a class="a" href="#">上衣</a></dt>
@@ -126,10 +128,10 @@
                                         <li><a href="#">衬衫裙</a></li>
                                         <li><a href="#">牛仔裙</a></li>
                                         <li><a href="#">长袖连衣裙</a></li>
-                                        <li><a href="#">卫衣裙</a></li>                
-                                    </ul>                
+                                        <li><a href="#">卫衣裙</a></li>
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">当季热卖</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -142,9 +144,9 @@
                                         <li><a href="#">伞裙</a></li>
                                         <li><a href="#">长裙</a></li>
                                         <li><a href="#">小白裙</a></li>
-                                    </ul>                
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">女神最爱</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -155,13 +157,13 @@
                                         <li><a href="#">清新女神</a></li>
                                         <li><a class="red" href="#">一步裙</a></li>
                                         <li><a href="#">飘逸长裙</a></li>
-                                        <li><a href="#">流苏</a></li>                    
-                                    </ul>                
+                                        <li><a href="#">流苏</a></li>
+                                    </ul>
                                 </dd>
                                 <div class="xiao-banner"><a href="#"><img src="/home/sycss/image/xiao-banner2.jpg" /></a></div>
-                                
+
                             </dl>
-                    </div> 
+                    </div>
                 <li class="li">
                     <dl>
                         <dt class="dt"><a class="a" href="#">裙子</a></dt>
@@ -181,10 +183,10 @@
                                         <li><a href="#">背带裤</a></li>
                                         <li><a href="#">高腰裤</a></li>
                                         <li><a href="#">阔腿裤</a></li>
-                                        <li><a href="#">休闲裤</a></li>                
-                                    </ul>                
+                                        <li><a href="#">休闲裤</a></li>
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">当季热卖</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -197,9 +199,9 @@
                                         <li><a href="#">显瘦休闲裤</a></li>
                                         <li><a href="#">韩版短裤</a></li>
                                         <li><a href="#">显瘦皮裤</a></li>
-                                    </ul>                
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">流行元素</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -211,13 +213,13 @@
                                         <li><a class="red" href="#">阔腿</a></li>
                                         <li><a href="#">灯笼</a></li>
                                         <li><a href="#">蕾丝</a></li>
-                                        <li><a href="#">卡通</a></li>                    
-                                    </ul>                
+                                        <li><a href="#">卡通</a></li>
+                                    </ul>
                                 </dd>
                                 <div class="xiao-banner"><a href="#"><img src="/home/sycss/image/xiao-banner3.jpg" /></a></div>
-                                
+
                             </dl>
-                    </div> 
+                    </div>
                 <li class="li">
                     <dl>
                         <dt class="dt"><a class="a" href="#">裤子</a></dt>
@@ -239,10 +241,10 @@
                                         <li><a href="#">保暖内衣</a></li>
                                         <li><a href="#">无痕内衣</a></li>
                                         <li><a href="#">性感内衣</a></li>
-                                        <li><a href="#">运动内衣</a></li>                 
-                                    </ul>                
+                                        <li><a href="#">运动内衣</a></li>
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">家居睡衣</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -254,9 +256,9 @@
                                         <li><a href="#">情侣睡衣</a></li>
                                         <li><a href="#">睡袍</a></li>
                                         <li><a href="#">性感睡衣</a></li>
-                                    </ul>                
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">袜子</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -267,13 +269,13 @@
                                         <li><a href="#">过膝袜</a></li>
                                         <li><a class="red" href="#">连裤袜</a></li>
                                         <li><a href="#">丝袜</a></li>
-                                        <li><a href="#">船袜</a></li>                    
-                                    </ul>                
+                                        <li><a href="#">船袜</a></li>
+                                    </ul>
                                 </dd>
                                 <div class="xiao-banner"><a href="#"><img src="/home/sycss/image/xiao-banner4.jpg" /></a></div>
-                                
+
                             </dl>
-                    </div> 
+                    </div>
                 <li class="li">
                     <dl>
                         <dt class="dt"><a class="a" href="#">内衣</a></dt>
@@ -298,10 +300,10 @@
                                         <li><a href="#">切尔西靴</a></li>
                                         <li><a href="#">单鞋</a></li>
                                         <li><a href="#">豆豆鞋</a></li>
-                                        <li><a href="#">厚底鞋</a></li>              
-                                    </ul>                
+                                        <li><a href="#">厚底鞋</a></li>
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">热门推荐</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -318,9 +320,9 @@
                                         <li><a href="#">牛津鞋</a></li>
                                         <li><a href="#">松糕鞋</a></li>
                                         <li><a href="#">圆头鞋</a></li>
-                                    </ul>                
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">经典直击</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -335,14 +337,14 @@
                                         <li><a href="#">舒适平底</a></li>
                                         <li><a href="#">板鞋</a></li>
                                         <li><a href="#">机车靴</a></li>
-                                        <li><a href="#">套脚</a></li>  
-                                        <li><a href="#">拉链款</a></li>          
-                                    </ul>                
+                                        <li><a href="#">套脚</a></li>
+                                        <li><a href="#">拉链款</a></li>
+                                    </ul>
                                 </dd>
                                 <div class="xiao-banner"><a href="#"><img src="/home/sycss/image/xiao-banner5.jpg" /></a></div>
-                                
+
                             </dl>
-                    </div> 
+                    </div>
                 <li class="li">
                     <dl>
                         <dt class="dt"><a class="a" href="#">鞋子</a></dt>
@@ -366,10 +368,10 @@
                                         <li><a href="#">卫衣</a></li>
                                         <li><a href="#">运动裤</a></li>
                                         <li><a href="#">羽绒服</a></li>
-                                        <li><a href="#">衬衫</a></li>               
-                                    </ul>                
+                                        <li><a href="#">衬衫</a></li>
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">男鞋</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -383,9 +385,9 @@
                                         <li><a href="#">豆豆鞋</a></li>
                                         <li><a href="#">跑步鞋</a></li>
                                         <li><a href="#">家居鞋</a></li>
-                                    </ul>                
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">包配</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -399,13 +401,13 @@
                                         <li><a href="#">手提包</a></li>
                                         <li><a href="#">帽子</a></li>
                                         <li><a href="#">围巾</a></li>
-                                        <li><a href="#">棒球帽</a></li>                    
-                                    </ul>                
+                                        <li><a href="#">棒球帽</a></li>
+                                    </ul>
                                 </dd>
                                 <div class="xiao-banner"><a href="#"><img src="/home/sycss/image/xiao-banner6.jpg" /></a></div>
-                                
+
                             </dl>
-                    </div> 
+                    </div>
                 <li class="li">
                     <dl>
                         <dt class="dt"><a class="a" href="#">男友</a></dt>
@@ -431,10 +433,10 @@
                                         <li><a href="#">钱包</a></li>
                                         <li><a href="#">香风链条</a></li>
                                         <li><a href="#">牛仔外套</a></li>
-                                        <li><a href="#">手拿包</a></li>                    
-                                    </ul>                
+                                        <li><a href="#">手拿包</a></li>
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">款式</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -447,9 +449,9 @@
                                         <li><a href="#">手拿包</a></li>
                                         <li><a href="#">帆布包</a></li>
                                         <li><a href="#">mini小包</a></li>
-                                    </ul>                
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">流行</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -463,13 +465,13 @@
                                         <li><a href="#">邮差包</a></li>
                                         <li><a href="#">子母包</a></li>
                                         <li><a href="#">印花包</a></li>
-                                        <li><a href="#">帆布包</a></li>                    
-                                    </ul>                
+                                        <li><a href="#">帆布包</a></li>
+                                    </ul>
                                 </dd>
                                 <div class="xiao-banner"><a href="#"><img src="/home/sycss/image/xiao-banner7.jpg" /></a></div>
-                                
+
                             </dl>
-                    </div> 
+                    </div>
                 <li class="li">
                     <dl>
                         <dt class="dt"><a class="a" href="#">包包</a></dt>
@@ -492,10 +494,10 @@
                                         <li><a href="#">精华</a></li>
                                         <li><a href="#">护肤套装</a></li>
                                         <li><a href="#">防晒</a></li>
-                                        <li><a href="#">男士护肤</a></li>              
-                                    </ul>                
+                                        <li><a href="#">男士护肤</a></li>
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">潮流彩妆</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -510,9 +512,9 @@
                                         <li><a href="#">眉笔</a></li>
                                         <li><a href="#">美妆工具</a></li>
                                         <li><a href="#">彩妆套装</a></li>
-                                    </ul>                
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">美体美发</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -526,14 +528,14 @@
                                         <li><a href="#">指甲油</a></li>
                                         <li><a href="#">香水</a></li>
                                         <li><a href="#">口腔护理</a></li>
-                                        <li><a href="#">精油</a></li>   
-                                        <li><a href="#">卫生巾</a></li>                  
-                                    </ul>                
+                                        <li><a href="#">精油</a></li>
+                                        <li><a href="#">卫生巾</a></li>
+                                    </ul>
                                 </dd>
                                 <div class="xiao-banner"><a href="#"><img src="/home/sycss/image/xiao-banner8.jpg" /></a></div>
-                                
+
                             </dl>
-                    </div> 
+                    </div>
                 <li class="li">
                     <dl>
                         <dt class="dt"><a class="a" href="#">美妆</a></dt>
@@ -559,11 +561,11 @@
                                         <li><a href="#">假发</a></li>
                                         <li><a href="#">自拍神器</a></li>
                                         <li><a href="#">移动电源</a></li>
-                                        <li><a href="#">毛衣链</a></li> 
-                                        <li><a href="#">帽子</a></li>                     
-                                    </ul>                
+                                        <li><a href="#">毛衣链</a></li>
+                                        <li><a href="#">帽子</a></li>
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">爱美装扮</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -575,9 +577,9 @@
                                         <li><a href="#">情侣配饰</a></li>
                                         <li><a href="#">独特小物</a></li>
                                         <li><a href="#">数码控</a></li>
-                                    </ul>                
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">流行推荐</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -588,13 +590,13 @@
                                         <li><a href="#">韩版帽</a></li>
                                         <li><a class="red" href="#">流苏围巾</a></li>
                                         <li><a href="#">小清新耳饰</a></li>
-                                        <li><a href="#">唯美发饰</a></li>                    
-                                    </ul>                
+                                        <li><a href="#">唯美发饰</a></li>
+                                    </ul>
                                 </dd>
                                 <div class="xiao-banner"><a href="#"><img src="/home/sycss/image/xiao-banner9.jpg" /></a></div>
-                                
+
                             </dl>
-                    </div> 
+                    </div>
                 <li class="li">
                     <dl>
                         <dt class="dt"><a class="a" href="#">配饰</a></dt>
@@ -620,10 +622,10 @@
                                         <li><a href="#">美翻了窗帘</a></li>
                                         <li><a href="#">毛绒玩具</a></li>
                                         <li><a href="#">被套</a></li>
-                                        <li><a href="#">床单</a></li>                    
-                                    </ul>                
+                                        <li><a href="#">床单</a></li>
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">精美家饰</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -639,9 +641,9 @@
                                         <li><a href="#">仿真花</a></li>
                                         <li><a href="#">DIY</a></li>
                                         <li><a href="#">装饰画</a></li>
-                                    </ul>                
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">美味厨房</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -656,12 +658,12 @@
                                         <li><a href="#">厨房小电器</a></li>
                                         <li><a href="#">厨房清洁</a></li>
                                         <li><a href="#">橡胶手套</a></li>                                       <li><a href="#">隔热手套</a></li>
-                                    </ul>                
+                                    </ul>
                                 </dd>
                                 <div class="xiao-banner"><a href="#"><img src="/home/sycss/image/xiao-banner10.jpg" /></a></div>
-                                
+
                             </dl>
-                    </div> 
+                    </div>
                 <li class="li">
                     <dl>
                         <dt class="dt"><a class="a" href="#">家具</a></dt>
@@ -688,10 +690,10 @@
                                         <li><a href="#">卫衣</a></li>
                                         <li><a href="#">针织衫</a></li>
                                         <li><a href="#">家居服</a></li>
-                                        <li><a href="#">套装</a></li>                      
-                                    </ul>                
+                                        <li><a href="#">套装</a></li>
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">辣妈</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -707,9 +709,9 @@
                                         <li><a href="#">哺乳内衣</a></li>
                                         <li><a href="#">孕产洗护</a></li>
                                         <li><a href="#">亲子装</a></li>
-                                    </ul>                
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">玩具用品</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -725,12 +727,12 @@
                                         <li><a href="#">喂哺</a></li>
                                         <li><a href="#">幼儿学步</a></li>                                                   <li><a href="#">安全出行</a></li>
                                         <li><a href="#">纸尿裤</a></li>
-                                    </ul>                
+                                    </ul>
                                 </dd>
                                 <div class="xiao-banner"><a href="#"><img src="/home/sycss/image/xiao-banner11.jpg" /></a></div>
-                                
+
                             </dl>
-                    </div> 
+                    </div>
                 <li class="li">
                     <dl>
                         <dt class="dt"><a class="a" href="#">母婴</a></dt>
@@ -752,10 +754,10 @@
                                         <li><a href="#">蜜饯</a></li>
                                         <li><a href="#">坚果</a></li>
                                         <li><a href="#">肉食</a></li>
-                                        <li><a href="#">膨化食品</a></li>                    
-                                    </ul>                
+                                        <li><a href="#">膨化食品</a></li>
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">进口美食</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -767,9 +769,9 @@
                                         <li><a href="#">进口糖巧</a></li>
                                         <li><a href="#">进口水饮</a></li>
 
-                                    </ul>                
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">茶酒饮品</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -783,13 +785,13 @@
                                         <li><a href="#">蕾丝</a></li>
                                         <li><a href="#">波点</a></li>
                                         <li><a href="#">纯色</a></li>
-                                        <li><a href="#">前短后长</a></li>                    
-                                    </ul>                
+                                        <li><a href="#">前短后长</a></li>
+                                    </ul>
                                 </dd>
                                 <div class="xiao-banner"><a href="#"><img src="/home/sycss/image/xiao-banner12.jpg" /></a></div>
-                                
+
                             </dl>
-                    </div> 
+                    </div>
                 <li class="li">
                     <dl>
                         <dt class="dt"><a class="a" href="#">零食</a></dt>
@@ -816,9 +818,9 @@
                                         <li><a href="#">明信片</a></li>
                                         <li><a href="#">笔记本</a></li>
                                         <li><a href="#">相册</a></li>
-                                    </ul>                
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">收纳控</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -836,9 +838,9 @@
                                         <li><a href="#">脏衣篓</a></li>
                                         <li><a class="red" href="#">内衣收纳</a></li>
 
-                                    </ul>                
+                                    </ul>
                                 </dd>
-                                
+
                                 <dt><a href="#">变美丽</a></dt>
                                 <dd>
                                     <ul class="clearfix">
@@ -852,13 +854,13 @@
                                         <li><a href="#">情趣用具</a></li>
                                         <li><a href="#">调情香剂</a></li>
                                         <li><a class="red" href="#">加湿器</a></li>
-                                                          
-                                    </ul>                
+
+                                    </ul>
                                 </dd>
                                 <div class="xiao-banner"><a href="#"><img src="/home/sycss/image/xiao-banner13.jpg" /></a></div>
-                                
+
                             </dl>
-                    </div> 
+                    </div>
                 <li class="li">
                     <dl>
                         <dt class="dt"><a class="a" href="#">百货</a></dt>
@@ -872,13 +874,15 @@
         <!-- 右侧展示banner -->
         <div class="right">
             <!-- <img src="/home/sycss/image/banner.gif" /> -->
-            
-                @foreach($show as $v)
-                <ul class="slide-show">
-                    <li><a href="#"><img src="{{$v->bprofile}}" alt="" / style="width: 875px;height: 550px"></a></li>
-                @endforeach
 
-            </ul>
+
+                <ul class="slide-show">
+                     @foreach($show as $k=>$v)
+                    <li><a href="{{$v->burl}}" target="_blank"><img src="{{$v->bsrc}}" alt="" style="width:875px;"/></a></li>
+
+                @endforeach
+                 </ul>
+
             <img class="banner-left" src="/home/sycss/image/banner-left.png" />
             <img class="banner-right" src="/home/sycss/image/banner-right.png" />
 
@@ -891,8 +895,6 @@
                 <li><img src="/home/sycss/image/point40x40.png" width="20px" alt="" /></li>
             </ol>
 
-         
-            
         </div>
     </div>
 <!--main1-->
@@ -905,38 +907,41 @@
                 <li></li>
                 <li>:</li>
                 <li></li>
-            </ul>            
-            <img src="/home/sycss/image/main1-daojishi_640x640.jpg" alt="" />
+            </ul>
+            <a href="/home/goodkill" target="_blank"><img src="/home/sycss/image/main1-daojishi_640x640.jpg" alt="" /></a>
         </div>
         <div class="two">
             <a href="#"><img src="/home/sycss/image/main1-two.png" /></a>
         </div>
+
         <div class="three">
-            <a href="#"><img src="/home/sycss/image/main1-three-1.png" /></a>
-            <a href="#"><img class="zs2" src="/home/sycss/image/main1-three-2.png" /></a>
+            @foreach($addata as $k=>$v)
+            <!-- <a href="" target="_blank"><img src="" /></a> -->
+            <a href="{{$v->adurl}}"><img class="zs2" src="{{$v->adsrc}}" /></a>
+            @endforeach
         </div>
     </div>
 <!--main2-->
     <div class="main2 banxin">
         <div class="title banxin">
-        
+
             <div class="title1">
                 <div class="title2">
                     <div class="title3">
                     </div>
-                </div>          
+                </div>
             </div>
-            
+
             <div class="ppg-wz">
             </div>
-            
+
             <div class="title1">
                 <div class="title2">
                     <div class="title3">
                     </div>
-                </div>          
+                </div>
             </div>
-            
+
         </div>
         <div class="ppg">
             <div class="ppg-1"><a href="/home/list"><img src="/home/sycss/image/ppg-1.png" width="223" height="254" /></a></div>
@@ -954,29 +959,29 @@
             <div class="ppg-13"><a href="#"><img src="/home/sycss/image/ppg-13.png"/></a></div>
             <div class="ppg-14"><a href="#"><img src="/home/sycss/image/ppg-12.png"/></a></div>
        </div>
-    
+
     </div>
 <!--main3/////////////////////////////-->
     <div class="main3 banxin">
         <div class="title banxin">
-        
+
             <div class="title1">
                 <div class="title2">
                     <div class="title3">
                     </div>
-                </div>          
+                </div>
             </div>
-            
+
             <div class="xs-wz">
             </div>
-            
+
             <div class="title1">
                 <div class="title2">
                     <div class="title3">
                     </div>
-                </div>          
+                </div>
             </div>
-            
+
         </div>
         <div class="xs">
             <div class="xs-1"><a href="#"><img src="/home/sycss/image/xs-1.jpg" width="223" height="254" /></a></div>
@@ -998,24 +1003,24 @@
 <!--main4/////////////////////////////-->
     <div class="main4 banxin">
         <div class="title banxin">
-        
+
             <div class="title1">
                 <div class="title2">
                     <div class="title3">
                     </div>
-                </div>          
+                </div>
             </div>
-            
+
             <div class="ht-wz">
             </div>
-            
+
             <div class="title1">
                 <div class="title2">
                     <div class="title3">
                     </div>
-                </div>          
+                </div>
             </div>
-            
+
         </div>
         <div class="ht">
             <div class="box-left">
@@ -1031,7 +1036,7 @@
                         <li><a href="#">伊思</a></li>
                         <li><a href="#">耳钉</a></li>
                         <li><a href="#">手链</a></li>
-                    
+
                     </ul>
             </div>
             <div class="box-right">
@@ -1039,27 +1044,27 @@
                     <div class="ul-box clearfix">
                         <div class="box-right-l box-right-r">
                             <div class="ht3"><a href="#"><img src="/home/sycss/image/ht-3.jpg" /></a></div>
-                            <a href="#"><div class="ht4"><img src="/home/sycss/image/ht-4.png" />                    
-                            <span>GNC健安喜<br /><i>美国第一保健品牌！</i></span>                    
+                            <a href="#"><div class="ht4"><img src="/home/sycss/image/ht-4.png" />
+                            <span>GNC健安喜<br /><i>美国第一保健品牌！</i></span>
                             </div></a>
                         </div>
                         <div class="box-right-l box-right-r">
                             <div class="ht3"><a href="#"><img src="/home/sycss/image/ht-5.jpg" /></a></div>
-                            <a href="#"><div class="ht4"><img src="/home/sycss/image/ht-6.png" />                    
-                            <span>小家电<br /><i>全球热门电子小家用！</i></span>                    
+                            <a href="#"><div class="ht4"><img src="/home/sycss/image/ht-6.png" />
+                            <span>小家电<br /><i>全球热门电子小家用！</i></span>
                             </div></a>
                         </div>
                         <!-- 轮播效果 -->
                         <div class="box-right-l box-right-r">
                             <div class="ht3"><a href="#"><img src="/home/sycss/image/ht-3.jpg" /></a></div>
-                            <a href="#"><div class="ht4"><img src="/home/sycss/image/ht-4.png" />                    
-                            <span>GNC健安喜<br /><i>美国第一保健品牌！</i></span>                    
+                            <a href="#"><div class="ht4"><img src="/home/sycss/image/ht-4.png" />
+                            <span>GNC健安喜<br /><i>美国第一保健品牌！</i></span>
                             </div></a>
                         </div>
                         <div class="box-right-l box-right-r">
                             <div class="ht3"><a href="#"><img src="/home/sycss/image/ht-5.jpg" /></a></div>
-                            <a href="#"><div class="ht4"><img src="/home/sycss/image/ht-6.png" />                    
-                            <span>小家电<br /><i>全球热门电子小家用！</i></span>                    
+                            <a href="#"><div class="ht4"><img src="/home/sycss/image/ht-6.png" />
+                            <span>小家电<br /><i>全球热门电子小家用！</i></span>
                             </div></a>
                         </div>
                     </div>
@@ -1068,29 +1073,29 @@
                 <div class="jt2"></div>
             </div>
         </div>
-    
+
     </div>
 <!--main5/////////////////////////////-->
     <div class="main5 banxin">
         <div class="title banxin">
-        
+
             <div class="title1">
                 <div class="title2">
                     <div class="title3">
                     </div>
-                </div>          
+                </div>
             </div>
-            
+
             <div class="hr-wz">
             </div>
-            
+
             <div class="title1">
                 <div class="title2">
                     <div class="title3">
                     </div>
-                </div>          
+                </div>
             </div>
-            
+
         </div>
         <div class="hr">
             <div class="box-left">
@@ -1103,49 +1108,49 @@
                         <li><a href="#">萌妹频道</a></li>
                         <li><a href="#">中性频道</a></li>
                         <li><a href="#">极简频道</a></li>
-                    
+
                     </ul>
             </div>
             <div class="box-right">
                 <div class="box-right-l">
                     <div class="hr3"><a href="#"><img src="/home/sycss/image/hr-3.jpg" /></a></div>
-                    <a href="#"><div class="hr4"><img src="/home/sycss/image/hr-4.jpg" />                    
-                    <span>冬日加分项甜美连衣裙<br /><i>女神气质即可拥有！</i></span>                   
+                    <a href="#"><div class="hr4"><img src="/home/sycss/image/hr-4.jpg" />
+                    <span>冬日加分项甜美连衣裙<br /><i>女神气质即可拥有！</i></span>
                     </div></a>
                 </div>
                 <div class="box-right-l box-right-r">
                     <div class="hr3"><a href="#"><img src="/home/sycss/image/hr-5.jpg" /></a></div>
-                    <a href="#"><div class="hr4"><img src="/home/sycss/image/hr-6.jpg" />                   
-                    <span>降温季囤货指南<br /><i>温暖外套降温必备！</i></span>                   
+                    <a href="#"><div class="hr4"><img src="/home/sycss/image/hr-6.jpg" />
+                    <span>降温季囤货指南<br /><i>温暖外套降温必备！</i></span>
                     </div></a>
                 </div>
                 <div class="jt1"></div>
                 <div class="jt2"></div>
             </div>
         </div>
-    
+
     </div>
 <!--main6/////////////////////////////-->
     <div class="main6 banxin">
         <div class="title banxin">
-        
+
             <div class="title1">
                 <div class="title2">
                     <div class="title3">
                     </div>
-                </div>          
+                </div>
             </div>
-            
+
             <div class="hh-wz">
             </div>
-            
+
             <div class="title1">
                 <div class="title2">
                     <div class="title3">
                     </div>
-                </div>          
+                </div>
             </div>
-            
+
         </div>
         <div class="hh">
             <div class="hh-1"><a href="#"><img src="/home/sycss/image/hh-1.jpg" width="223" height="254" /></a></div>
@@ -1167,24 +1172,24 @@
 <!--main7/////////////////////////////-->
     <div class="main7 banxin">
         <div class="title banxin">
-        
+
             <div class="title1">
                 <div class="title2">
                     <div class="title3">
                     </div>
-                </div>          
+                </div>
             </div>
-            
+
             <div class="sm-wz">
             </div>
-            
+
             <div class="title1">
                 <div class="title2">
                     <div class="title3">
                     </div>
-                </div>          
+                </div>
             </div>
-            
+
         </div>
         <div class="sm">
             <div class="sm-1"><a href="#"><img src="/home/sycss/image/sm-1.jpg" width="223" height="254" /></a></div>
@@ -1203,15 +1208,6 @@
             <div class="sm-14"><a href="#"><img src="/home/sycss/image/sm-14.png"/></a></div>
        </div>
      </div>
-  
-
-
-
-
-
-
-
-
 
 
 @endsection

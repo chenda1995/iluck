@@ -26,7 +26,7 @@ $(function(){
 
 	}
 	setInterval(function(){
-		ShowCountDown(2016,1,6,'divdown1');
+		ShowCountDown(2018,5,29,'divdown1');
 	},1000); 
 })
 
@@ -47,6 +47,27 @@ $(function(){
 	// setInterval(function(){
 	// 	ShowCountDown(2016,1,6,'divdown1');
 	// },1000); 
+    
+    
+    
+    // window.onload = function(){
+			// showTime();
+		// }
+		// function showTime(){
+			// var endtime=new Date("2016/6/6,14:33:22");
+			// var nowtime=new Date();
+			// var lefttime=parseInt((endtime.getTime()-nowtime.getTime())/1000);
+			// var d = parseInt((lefttime)/(24*60*60));
+			// var h = parseInt(lefttime/(60*60)%24);
+			// var m = parseInt(lefttime/60%60);
+			// var s = parseInt(lefttime%60);
+			// document.getElementById("timer").innerHTML=d+"天"+h+"时"+m+"分"+s+"秒";
+			// if (lefttime<=0) {
+				// document.getElementById("timer").innerHTML="";
+			// } 
+			// setTimeout(showTime,500);
+		// }
+
 
 
 
@@ -62,12 +83,12 @@ $(function(){
     				olIndex=0;
     			}  
 				ulIndex++;
-				if(ulIndex>6){
-					ulIndex=1
+				if(ulIndex>5){
+					ulIndex=0
 					$('.slide-show').css('left','0px')
 				};
 
-				l=ulIndex*(-715)
+				l=ulIndex*(-875)
 
 				$('.slide-show').stop().animate({'left':l+'px'}, 800);
 				$('.p-box li').eq(olIndex).addClass('current').siblings().removeClass('current');
@@ -79,23 +100,24 @@ $(function(){
 		olIndex--;
 		// 检测数据是否合法
 		if(olIndex<0){
-			olIndex=4;
+			olIndex=5;
 		} 
 		ulIndex--;
 		if(ulIndex<0){
 			ulIndex=5;
-			l=(ulIndex+1)*(-715)
+			l=(ulIndex+1)*(-875)
 			$('.slide-show').css('left',l+'px')
 		}
-		l=ulIndex*(-715);
+		l=ulIndex*(-875);
 		$('.slide-show').stop().animate({'left':l+'px'}, 800)
+        $('.p-box li').eq(olIndex).addClass('current').siblings().removeClass('current');
 	});
 
 	$('.p-box li').click(function(){
   					olIndex=$(this).index()
   					ulIndex=$(this).index()
   					$(this).addClass('current').siblings().removeClass('current');
-  					var l=ulIndex*(-715);
+  					var l=ulIndex*(-875);
   					$('.slide-show').stop().animate({'left':l+'px'}, 800)  					
 
   				})

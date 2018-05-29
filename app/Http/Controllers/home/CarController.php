@@ -8,8 +8,13 @@ use DB;
 
 class CarController extends Controller
 {
-    public function index()
+    public function index($id)
 	{
+		
+
+
+
+		
 		$res = DB::table('car')->where('uid',session('uid'))->orderBy('id','asc')->get();
 
 		

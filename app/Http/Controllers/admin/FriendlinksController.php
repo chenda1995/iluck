@@ -17,16 +17,19 @@ class FriendlinksController extends Controller
     {
 
         $arr = $request->all();
-        $res = DB::table('connect')->orderBy('cid','asc')->paginate($request->input('num',5));
+        $res = DB::table('connect')->
+        where('cname','like','%'.$request->input('search').'%')->orderBy('cid','asc')->paginate($request->input('num',6));
 
         $num = $request->input('num');
+
+        $search = $request->input('search');
 
         return view('admin.friendlinks.index',[
             'title'=>'友情链接列表',
             'res'=>$res,
             'num'=>$num,
-            'request'=>$arr
-
+            'request'=>$arr,
+            'search'=>$search,
         ]);
     }
 

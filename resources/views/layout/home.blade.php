@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>@yield('title')</title>
 
-     
+
      <link type="text/css" rel="stylesheet" href="/home/sycss/styles/index.css" />
 
 
@@ -60,21 +60,29 @@
     <script type="text/javascript" src="/home/index_files/js/pc_wall.js$1525848313.js"></script>
     <script src="/home/index_files/js/oiDRP1K45KG4TlCsxhUzeDq.js"></script>
 
-    
+
    <!--  <script src="/home/car/index.js"></script>
     <script src="/home/car/analytics.js"></script>
     <script src="/home/car/bottom.js"></script>
     <script src="/home/car/index_002.js"></script>
     <script src="/home/car/pkg-pc-base.js"></script> -->
-    
-    <style></style>
 
-     
+
+    <style>
+
+        .main1 .three .zs2{
+    margin-top:10px;
+}
+    </style>
+
+
 
 </head>
 
+
 <body style="background: transparent">
     
+
     <div class="mgj_rightbar">
         <div class="mgj-my-cart">
             <a class="nofollow" href="javascript:;">
@@ -85,7 +93,7 @@
        
          <div class="sideBottom">
             <a class="nofollow" href="javascript:;">
-                <i class="s-icon"></i>               
+                <i class="s-icon"></i>
             </a>
         </div>
 
@@ -98,9 +106,9 @@
     <div class="head">
        <div class="head-top">
           <ul>
-          
+
           <li class="gouwuche">
-<!--                <div class="gwctk"></div>-->
+
                 <a class="gwc" href="/home/cart">
                     购物车
                     
@@ -127,10 +135,10 @@
             </a>
         </li>
           <li ><a class="zc" href="/home/register">注册</a></li>
-                
+
           </ul>
-            
-            
+
+
         </div>
         @section('content')
 
@@ -139,76 +147,35 @@
 <!-- 底部链接 -->
 <div class="foot">
             <div class="foot-top banxin">
-                <div class="foot-top-l">
-                    <div class="foot-logo">
-                        <a href="#"><img src="/home/sycss/image/foot-logo.png" /></a>                        
-                    </div>
-                    <p class="xukezheng">
-                    营业执照注册号：<a href="#">330106000129004</a>
-                    </p>
-                    <p class="xukezheng">
-                    增值电信业务经营许可证：<a href="#">浙B2-20110349</a>
-                    </p>
-                    <p class="xukezheng">
-                    ICP备案号：浙ICP备10044327号-3
-                    </p>
-                    <p class="xukezheng">
-                    ©2015 Mogujie.com 杭州卷瓜网络有限公司
-                    </p>
-                    
-                </div>
-                <div class="foot-top-r">
-                    <dl>
-                        <dt>公司</dt>
-                        <dd><a href="#">关于我们</a></dd>
-                        <dd><a href="#">招聘信息</a></dd>
-                        <dd><a href="#">联系我们</a></dd>
-                    </dl>
-                    <dl>
-                        <dt>消费者</dt>
-                        <dd><a href="#">帮助中心</a></dd>
-                        <dd><a href="#">意见反馈</a></dd>
-                        <dd><a href="#">手机版下载</a></dd>
-                    </dl>
-                    <dl>
-                        <dt>商家</dt>
-                        <dd><a href="#">免费开店</a></dd>
-                        <dd><a href="#">商家社区</a></dd>
-                        <dd><a href="#">商家入驻</a></dd>
-                        <dd><a href="#">管理后台</a></dd>
-                    </dl>
-                    <dl>
-                        <dt>权威认证</dt>
-                        <dd><a href="#">免费开店</a></dd>
-                        <dd><a href="#">商家社区</a></dd>
-                        <dd><a href="#">商家入驻</a></dd>
-                        <dd><a href="#">管理后台</a></dd>
-                    </dl>
-                
-                </div>
-                
-            </div>
-            <div class="foot-bottom banxin">
+               
+                <div class="foot-bottom banxin">
+                      <?php $fl = DB::table('connect')->get(); ?>
                 <dl>
-                    <dt>友情链接:</dt>
-                    <dd><a href="#">淘粉吧</a></dd>
-                    <dd><a href="#">蘑菇街团购网</a></dd>
-                    <dd><a href="#">蘑菇街女装</a></dd>
-                    <dd><a href="#">蘑菇街男装</a></dd>
-                    <dd><a href="#">蘑菇街鞋子</a></dd>
-                    <dd><a href="#">蘑菇街包包</a></dd>
-                    <dd><a href="#">蘑菇街家居</a></dd>
-                    <dd><a href="#">家具网</a></dd>
-                    <dd><a href="#">时尚品牌网</a></dd>
-                    <dd><a href="#">装修</a></dd>
-                    <dd><a href="#">蘑菇街母婴</a></dd>
-                    <dd><a href="#">衣联网</a></dd>
-                    <dd><a href="#">播视网视频</a></dd>             
-                
+                    
+                    @foreach($fl as $k=>$v)
+                    <dd><a href="{{$v->curl}}" target="_blank">{{$v->cname}}</a></dd>
+                    @endforeach
                 </dl>
-            
+                    
+
+                </div>
+
+            <br>
+        <center>  
+            <div style="margin-top: 70px;">
+             <span class="xukezheng">
+                        IPC备案号：晋ICP备18004132号-1
+                    </span>
+                    <p class="xukezheng">
+                    ©2015 iluck.club 
+                    </p>
+                </center>
             </div>
-        
+            
+               
+
+            </div>
+
     </div>
 </body>
 </html>

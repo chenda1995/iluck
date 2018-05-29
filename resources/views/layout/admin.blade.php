@@ -20,14 +20,14 @@
 
 
 
-   
-    
-   
+
+
+
     <script src="/admin/assets/js/layer.js"></script>
  <script src="/admin/assets/js/jquery.min.js"></script>
-    
+
     <style>
-        
+
             #user-weibo{
                 width: 400px;
         }
@@ -44,7 +44,7 @@
                 cursor: pointer;
                 outline: none;
                 background-color: #444444;
-               
+
                 text-decoration: none;
                 border-right: 1px solid #232323;
                 border-left: 1px solid #666666;
@@ -280,7 +280,7 @@
                         <i class="am-icon-home sidebar-nav-link-logo"></i> 首页
                     </a>
                 </li>
-                
+
                 <!-- 用户 -->
                 <li class="sidebar-nav-link">
                     <a href="javascript:;" class="sidebar-nav-sub-title">
@@ -322,7 +322,7 @@
                             </a>
                         </li>
                     </ul>
-                </li>   
+                </li>
 
 
                 <li class="sidebar-nav-link">
@@ -343,7 +343,8 @@
                             </a>
                         </li>
                     </ul>
-                </li>  
+                </li>
+
 
                  <li class="sidebar-nav-link">
                     <a href="javascript:;" class="sidebar-nav-sub-title">
@@ -357,6 +358,7 @@
                             </a>
                         </li>
 
+
                         <li class="sidebar-nav-link">
                             <a href="/admin/goods">
                                 <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 商品列表
@@ -365,12 +367,18 @@
                     </ul>
                 </li>            
 
+
+
+
+
+
+
                 <!-- 订单 -->
-                
+
                 <!-- 评论管理 -->
                 <li class="sidebar-nav-link">
                     <a href="javascript:;" class="sidebar-nav-sub-title">
-                        <i class="am-icon-table sidebar-nav-link-logo" id="comment"></i> 评论管理 
+                        <i class="am-icon-table sidebar-nav-link-logo" id="comment"></i> 评论管理
                         <span class="am-icon-chevron-down am-fr am-margin-right-sm sidebar-nav-sub-ico"></span>
                     </a>
                     <ul class="sidebar-nav sidebar-nav-sub">
@@ -385,7 +393,7 @@
                 <!-- 收藏管理 -->
 				<li class="sidebar-nav-link">
                     <a href="javascript:;" class="sidebar-nav-sub-title">
-                        <i class="am-icon-table sidebar-nav-link-logo" id="comment"></i> 订单管理 
+                        <i class="am-icon-table sidebar-nav-link-logo" id="comment"></i> 订单管理
                         <span class="am-icon-chevron-down am-fr am-margin-right-sm sidebar-nav-sub-ico"></span>
                     </a>
                     <ul class="sidebar-nav sidebar-nav-sub">
@@ -396,7 +404,7 @@
                         </li>
                     </ul>
                 </li>
-                
+
 
 
 
@@ -445,7 +453,51 @@
                         </li>
                     </ul>
                 </li>
-                
+
+
+                <!-- 广告管理 -->
+                <li class="sidebar-nav-link">
+                    <a href="javascript:;" class="sidebar-nav-sub-title">
+                        <i class="am-icon-table sidebar-nav-link-logo"></i> 广告管理
+                        <span class="am-icon-chevron-down am-fr am-margin-right-sm sidebar-nav-sub-ico"></span>
+                    </a>
+                    <ul class="sidebar-nav sidebar-nav-sub">
+                        <li class="sidebar-nav-link">
+                            <a href="/admin/adv/create">
+                                <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 添加广告
+                            </a>
+                        </li>
+
+                        <li class="sidebar-nav-link">
+                            <a href="/admin/adv">
+                                <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 广告列表
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- 限时快抢管理 -->
+                <li class="sidebar-nav-link">
+                    <a href="javascript:;" class="sidebar-nav-sub-title">
+                        <i class="am-icon-table sidebar-nav-link-logo"></i> 限时快抢
+                        <span class="am-icon-chevron-down am-fr am-margin-right-sm sidebar-nav-sub-ico"></span>
+                    </a>
+                    <ul class="sidebar-nav sidebar-nav-sub">
+                        <li class="sidebar-nav-link">
+                            <a href="/admin/kill/create">
+                                <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 限时快抢添加
+                            </a>
+                        </li>
+
+                        <li class="sidebar-nav-link">
+                            <a href="/admin/kill">
+                                <span class="am-icon-angle-right sidebar-nav-link-logo"></span> 限时快抢列表
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
 
             </ul>
         </div>
@@ -454,7 +506,7 @@
         <!-- 内容区域 -->
         <div class="tpl-content-wrapper">
 
-            
+
 
             @section('content')
 
@@ -481,7 +533,7 @@
     <script type="text/javascript" charset="utf-8" src="/admin/ueditor/lang/zh-cn/zh-cn.js"></script>
   @section('js')
 
-    @show  
+    @show
 </body>
 
 </html>
