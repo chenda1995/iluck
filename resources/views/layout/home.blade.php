@@ -68,12 +68,14 @@
     <script src="/home/car/pkg-pc-base.js"></script> -->
 
 
+
     <style>
 
         .main1 .three .zs2{
     margin-top:10px;
 }
     </style>
+
 
 
 
@@ -99,10 +101,7 @@
 
 
     </div>
-    <?php
-        $res = DB::table('user')->where('uid',session('uid'))->first();
-        // dd($res);
-    ?>
+  
     <div class="head">
        <div class="head-top">
           <ul>
@@ -114,9 +113,11 @@
                     
                 </a>
           </li>
+
           <li class="dingdan"><a class="dd" href="/home/orderindex">我的订单</a></li>
           <li >
 
+=
             
             @if(session('uid'))
                 <li><a href="/home/loginout">退出</a></li>
@@ -126,7 +127,7 @@
                     
                     欢迎
 
-                    {{$res->uname}}<span>|</span> </a></li>
+                    <span>|</span> </a></li>
             @else
                 <li><a href="/home/login">请登录</a></li>
             @endif

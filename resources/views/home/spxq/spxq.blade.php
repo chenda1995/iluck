@@ -246,8 +246,7 @@
                     <li class="s1 show-nologin">
                         <a rel="nofollow" class="" href="/home/userdetails" style="color: red">
 
-                            {{$res->uname}}
-
+                          
                         </a>
                     </li>
                     <li class="s1 show-nologin">
@@ -704,11 +703,12 @@
                 <div class="detail-primary clearfix">
                     <div class="primary-goods">
                         <div class="clearfix">
+                           
                             <div class="fl goods-info goods-info-tuan-act" id="J_GoodsInfo">
                                 <div class="info-box">
                                     <h1 class="goods-title">
                                         <span itemprop="name">
-                                            林允儿同款M字女鞋韩版低帮运动白色帆布鞋休闲鞋学生系带小白鞋
+                                            {{$goods->gname}}
                                         </span>
                                     </h1>
                                     <div class="goods-prowrap goods-main">
@@ -752,7 +752,7 @@
                                                 </dt>
                                                 <dd class="property-cont property-cont-origin">
                                                     <span id="J_OriginPrice" class="price">
-                                                        ¥85.00
+                                                        ¥{{$goods->price/0.8}}
                                                     </span>
                                                 </dd>
                                             </dl>
@@ -762,7 +762,7 @@
                                                 </dt>
                                                 <dd class="property-cont property-cont-now fl">
                                                     <span id="J_NowPrice" class="price" style="color: #ff0000">
-                                                        ¥55.25
+                                                        ¥{{$goods->price}}
                                                     </span>
                                                 </dd>
                                                 <dd class="property-extra fr">
@@ -815,20 +815,11 @@
                                                         颜色：
                                                     </dt>
                                                     <dd>
-                                                        <ol class="J_StyleList style-list clearfix">
-                                                            <li class="img disable" data-id="1" data-src="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_832c58gkie6693ldae2jkcjgee241_640x960.jpg"
-                                                            title="白/黑">
-                                                                <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/1tc4hs_832c58gkie6693ldae2jkcjgee241_640x960_002.jpg">
-                                                                <b>
-                                                                </b>
-                                                            </li>
-                                                            <li class="img" data-id="2" data-src="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_3akhe4je7idjbehcl14fe8hcjb77g_640x960.jpg"
-                                                            title="白绿">
-                                                                <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/1tc4hs_3akhe4je7idjbehcl14fe8hcjb77g_640x960_002.jpg">
-                                                                <b>
-                                                                </b>
-                                                            </li>
+                                                        @foreach($goods->color as $k=>$v)
+                                                         <ol class="J_SizeList size-list clearfix" style=" float: left;display:inline;">
+                                                            <li class="" data-id="100" title="35" >{{$v}}</li>
                                                         </ol>
+                                                        @endforeach
                                                     </dd>
                                                 </dl>
                                                 <dl style="display: block;" class="size clearfix">
@@ -836,26 +827,11 @@
                                                         尺码：
                                                     </dt>
                                                     <dd>
-                                                        <ol class="J_SizeList size-list clearfix">
-                                                            <li class="" data-id="100" title="35">
-                                                                35
-                                                            </li>
-                                                            <li class="" data-id="101" title="36">
-                                                                36
-                                                            </li>
-                                                            <li class="" data-id="102" title="37">
-                                                                37
-                                                            </li>
-                                                            <li class="" data-id="103" title="38">
-                                                                38
-                                                            </li>
-                                                            <li class="" data-id="104" title="39">
-                                                                39
-                                                            </li>
-                                                            <li class="" data-id="105" title="40">
-                                                                40
-                                                            </li>
+                                                        @foreach($goods->size as $k=>$v)
+                                                         <ol class="J_SizeList size-list clearfix" style=" float: left;display:inline;">
+                                                            <li class="" data-id="100" title="35" >{{$v}}</li>
                                                         </ol>
+                                                        @endforeach
                                                     </dd>
                                                 </dl>
                                                 <dl class="clearfix">
@@ -998,7 +974,9 @@
                             <div class="fl goods-topimg" id="J_GoodsImg">
                                 <div class="big-img">
                                     <button class="middle">
-                                        <img id="J_BigImg" src="/home/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/1tc4hs_3akhe4je7idjbehcl14fe8hcjb77g_640x960_004.jpg"
+
+                                        <img id="J_BigImg" src="{{ URL::asset($goods->gpic[0])}}"
+
                                         data-main="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_3akhe4je7idjbehcl14fe8hcjb77g_640x960.jpg_468x468.jpg"
                                         alt="小白鞋,平底,运动鞋,学院风,单鞋" width="400">
                                     </button>
@@ -1007,36 +985,13 @@
                                     <div class="box">
                                         <div style="width: 350px; height: 59px;" class="list">
                                             <ul class="clearfix carousel">
-                                                <li>
-                                                    <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/1tc4hs_3akhe4je7idjbehcl14fe8hcjb77g_640x960_002.jpg">
+                                            @foreach($goods->gpic as $k=>$v)
+                                                <li class="c">
+                                                    <img src="{{ URL::asset($v)}}">
                                                     <i>
                                                     </i>
                                                 </li>
-                                                <li>
-                                                    <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/1tc4hs_42j99856j281bg71eikag37f43fi1_640x960.jpg">
-                                                    <i>
-                                                    </i>
-                                                </li>
-                                                <li>
-                                                    <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/1tc4hs_71b53kji2bc8i8c3213226300c6df_640x960.jpg">
-                                                    <i>
-                                                    </i>
-                                                </li>
-                                                <li>
-                                                    <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/1tc4hs_832c58gkie6693ldae2jkcjgee241_640x960_002.jpg">
-                                                    <i>
-                                                    </i>
-                                                </li>
-                                                <li>
-                                                    <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/1tc4hs_12abg15gic6h14d9787b8giag9hig_640x960.jpg">
-                                                    <i>
-                                                    </i>
-                                                </li>
-                                                <li>
-                                                    <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/1tc4hs_8d5a3jk7a1kfkchh9b82h6ed3gc77_640x960.jpg">
-                                                    <i>
-                                                    </i>
-                                                </li>
+                                           @endforeach
                                             </ul>
                                         </div>
                                     </div>
@@ -1046,6 +1001,7 @@
                                     </a>
                                 </div>
                             </div>
+                          
                         </div>
                     </div>
                     <div class="primary-slide">
@@ -1538,7 +1494,7 @@
                                         <a href="javascript:;">
                                             累计评价
                                             <em>
-                                                {{$arr['commentTot']}}
+                                               
                                             </em>
                                         </a>
                                     </li>
@@ -1580,17 +1536,7 @@
                                     <!-- 图文详情 -->
                                     <!-- 注：PHP模板走的是本地模板文件：views/modules/module-graphic.php-->
                                     <!-- 商品描述 -->
-                                    <div id="J_Graphic_desc">
-                                        <div class="panel-title">
-                                            <h1>
-                                                商品描述
-                                            </h1>
-                                        </div>
-                                        <!-- 描述 -->
-                                        <div class="graphic-text">
-                                            林允儿同款帆布鞋，上脚舒适。
-                                        </div>
-                                    </div>
+                                  
                                     <!-- 产品参数 -->
                                     <div id="J_Graphic_产品参数">
                                         <div class="panel-title">
@@ -1666,130 +1612,17 @@
                                                     穿着效果
                                                 </h1>
                                             </div>
+
                                             <!-- 描述 -->
                                             <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_3akhe4je7idjbehcl14fe8hcjb77g_640x960.jpg_750x999.jpg"
-                                                    src="/home/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
+
+                                                {{!!$goods->gdesc!!}}
+
                                             </div>
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_3jb8cf549gfckb9133aj9diik8aak_640x960.jpg_750x999.jpg"
-                                                    src="/home/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_8ekblla6lf17jc54b50da2d26a99i_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_71b53kji2bc8i8c3213226300c6df_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_42j99856j281bg71eikag37f43fi1_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_7ag7ie0780bff76hbjaic9dlbca7e_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_0i10ablh64h884kg8e3l79ca9ecj8_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_5087kkgbddafe74hh09c5iiefch9e_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_832c58gkie6693ldae2jkcjgee241_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_5008c9j24de6cjc8h8ij33fg2d0ce_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_742jjjc26i073i4219584k4hk49c0_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_8d5a3jk7a1kfkchh9b82h6ed3gc77_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_12abg15gic6h14d9787b8giag9hig_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_189ijeeeab9ab7h3ced3d7kbh4fba_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_08gg47g0j1af19iacec98jgfdjb26_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_27jgg6g33fjj35gb5bg99f4c0a9fg_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
+                                         
+                                  
                                         </div>
-                                        <div id="J_Graphic_整体款式">
-                                            <div class="panel-title">
-                                                <h1>
-                                                    整体款式
-                                                </h1>
-                                            </div>
-                                            <!-- 描述 -->
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_1cfb59ab17jldlf4g0adl2ef17b56_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:137.14285714285714%;">
-                                                    <img class="lazy" style="left:-320px;" data-original="http://s3.mogucdn.com/p2/uni/160807/1tc4hs_159bleel1bfe3l2l1l54l82k578d7_640x960.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
-                                            <div class="graphic-pic">
-                                                <div class="pic-box" style="padding-bottom:25.333333333333336%;">
-                                                    <img class="lazy" style="left:-350px;" data-original="http://s3.mogucdn.com/p2/170317/77101615_6f3ak83kkl00329ged9249aa93ifb_1125x285.jpg_750x999.jpg"
-                                                    src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/117603130_3d8589jcfd14l0985l9bkgbhh1h59_100x100.gif">
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                     <!-- 尺码说明 -->
                                     <div id="J_Graphic_尺码说明">
@@ -1875,7 +1708,7 @@
                                     </div>
                                 </div>
                                 <!-- 累计评价 -->
-                                @if($arr['commentTot'])
+                               
                                 <div class="module-panel module-rates ui-none" id="J_ModuleRates">
                                     <!-- 买家评价 -->
                                     <div id="J_RatesBuyer">
@@ -1897,7 +1730,7 @@
                                                         </span>
                                                         <span class="numbox">
                                                             <b class="num-v">
-                                                                {{round(($arr['goodTot']/$arr['commentTot']*100))}}
+                                                                
                                                             </b>
                                                             <span class="num-s">
                                                                 %
@@ -1914,7 +1747,7 @@
                                                         <!-- ## 好评标签个数 -->
                                                         <!-- ## 好评 -->
                                                         <a href="javascript:;" class="best" data-emotion="positive" data-property="质量">
-                                                            好评({{$arr['goodTot']}})
+                                                           
                                                         </a>
                                                         <b>
                                                             |
@@ -1922,7 +1755,7 @@
                                                         <!-- ## 差评 -->
                                                         <!-- ## 好评 -->
                                                         <a href="javascript:;" class="best" data-emotion="positive" data-property="服务">
-                                                            中评 ({{$arr['zhongTot']}})
+                                                            
                                                         </a>
                                                         <b>
                                                             |
@@ -1930,7 +1763,7 @@
                                                         <!-- ## 差评 -->
                                                         <!-- ## 好评 -->
                                                         <a href="javascript:;" class="best" data-emotion="positive" data-property="物流">
-                                                            差评 ({{$arr['chaTot']}})
+                                                           
                                                              
                                                         </a>    
                                                     </div>
@@ -1940,48 +1773,11 @@
                                                 <div class="nav clearfix">
                         
                                                     <a href="javascript:;" data-type="all" class="c">
-                                                        全部评价{{$arr['commentTot']}}
-
+                                                       
                                                     </a>
                                                  
                                                 </div>
-                                                <!-- 列表 -->
-                                                @foreach($comment as $com)
-    
-                                                <div id="J_RatesBuyerList" class="comments">
-                                                    <!--详情页交易评价列表-->
-                                                    <div class="item clearfix" data-id="1vix4z0">
-                                                        <div class="info">
-                                                            <div class="info-w">
-                                                                <!-- 评价用户、时间 -->
-                                                                <div class="info-t clearfix">
-                                                                    <div><span class="am-text-middle" style="color: #FDC724;font-size:18px;vertical-align:middle; ">{{str_repeat("★",$com->start)}}{{str_repeat("☆",5-$com->start)}}</span>
-                                                                     <span class="name" style="vertical-align:middle; ">
-                                                                        匿名
-                                                                    </span>
-                                                                    </div>
-                                                                   
-                                                                    <span class="date">
-                                                                        {{date('Y-m-d H:i:s',$com->etime)}}
-                                                                    </span>
-                                                                </div>
-                                                                <!-- 评价内容 -->
-                                                                <div class="info-m">
-                                                                    {{$com->text}}
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="face">
-                                                            <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/upload_73289ki0h6j92ck3f3gec621gc60g_1080x1440.jpg">
-                                                        </div>
-                                                    </div> 
-                                                </div>
-                                                @endforeach
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                @endif
+                                
                                 <!-- 本店同类商品 -->
                                 <div class="module-panel module-recommend" id="J_ModuleRecommend">
                                 </div>
@@ -2700,21 +2496,21 @@
                         "title": "林允儿同款M字女鞋韩版低帮运动白色帆布鞋休闲鞋学生系带小白鞋",
                         "type": 8,
                         "cartNum": 0,
-                        "imUrl": "mgjim://talk?&bid=1oy202&goodsId=1k12j9s&userId=13q3s4i&shopId=1oy202",
-                        "lowPrice": "85.00",
+                        "imUrl": "",
+                        "lowPrice": "",
                         "cFav": 34947,
-                        "price": "¥55.25",
+                        "price": "",
                         "extra": {},
-                        "highPrice": "85.00",
+                        "highPrice": "",
                         "cids": "#682# #757# #764#",
                         "shopId": "1oy202",
                         "state": 0,
                         "newComer": false,
-                        "oldPrice": "¥85.00",
+                        "oldPrice": "",
                         "addCartTips": false,
                         "userId": "13q3s4i",
                         "tags": "小白鞋,平底,运动鞋,学院风,单鞋",
-                        "topImages": ["http://s3.mogucdn.com/p2/uni/160807/1tc4hs_3akhe4je7idjbehcl14fe8hcjb77g_640x960.jpg", "http://s3.mogucdn.com/p2/uni/160807/1tc4hs_42j99856j281bg71eikag37f43fi1_640x960.jpg", "http://s3.mogucdn.com/p2/uni/160807/1tc4hs_71b53kji2bc8i8c3213226300c6df_640x960.jpg", "http://s3.mogucdn.com/p2/uni/160807/1tc4hs_832c58gkie6693ldae2jkcjgee241_640x960.jpg", "http://s3.mogucdn.com/p2/uni/160807/1tc4hs_12abg15gic6h14d9787b8giag9hig_640x960.jpg", "http://s3.mogucdn.com/p2/uni/160807/1tc4hs_8d5a3jk7a1kfkchh9b82h6ed3gc77_640x960.jpg"],
+                        "topImages": [""],
                         "canApplyInstallment": false,
                         "discountBgColor": "#f13e3a",
                         "lowNowPrice": "55.25",
@@ -2739,13 +2535,46 @@
         <div class="foot J_siteFooter" data-ptp="_foot">
         </div>
 
-         <!-- <script type="text/javascript" src="/home/js/index_002.js"> </script> -->
+        
         
          <script type="text/javascript" src="/home/js/bottom.js"> </script>
         
-         <script type="text/javascript" src="/home/js/index(2).js"> </script>
         
-        
+        <script type="text/javascript">
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] ||
+                function() { (i[r].q = i[r].q || []).push(arguments)
+                },
+                i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-25590490-1', 'auto');
+            ga('send', 'pageview');
+
+            //临时删除旧版指纹cookie，后面可以干掉这段代码，By奇云，17.02.15
+            M.fn.removeCookie('FRMS_FINGERPRINT', {
+                domain: '.mogujie.com',
+                path: '/'
+            });
+        </script>
+        <script type="text/javascript">
+            if (window._trace && window._trace.config) {
+                _trace.config.customUrl = function() {
+                    return location.hostname + '/detail';
+                }
+            }
+            // $('.pic-box').html($('.pic-box').text());
+        </script>
+        <script src="/home/js/getcapjs" id="shieldcaptain-bootstrap"
+        type="text/javascript">
+        </script>
+
     </body>
 
 </html>

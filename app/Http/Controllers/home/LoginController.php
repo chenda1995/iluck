@@ -20,7 +20,7 @@ class LoginController extends Controller
        // dump(Session::get('code'));
       // dd($_SERVER);
       // 获取上一个页面
-      session(['prevPge'=>$_SERVER['HTTP_REFERER']]);
+      //session(['prevPge'=>$_SERVER['HTTP_REFERER']]);
 
 
 
@@ -96,7 +96,7 @@ class LoginController extends Controller
         session(['uid'=>$data->uid]);
         session(['uname'=>$data->uname]);
 
-    	return redirect(session('prevPge'));
+    	return redirect('/home/index');
    		 
    }
 

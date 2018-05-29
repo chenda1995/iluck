@@ -25,7 +25,7 @@ class TypeController extends Controller
         foreach($res as $k => $v){
             //获取path路径
             $foo = explode(',',$v->paths);
-            $level  = count($foo)-2;
+            $level  = count($foo)-1;
             $v->cname = str_repeat('&nbsp;&nbsp;&nbsp;',$level).'|--'.$v->cname;
         }
 
@@ -108,7 +108,7 @@ class TypeController extends Controller
         foreach($res as $k=>$v){
             //获取path路径
             $foo = explode(',',$v->path);     
-            $level = count($foo)-2;
+            $level = count($foo)-1;
             $v->cname = str_repeat('&nbsp;&nbsp;&nbsp;',$level).'|--'.$v->cname; 
         }
 

@@ -11,7 +11,7 @@ class SpxqController extends Controller
     //
     public function index($gid)
     {
-    	// dd($id)
+    	 
     	//查询商品对应评论
     	$commentTot = DB::table('user_evaluate')->where('gid',$gid)->count();
 
@@ -19,27 +19,21 @@ class SpxqController extends Controller
     	$chaTot = DB::table('user_evaluate')->where([['gid','=',$gid],['start','<=',2]])->count(); //差评
     	$zhongTot = $commentTot-$goodTot-$chaTot;                             //中评
 
-    	$arr = array(
-    		'commentTot'=>$commentTot,
-    		'goodTot'=>$goodTot,
-    		'chaTot'=>$chaTot,
-    		'zhongTot'=>$zhongTot,
-    	);
-    	// dd($arr);
+    	$goods = DB::table('goods')->where('gid',$gid)->first();
+    	$goods->gpic = json_decode($goods->gpic);
+    	$goods->size = explode(',', $goods->size);
+    	$goods->color = explode('，', $goods->color);
+    	
+    	// var_dump($goods);die;
+    	return view('home.spxq.spxq',[
+    		'title'=>'商品详情',
+    		'goods'=>$goods
+    	]);
+
 
     	// dd($comment);
 
-    	$comment = DB::table('user_evaluate')->where('gid',$gid)->get();
 
-
-
-    	//数据格式化
-    	$data = array(
-    		'arr'=>$arr,
-    		'comment'=>$comment,
-    	);
-
-    	return view('home.spxq.spxq',['title'=>'商品详情'])->with($data);
 
     }
 }

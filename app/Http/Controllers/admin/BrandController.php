@@ -22,7 +22,6 @@ class BrandController extends Controller
         orderBy('bid', 'desc')->
         paginate(5);
 
-        $num = $request->input('num');
         $search = $request->input('search');
 
         return view('admin.brand.index',[

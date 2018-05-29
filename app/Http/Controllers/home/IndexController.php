@@ -42,8 +42,12 @@ class IndexController extends Controller
             'addata'=>$addata
 
         );
+        //获取分类
+        $res = Common::getTypeMassage(0);
+      
+        
 
-        return view('home.index',['title'=>'商城前台首页'])->with($data);
+        return view('home.index',['title'=>'商城前台首页','res'=>$res])->with($data);
 
 
     }

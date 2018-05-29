@@ -19,7 +19,6 @@ class GoodsController extends Controller
         $res = DB::table('goods')->
         where('gname','like','%'.$request->input('search').'%')->
         paginate(5);
-    
         $res->each(function($item, $key){            
             $item->gpic = json_decode($item->gpic);
             return $item;         
@@ -126,7 +125,7 @@ class GoodsController extends Controller
          foreach($type as $k=>$v){
             //获取path路径
             $foo = explode(',',$v->path);     
-            $level = count($foo)-2;
+            $level = count($foo)-1;
             $v->cname = str_repeat('&nbsp;&nbsp;&nbsp;',$level).'|--'.$v->cname; 
         }
 
@@ -186,7 +185,7 @@ class GoodsController extends Controller
         
 
         $data = DB::table('goods')->where('gid',$id)->update($res);
-        if(isset($res['status'])) {
+        if(isset($res['onlystatus'])) {
             return ['code' => 1];
         }
 
