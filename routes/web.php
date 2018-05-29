@@ -150,9 +150,9 @@ Route::group([],function(){
 
 	
 	//商品列表页
-	Route::get('home/list','home\ListController@index');
+	Route::get('home/list/{id}','home\ListController@index');
 	//商品详情页
-	Route::get('home/spxq','home\SpxqController@index');
+	Route::get('home/spxq/{id}','home\SpxqController@index');
 
 
 

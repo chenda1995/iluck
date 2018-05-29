@@ -46,13 +46,13 @@
                                         	@foreach($res as $k=>$v)
                                             <tr class="gradeX">
 	                                            <td class="">{{$v->gid}}</td>
-            							                    <td class="uname">{{$v->gname}}</td>
+            							                    <td class="uname" style="width: 150px;">{{$v->gname}}</td>
             							                    <td class="uname">
-							                    	          <img src="{{ URL::asset($v->gpic[0]) }}" class="tpl-table-line-img" alt="">
-							                               </td>
-	                                            <td class="">{{getName($v->tid)}}</td>
-	                                            <td class="">{{$v->price}}</td>
-	                                            <td class="">{{$v->stock}}</td>
+							                    	          <img src="{{ URL::asset($v->gpic[0]) }}" class="tpl-table-line-img" alt="" style="width:90px;height: 80px;">
+							                                </td>
+            	                                            <td class="">{{getName($v->tid)}}</td>
+            	                                            <td class="">{{$v->price}}</td>
+            	                                            <td class="">{{$v->stock}}</td>
             							                    <td class=" ">
             							                    	@if($v->status==1)
             							                    	<button type="button" class="am-btn am-btn-default am-btn-danger" onclick="upstat({{$v->gid}},0)" style="font-size: 1.2rem">下架</button>
@@ -164,6 +164,7 @@
                            data :{ 
                            		_method : 'PUT',
                                 status : sta,
+                                onlystatus : 1
                             },
                            success: function(data, textStatus, jqXHR ){                      
                                 if (data.code > 0){

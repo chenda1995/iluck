@@ -4,6 +4,7 @@ namespace App\Http\Controllers\home;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use DB;
 
 class SpxqController extends Controller
 {
@@ -16,10 +17,17 @@ class SpxqController extends Controller
     	// // dd($comment);
 
 
+    	$goods = DB::table('goods')->where('gid',$id)->first();
+    	$goods->gpic = json_decode($goods->gpic);
+    	$goods->size = explode(',', $goods->size);
+    	$goods->color = explode('，', $goods->color);
+    	
+    	// var_dump($goods);die;
+    	return view('home.spxq.spxq',[
+    		'title'=>'商品详情',
+    		'goods'=>$goods
+    	]);
 
-
-
-    	return view('home.spxq.spxq',['title'=>'商品详情']);
 
     }
 }

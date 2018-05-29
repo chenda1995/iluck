@@ -56,7 +56,14 @@
     <script src="/home/car/index_002.js"></script>
     <script src="/home/car/pkg-pc-base.js"></script> -->
 
+    <style>
+         .clearfix li{
+            font-size: 12px;
+            float:left;
+            display:inline;
 
+        }
+    </style>
      
 
 </head>
@@ -96,10 +103,7 @@
 
 
     </div>
-    <?php
-        $res = DB::table('user')->where('uid',session('uid'))->first();
-        // dd($res);
-    ?>
+  
     <div class="head">
        <div class="head-top">
           <ul>
@@ -124,7 +128,7 @@
                 </a>
           </li>
           <li class="dingdan"><a class="dd" href="#">我的订单</a></li>
-          <li ><a class="dl" href="/home/userdetails" style="color: red">{{$res->uname}}</a></li>
+          <li ><a class="dl" href="/home/userdetails" style="color: red"></a></li>
           <li ><a class="zc" href="/home/register">注册</a></li>
                 
           </ul>

@@ -33,7 +33,14 @@ class IndexController extends Controller
 
         );
 
-        return view('home.index',['title'=>'商城前台首页'])->with($data);
+        //获取分类
+        $res = Common::getTypeMassage(0);
+      
+        return view('home.index',[
+            'res'=>$res
+        ]);
+
+        return view('home.index',['title'=>'商城前台首页','res'=>$res])->with($data);
 
 
     }
