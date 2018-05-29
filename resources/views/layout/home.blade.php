@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>@yield('title')</title>
 
-     <link href="/home/sycss/image/favicon.ico" type="/home/sycss/image/x-icon" rel="shortcut icon"/> 
+     <link href="/home/sycss/image/favicon.ico" type="/home/sycss/image/x-icon" rel="shortcut icon"/>
      <link type="text/css" rel="stylesheet" href="/home/sycss/styles/index.css" />
 
 
@@ -49,20 +49,25 @@
     <script type="text/javascript" src="/home/index_files/js/pc_wall.js$1525848313.js"></script>
     <script src="/home/index_files/js/oiDRP1K45KG4TlCsxhUzeDq.js"></script>
 
-    
+
    <!--  <script src="/home/car/index.js"></script>
     <script src="/home/car/analytics.js"></script>
     <script src="/home/car/bottom.js"></script>
     <script src="/home/car/index_002.js"></script>
     <script src="/home/car/pkg-pc-base.js"></script> -->
 
+    <style>
 
-     
+        .main1 .three .zs2{
+    margin-top:10px;
+}
+    </style>
+
 
 </head>
 
 <body>
-    
+
     <div class="mgj_rightbar">
         <div class="mgj-my-cart">
             <a class="nofollow" href="javascript:;">
@@ -90,7 +95,7 @@
         </div>
          <div class="sideBottom">
             <a class="nofollow" href="javascript:;">
-                <i class="s-icon"></i>               
+                <i class="s-icon"></i>
             </a>
         </div>
 
@@ -111,7 +116,7 @@
                         <li>联系合作</li>
                         <li>帮助</li>
                     </ul>
-                    
+
                 </a>
           </li>
           <li class="gouwuche">
@@ -126,10 +131,10 @@
           <li class="dingdan"><a class="dd" href="#">我的订单</a></li>
           <li ><a class="dl" href="/home/userdetails" style="color: red">{{$res->uname}}</a></li>
           <li ><a class="zc" href="/home/register">注册</a></li>
-                
+
           </ul>
-            
-            
+
+
         </div>
         @section('content')
 
@@ -140,7 +145,7 @@
             <div class="foot-top banxin">
                 <div class="foot-top-l">
                     <div class="foot-logo">
-                        <a href="#"><img src="/home/sycss/image/foot-logo.png" /></a>                        
+                        <a href="#"><img src="/home/sycss/image/foot-logo.png" /></a>
                     </div>
                     <p class="xukezheng">
                     营业执照注册号：<a href="#">330106000129004</a>
@@ -154,7 +159,7 @@
                     <p class="xukezheng">
                     ©2015 Mogujie.com 杭州卷瓜网络有限公司
                     </p>
-                    
+
                 </div>
                 <div class="foot-top-r">
                     <dl>
@@ -183,31 +188,25 @@
                         <dd><a href="#">商家入驻</a></dd>
                         <dd><a href="#">管理后台</a></dd>
                     </dl>
-                
+
                 </div>
-                
+
             </div>
+
+             <?php
+                $fl = DB::table('connect')->get();
+        // dd($res);
+            ?>
             <div class="foot-bottom banxin">
                 <dl>
                     <dt>友情链接:</dt>
-                    <dd><a href="#">淘粉吧</a></dd>
-                    <dd><a href="#">蘑菇街团购网</a></dd>
-                    <dd><a href="#">蘑菇街女装</a></dd>
-                    <dd><a href="#">蘑菇街男装</a></dd>
-                    <dd><a href="#">蘑菇街鞋子</a></dd>
-                    <dd><a href="#">蘑菇街包包</a></dd>
-                    <dd><a href="#">蘑菇街家居</a></dd>
-                    <dd><a href="#">家具网</a></dd>
-                    <dd><a href="#">时尚品牌网</a></dd>
-                    <dd><a href="#">装修</a></dd>
-                    <dd><a href="#">蘑菇街母婴</a></dd>
-                    <dd><a href="#">衣联网</a></dd>
-                    <dd><a href="#">播视网视频</a></dd>             
-                
+                    @foreach($fl as $k=>$v)
+                    <dd><a href="{{$v->curl}}" target="_blank">{{$v->cname}}</a></dd>
+                    @endforeach
                 </dl>
-            
+
             </div>
-        
+
     </div>
 </body>
 </html>

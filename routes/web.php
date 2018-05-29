@@ -47,7 +47,7 @@ Route::group(['middleware'=>'login'],function(){
 	// 修改管理员密码
 	Route::get('admin/pass','admin\LoginController@pass');
 	Route::post('admin/changepass','admin\LoginController@changePass');
-	
+
 
 	//用户管理
 	Route::resource('admin/user','admin\UserController');
@@ -88,6 +88,12 @@ Route::group(['middleware'=>'login'],function(){
 
     //后台轮播图
     Route::resource('admin/show','admin\ShowController');
+
+    //后台广告管理
+    Route::resource('admin/adv','admin\AdvController');
+
+    //限时抢购
+    Route::resource('admin/kill','admin\KillController');
 
 
 });
@@ -146,11 +152,14 @@ Route::group([],function(){
 	Route::get('home/orderindex','home\OrderController@index');
 
 
-	
+
 	//商品列表页
 	Route::get('home/list','home\ListController@index');
 	//商品详情页
 	Route::get('home/spxq','home\SpxqController@index');
+
+	//限时抢购
+	Route::get('home/goodkill','home\GoodkillController@goodkill');
 
 
 

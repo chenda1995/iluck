@@ -11,7 +11,7 @@ class CarController extends Controller
     public function index()
 	{
 		$res = DB::table('car')->orderBy('id','asc')->get();
-		
+
 
 		return view('home.cart.car',['title'=>'iluck购物车','res'=>$res]);
 	}
@@ -26,7 +26,7 @@ class CarController extends Controller
 
 		echo $arr;
 
-		
+
 	}
 
 	public function add(Request $request)
@@ -38,7 +38,7 @@ class CarController extends Controller
 		$cnt['cnt'] = $arr['cnt'] + '1';
 
 		DB::table('car')->where('id',$id)->update($cnt);
-		
+
 	}
 
 	public function jian(Request $request)
@@ -55,10 +55,10 @@ class CarController extends Controller
 		}
 
 		DB::table('car')->where('id',$id)->update($cnt);
-		
+
 	}
 
-	
+
 
 	public function scdz(Request $request)
 	{
@@ -68,20 +68,20 @@ class CarController extends Controller
 
 		$a['auth'] =  '1';
 		$b['auth'] = '0';
-		
+
 		session(['uid'=>'85']);
 		$res = DB::table('car')->where('uid',session('uid'))->update($b);
 		  $arr = DB::table('car')->where($arr)->update($a);
 
 		  //var_dump($res);
-		  
 
 
-		
 
-		 //return view('home.cart.car2',['title'=>'确认订单']);
 
-		
+
+		 return view('home.cart.car2',['title'=>'确认订单']);
+
+
 	}
 
 	public function cardizhi(Request $request)
