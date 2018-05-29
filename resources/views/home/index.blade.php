@@ -15,7 +15,7 @@
             <input class="s3" type="button" />
              <div class="sao">
             <img src="/home/sycss/image/leftlogin.png" style="width:160px;height:80px" />
-            <span class="mgj">蘑菇街客户端</span>
+            <span class="mgj">iluck客户端</span>
         </div>        
         <ul>
             <li><a href="#">毛衣</a></li>

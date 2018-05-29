@@ -1,10 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>@yield('title')</title>
 
-     <link href="/home/image/favicon.ico" type="/home/sycss/image/x-icon" rel="shortcut icon"/> 
+     
      <link type="text/css" rel="stylesheet" href="/home/sycss/styles/index.css" />
 
 
@@ -82,24 +82,7 @@
                 <div class="s-txt">购物车</div>
             </a>
         </div>
-        <div class="mgj-my-coupon">
-            <a class="nofollow" href="javascript:;">
-                <i class="s-icon"></i>
-                <div class="s-txt">优惠券</div>
-            </a>
-        </div>
-        <div class="mgj-my-wallet">
-            <a class="nofollow" href="javascript:;">
-                <i class="s-icon"></i>
-                <div class="s-txt">钱包</div>
-            </a>
-        </div>
-        <div class="mgj-my-browserlog">
-            <a class="nofollow" href="javascript:;">
-                <i class="s-icon"></i>
-                <div class="s-txt">足迹</div>
-            </a>
-        </div>
+       
          <div class="sideBottom">
             <a class="nofollow" href="javascript:;">
                 <i class="s-icon"></i>               
@@ -115,27 +98,15 @@
     <div class="head">
        <div class="head-top">
           <ul>
-          <li class="wodexiaodian"><a class="wd" href="../mgjz/index.html">我的小店</a></li>
-          <li class="khfw">
-                <a class="fw" href="#">
-                    客户服务
-                    <ul class="khfwtk">
-                        <li>联系合作</li>
-                        <li>帮助</li>
-                    </ul>
+          
+          <li class="gouwuche">
+<!--                <div class="gwctk"></div>-->
+                <a class="gwc" href="/home/cart">
+                    购物车
                     
                 </a>
           </li>
-          <li class="gouwuche">
-<!--                <div class="gwctk"></div>-->
-                <a class="gwc" href="#">
-                    购物车
-                    <ul class="gwctk">
-                            <li>购物车里没有商品！</li>
-                        </ul>
-                </a>
-          </li>
-          <li class="dingdan"><a class="dd" href="#">我的订单</a></li>
+          <li class="dingdan"><a class="dd" href="/home/orderindex">我的订单</a></li>
           <li >
 
             

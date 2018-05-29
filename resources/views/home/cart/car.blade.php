@@ -13,6 +13,7 @@
     <link href="/home/car/index_002.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="/home/car/bottom.css" media="all">
     <link href="/home/car/index.css" rel="stylesheet" type="text/css">
+    <script src="/sanji/jquery-3.2.1.min.js"></script>
     
     
       <!-- 表格 -->
@@ -105,7 +106,7 @@
                 <div class="cart_num cart_counter">
                     <span class="cart_num_reduce">
                     </span>
-                    <input class="cnt" type="text" name="quantity" value="{{$v->cnt}}" class="qty" style="width: 30px;height: 27px; text-align: center;">
+                    <input class="cnt" type="text" name="quantity" value="{{$v->cnt}}" class="qty" style="width: 30px;height: 23px; text-align: center;">
                     <span class="cart_num_add">
                     </span>
                 </div>
