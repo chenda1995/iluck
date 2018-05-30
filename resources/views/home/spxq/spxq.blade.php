@@ -1,4 +1,4 @@
-@extends('layout.home')
+@extends('layout.home1')
 
 
 @section('title',$title)
@@ -53,7 +53,7 @@
             <input id="J_DetailRefer" value="http%3A%2F%2Fact.mogujie.com%2Fuzt%2Fpc%2Fnvxie%3Facm%3D3.mce.1_10_1hxzq.19221..bUVZQqRDRtGrl.pos_0-m_418575-sd_119-mf_15261_944839-idx_19-mfs_22-dm1_5000%26ptp%3D1._mf1_1239_15261.0.0.YXN86V9m"
             type="hidden">
             <input id="J_CartLuckyDrawData" data-istimerange="true" type="hidden">
-            <div class="shop-detail" >
+            <div class="shop-detail"  style="margin-top: 20px;">
                 <div class="detail-primary clearfix" style="margin:0 auto;">
                     <div class="primary-goods">
                         <div class="clearfix">
@@ -150,7 +150,7 @@
                                                        $(this).attr('class','aa c');
                                                       var color =  $(this).text();
                                                       $.get('/home/cardo1',{color:color},function(data){
-                                                        console.log(data);
+                                                        //console.log(data);
                                                       })
                                                        //$(this).addClass('c');
                                                        
@@ -164,7 +164,7 @@
                                                        $(this).attr('class','dd c');
                                                        var size = $(this).text();
                                                         $.get('/home/cardo2',{size:size},function(data){
-                                                        console.log(data);
+                                                        //console.log(data);
                                                       })
 
                                                        //$(this).addClass('c');
@@ -182,13 +182,20 @@
                                             </div>
                                         </div>
                                         <div class="goods-buy clearfix">
-                                            <a href="/home/cardo" id="J_BuyNow" class="fl mr10 buy-btn buy-now">
+                                            <a href="#" id="J_BuyNow" class="fl mr10 buy-btn buy-now">
                                                 加入购物车
                                             </a>
                                             
                                             <img src="%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/171130_19haaka7jg7224f491f44c24c8bi5_32x32.gif"
                                             class="refresh-loading">
                                         </div>
+                                        <script>
+                                            $('#J_BuyNow').click(function(){
+                                               $(this).
+                                            })
+                                            
+
+                                        </script>
                                     </div>
                                     <div class="goods-social clearfix">
                                         <div class=" fav  item" goodsid="0"  tid="0">
@@ -198,31 +205,8 @@
                                                 加入收藏
                                             </span>
                                         </div>
-                                        <div class="share item">
-                                            <b>
-                                            </b>
-                                            分享
-                                            <div class="share-w clearfix">
-                                                <a target="_blank" href=""
-                                                class="forqzone" title="关注QQ空间" rel="nofollow">
-                                                </a>
-                                                <a target="_blank" href=""
-                                                class="forrenren" title="关注人人" rel="nofollow">
-                                                </a>
-                                                <a target="_blank" href=""
-                                                class="forsina" title="关注sina" rel="nofollow">
-                                                </a>
-                                                <a target="_blank" href="http://www.mogujie.com/group/topic/1grvy/" class="forweixin"
-                                                title="关注微信" rel="nofollow">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="report">
-                                            <a target="_blank" href=""
-                                            class="goods_report fl" rel="nofollow">
-                                                举报
-                                            </a>
-                                        </div>
+                                       
+                                        
                                     </div>
                                     <div class="goods-extra clearfix">
                                         <div class="extra-services">
@@ -245,32 +229,32 @@
                                             </div>
                                             <ul class="fl clearfix list">
                                                 <li class="item">
-                                                    <a class="link" href="http://www.mogujie.com/rule/mogu?categoryId=326&amp;ruleId=895"
-                                                    target="_blank" title="" rel="nofollow">
+                                                    <a class="link" href="#"
+                                                     title="" rel="nofollow">
                                                         <img src="/home/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/idid_ie3tmyjxhfrtgzbzmezdambqgayde_40x40.png"
                                                         height="24" width="24">
                                                         全国包邮
                                                     </a>
                                                 </li>
                                                 <li class="item">
-                                                    <a class="link" href="http://www.mogujie.com/rule/mogu?categoryId=326&amp;ruleId=892"
-                                                    target="_blank" title="" rel="nofollow">
+                                                    <a class="link" href="#"
+                                                     title="" rel="nofollow">
                                                         <img src="/home/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/idid_ifrtgojygu2dgzbzmezdambqhayde_40x40.png"
                                                         height="24" width="24">
                                                         7天无理由退货
                                                     </a>
                                                 </li>
                                                 <li class="item">
-                                                    <a class="link" href="http://www.mogujie.com/rule/mogu?categoryId=326&amp;ruleId=893"
-                                                    target="_blank" title="" rel="nofollow">
+                                                    <a class="link" href="#"
+                                                     title="" rel="nofollow">
                                                         <img src="/home/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/idid_ifrdqobzmq3dizbzmezdambqmeyde_40x40.png"
                                                         height="24" width="24">
                                                         72小时发货
                                                     </a>
                                                 </li>
                                                 <li class="item">
-                                                    <a class="link" href="http://www.mogujie.com/rule/mogu?categoryId=326&amp;ruleId=927"
-                                                    target="_blank" title="" rel="nofollow">
+                                                    <a class="link" href="#"
+                                                     title="" rel="nofollow">
                                                         <img src="/home/%E5%95%86%E5%93%81%E8%AF%A6%E6%83%85_files/idid_ie4timrzmq3tkzbzmezdambqgqyde_40x40.png"
                                                         height="24" width="24">
                                                         退货补运费

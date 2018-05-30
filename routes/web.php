@@ -122,6 +122,8 @@ Route::group([],function(){
 
 	Route::post('home/dizhiadd/{id}','home\AddressController@dizhiadd');
 
+	Route::post('home/dizhiadd2/{id}','home\AddressController@dizhiadd2');
+
 	Route::get('home/dizhiindex','home\AddressController@index');
 
 	Route::get('home/dizhiupdate/{id}','home\AddressController@dizhiupdate');

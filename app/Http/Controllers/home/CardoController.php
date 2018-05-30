@@ -38,6 +38,13 @@ class CardoController extends Controller
 
 
 		$car = DB::table('car')->insert($car);
+		session()->forget('gname');
+		session()->forget('gpic');
+		session()->forget('color');
+		session()->forget('size');
+
+		
+		
 		if($car){
 
 		   return redirect('/home/cart');

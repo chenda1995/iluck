@@ -99,4 +99,29 @@ class AddressController extends Controller
             echo 0;
         }
     }
+      public function dizhiadd2(Request $request,$id)
+    {
+        $arr = $request->except('_token');
+
+
+        $arr['auth'] = '1';
+
+
+
+        $res = DB::table('address')->insert($arr);
+
+
+
+        if($res){
+
+           return redirect('/home/orderddxq');
+
+        } else {
+
+            return back();
+        }
+
+        // echo '<pre>';
+        // var_dump($res);
+    }
 }

@@ -37,7 +37,7 @@
    
     <!--购物车-->
     <div style="left: 0px;" class="sidebar-item mgj-my-cart">
-        <a target="_blank" href="	" rel="nofollow">
+        <a target="_blank" href="/home/cart" rel="nofollow">
             <i class="s-icon">
             </i>
             <div class="s-txt">
@@ -46,7 +46,27 @@
             
         </a>
     </div>
-    <!--优惠券-->
+    <!--订单-->
+    <div style="left: 0px;" class="sidebar-item mgj-my-cart">
+        <a target="_blank" href="/home/orderindex" rel="nofollow">
+            <i class="s-icon">
+            </i>
+            <div class="s-txt">
+                我的订单
+            </div>
+            
+        </a>
+    </div>
+     <!--地址-->
+        <div style="left: 0px;" class="sidebar-item mgj-my-cart">
+        <a target="_blank" href="/home/dizhiedit" rel="nofollow">
+            
+            <div class="s-txt">
+                地址管理
+            </div>
+            
+        </a>
+        </div>
    
     <!--钱包-->
     
@@ -71,7 +91,7 @@
         <ul class="header-top">
             <li class="s1 has-icon user-meta">
                 <a rel="nofollow" href="javascript:;">
-                    wx_m6kpq3hmynfj4
+                    登录
                 </a>
                 <a rel="nofollow" href="#" target="_blank">
                 </a>

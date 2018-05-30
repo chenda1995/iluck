@@ -73,7 +73,26 @@
                     </div>
                 </a>
             </div>
-            <!--优惠券-->
+             <!--订单-->
+        <div style="left: 0px;" class="sidebar-item mgj-my-cart">
+        <a target="_blank" href="/home/orderindex" rel="nofollow">
+            
+            <div class="s-txt">
+                我的订单
+            </div>
+            
+        </a>
+        </div>
+        <!--地址-->
+        <div style="left: 0px;" class="sidebar-item mgj-my-cart">
+        <a target="_blank" href="/home/dizhiedit" rel="nofollow">
+            
+            <div class="s-txt">
+                地址管理
+            </div>
+            
+        </a>
+        </div>
            
             <div class="sideBottom">
                 <!--回到顶部-->

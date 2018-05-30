@@ -1,12 +1,11 @@
-@extends('layout.home')
+@extends('layout.home1')
 
 @section('title',$title)
 
 
 @section('content')
 
-        <!--## PC公用Logo & 搜索-->
-        <!-- 中间区域 -->
+       
         
         <input type="hidden" id="J_searchbar_flag" value="show">
         <!--页面内容-->
@@ -54,21 +53,20 @@
                     @foreach($goods as $k=>$v)
                             <div class="iwf goods_item ratio3x4" data-tradeitemid="1lxe82g  " goods-index="0"
                                  is-exposed="true">
-                                <a class="likeLink yahei" href="http://list.mogujie.com/relative?pid=8872&amp;iid=1lxe82g&amp;acm=3.ms.1_4_1lxe82g.15.1343-76374-69000.0Q42TqRE3L6pK.sd_117_116_116-swt_15-imt_6-c_1_3_361422889_0_0_3-t_0Q42TqRE3L6pK-lc_3-fcid_50249-pid_180-pit_1-bid_15&amp;itemType=6"
+                                <a class="likeLink yahei" href="/home/spxq/{{$v->gid}}"
                                 target="_blank">
-                                    找相似
+                                    
                                 </a>
 
-                                <a  gid="{{$v->gid}}"  href="/home/spxq/{{$v->gid}}"
+                                <a  gid="{{$v->gid}}"  href="/home/spxq/{{$v->gid}}" target="_blank"
 
                                 class="qwe img pagani_log_link J_dynamic_imagebox loading_bg_120 J_loading_success"
                                  >
                                     <img class="J_dynamic_img fill_img" src="{{ URL::asset($v->gpic[0]) }}"
                                     alt="">
                                 </a> 
-                                <a rel="nofollow" target="_blank" href="#"
-                                class="pagani_log_link goods_info_container" data-ext-acm="3.ms.1_4_1lxe82g.15.1343-76374-69000.0Q42TqRE3L6pK.sd_117_116_116-swt_15-imt_6-c_1_3_361422889_0_0_3-t_0Q42TqRE3L6pK-lc_3-fcid_50249-pid_180-pit_1-bid_15-idx_0-dm1_5002"
-                                data-log-bkey="..0" data-ptp-customc="">
+                                <a rel="nofollow" target="_blank" href="/home/spxq/{{$v->gid}}"
+                                class="pagani_log_link goods_info_container" >
                                     <p class="title yahei fl" style="height:40px;margin-bottom:3px">
                                         {{$v->gname}}
                                     </p>
