@@ -11,9 +11,6 @@
 |
 */
 //后台登录
-
-
-
 Route::get('admin/login','admin\LoginController@login');// 登录页面
 Route::post('admin/dologin','admin\LoginController@dologin');// 登录
 Route::get('admin/signout','admin\LoginController@signout'); //退出
@@ -43,7 +40,6 @@ Route::get('/', function () {
 
 //后台控制组
 
-
 Route::group(['middleware'=>'login'],function(){
 
 	//后台首页
@@ -56,7 +52,6 @@ Route::group(['middleware'=>'login'],function(){
 	//用户管理
 	Route::resource('admin/user','admin\UserController');
 
-
 	Route::post('admin/user/ajaxState','admin\UserController@ajaxState');
 
 
@@ -66,8 +61,6 @@ Route::group(['middleware'=>'login'],function(){
 	Route::resource('admin/goods','admin\GoodsController');
 	
 	
-
-
 	//订单管理
 	Route::get('admin/order/del/{id}','admin\OrderController@del');
 
@@ -78,15 +71,12 @@ Route::group(['middleware'=>'login'],function(){
 	Route::resource('admin/orders','admin\OrdersController');
 
 
-
 	//评论管理
 	Route::get('admin/comment','admin\CommentController@index');
 	Route::post('admin/comment/ajaxStatu','admin\CommentController@ajaxStatu');
 
 	//收藏管理
 	Route::get('admin/house','admin\HouseController@index');
-
-
 
 
 	//后台友情链接
@@ -104,13 +94,13 @@ Route::group(['middleware'=>'login'],function(){
 
 });
 
+
 //前台控制组
 Route::group([],function(){
 
 	//前台首页
 	Route::get('home/index','home\IndexController@index');
 	Route::get('home/userdetails','home\UserDetailsController@userdetails');
-
 
 	//个人中心
 	Route::post('home/userdetails/update','home\UserDetailsController@update');
@@ -131,7 +121,6 @@ Route::group([],function(){
 	Route::post('home/dizhiupdatedo','home\AddressController@dizhiupdatedo');
 
 	Route::get('home/dizhidel/{id}','home\AddressController@dizhidel');
-
 
 	Route::get('home/dizhi/auth','home\AddressController@auth');
 
@@ -184,10 +173,11 @@ Route::group([],function(){
 
 	Route::get('home/spxq/{id}','home\SpxqController@index');
 
-
 	//我的收藏
 	Route::get('home/house','home\HouseController@index');
 
+	//历史足迹
+	Route::get('home/history','home\HistoryController@index');
 
 	//限时抢购
 	Route::get('home/goodkill','home\GoodkillController@goodkill');

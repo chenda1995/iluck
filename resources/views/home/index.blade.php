@@ -60,10 +60,7 @@
                                 <dd>
                                 @foreach($v->type as $kk=>$vv)
                                     @if($kk==0) 
-                                    <ul class="clearfix" style="  font-size: 12px;
-            float:left;
-            display:inline;">
-
+                                    <ul class="clearfix" style="  font-size: 12px;float:left;display:inline;">
                                         @foreach($vv->type as $kkk=>$vvv)
                                         <li><a href="list/{{$v->cid}}">{{$vvv->cname}}</a></li>
                                         @endforeach   
@@ -87,7 +84,6 @@
                                     </ul>  
                                     @endif  
                                 @endforeach  
-                                <div class="xiao-banner"><a href="#"><img src="/home/index/image/xiao-banner2.jpg" /></a></div>
                             </dl>
                     </div> 
                  <li class="li">
