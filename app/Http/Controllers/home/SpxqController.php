@@ -35,14 +35,11 @@ class SpxqController extends Controller
                         ->orderBy('etime', 'desc')
                         ->paginate(20);
 
-
     	//数据格式化
     	$data = array(
     		'arr'=>$arr,
     		'comment'=>$comment,
     	);
-
-
 
 
  
@@ -51,10 +48,26 @@ class SpxqController extends Controller
     }
 
 
-    public function house()
+    public function ajaxHouse(Request $request)
     {
 
-        $info = DB::table('collection')->where('gid',$gid)->get();
-        dd($info); 
+          $arr = $request->all();
+
+
+        // $gid['stime'] = time();
+        // $gid['gid'] = $arr['gid'];
+        // $gid['uid'] = session('uid');
+
+        // $data = DB::table('collection')->insert($gid);
+        
+        
+        if (DB::update("update collection set auth = $arr[auth]")) {
+            
+            return 1;
+        } else {
+
+            return 0;
+
+        }
     }
 }

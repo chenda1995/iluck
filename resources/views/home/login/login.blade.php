@@ -11,14 +11,6 @@
             window.__token = "Jy2DddYXN9q%2BU7cQl7%2Fg%2Frm%2Bf5MN8DZAKLp11YskWij3pKazwgy%2FYgSromaTT3e%2FO%2FsrLZuUhRe5MT2SZ8NNpQ%3D%3D";
         </script>
         <meta charset="UTF-8">
-        <link rel="dns-prefetch" href="">
-        <link rel="dns-prefetch" href="">
-        <link rel="dns-prefetch" href="">
-        <link rel="dns-prefetch" href="">
-        <link rel="dns-prefetch" href="">
-        <link rel="dns-prefetch" href="">
-        <link rel="dns-prefetch" href="">
-        <link rel="dns-prefetch" href="">
         <meta http-equiv="Cache-Control" content="no-transform ">
         <meta name="renderer" content="webkit">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -144,29 +136,7 @@
                                         </div>
                                     </div>
                                     <!-- 正常登录 end -->
-                                    <!-- 无密码 start -->
-                                    <div class="mod_box eb_mod_box" data-isshow="0">
-                                        <div class="ui-sign-item ui-name-item clearfix mb">
-                                           
-                                            <input maxlength="32" class="ui-input pwd_text" name="" data-type="mobile"
-                                            placeholder="手机号码" style="border-color:#CFCFCF;" type="text">
-                                        </div>
-                                        <!-- 动态密码输入 -->
-                                        <div class="ui-sign-item ui-sign-common-item lg_item lg_code">
-                                            <!-- 获取验证码按钮 -->
-                                            <div class="lg_item lg_getcode">
-                                                <a href="javascript:;" class="get_tel_code" id="but">
-                                                    获取动态密码
-                                                </a>
-                                                <input maxlength="32" class="ui-input pwd_text width_180" name=""
-                                                data-type="phonecode" placeholder="动态密码" style="border-color:#CFCFCF;"
-                                                type="text">
-                                            </div>
-                                        </div>
-                                        <div class="lg_chk_item">
-                                        </div>
-                                    </div>
-                                    <!-- 无密码 end -->
+                                   
 
                                     <div  clearfix">
                                         {{csrf_field()}}
@@ -188,14 +158,15 @@
                                         </div>
                                     </div>
                                     <div class="lg_reg">
+                                        <a class="findpwd" href="/home/register">
+                                            注册新账号
+                                        </a>
                                         <a class="findpwd" href="/home/zhaohui">
                                             忘记密码
                                         </a>
+                                         
                                     </div>
-                                    
-
                                     <input value="" id="imgcheckvalue" type="hidden">
-
                                 </form>
                             </div>
                         </div>

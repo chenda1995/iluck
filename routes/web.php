@@ -175,11 +175,13 @@ Route::group([],function(){
 
 
 	//我的收藏
-	Route::post('home/house','home\HouseController@house');
+	Route::get('home/house','home\HouseController@index');
+	Route::get('home/ajaxHouse','home\SpxqController@ajaxHouse');
+
 
 
 	//商品评价
-	Route::get('home/pingjia','home\PingjiaController@pingjia');
+	Route::get('home/pingjia/{gid}','home\PingjiaController@pingjia');
 	Route::post('home/pjdo','home\PingjiaController@pjdo');
 
 

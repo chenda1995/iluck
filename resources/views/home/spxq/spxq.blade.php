@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    
+     
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         
@@ -40,131 +40,13 @@
             MOGUPROFILE = {};
         </script>
        
-        <style type="text/css">
-            .admin_panel_wrap { width: 1200px; margin: 0 auto; } .admin_panel { border:
-            1px solid #e0e0e0; background: #fff; padding: 20px; margin-top: 20px; font-size:
-            14px; } .admin_panel .item { float: left; margin-right: 20px; } .admin_panel
-            .item .title { color: #ff7b76; font-size: 14px; font-weight: bold; } .admin_panel
-            .op_btn { background: #34beff; color: #fff; display: inline-block; width:
-            48px; text-align: center; border-radius: 3px; } .media_screen_960 .admin_panel_wrap
-            { width: 960px; }
-        </style>
-        <style type="text/css">
-            #J_ModulePintuan { border: 1px solid #e5e5e5; margin-bottom: 20px; padding:
-            20px 20px 10px 20px; } #J_ModulePintuan .title-bar { font-size: 14px; color:
-            #666666; padding-bottom: 19px; margin-bottom: 20px; border-bottom: 1px
-            solid #e5e5e5; } #J_ModulePintuan .title-bar img { height: 15px; width:
-            62px; margin-right: 11px; vertical-align: -2px; } #J_ModulePintuan .title-bar
-            .btn-rule { cursor: pointer; text-decoration: underline; color: #999999;
-            } #J_ModulePintuan ul { font-size: 0; } #J_ModulePintuan li { width: 31.1%;
-            margin-right: 1.7%; height: 40px; line-height: 40px; padding: 10px 0 10px
-            10px; background-color: #fff0f0; display: inline-block; margin-bottom:
-            10px; border-radius: 2px; } #J_ModulePintuan li:last-child { margin-right:
-            0; } #J_ModulePintuan li .avatar { border-radius: 50%; width: 40px; height:
-            40px; margin-right: 10px; } #J_ModulePintuan li .name { font-size: 14px;
-            color: #333333; display: inline-block; width: 68px; overflow: hidden; height:
-            40px; vertical-align: middle; text-overflow: ellipsis; white-space: nowrap;
-            } #J_ModulePintuan li .info { display: inline-block; line-height: 20px;
-            text-align: right; margin-right: 10px; font-size: 12px; } #J_ModulePintuan
-            li .info .num { color: #ff5777; } #J_ModulePintuan li .info .time { color:
-            #999999; } #J_ModulePintuan li .btn-pintuan { position: relative; top:
-            -10px; display: inline-block; width: 80px; height: 60px; line-height: 60px;
-            color: #ff5777; background-color: #fedcdc; text-align: center; font-size:
-            14px; border-radius: 0 2px 2px 0; cursor: default; } #J_ModulePintuan li
-            .btn-pintuan:hover .qrcode-wrapper { display: inline-block; } #J_ModulePintuan
-            li .btn-pintuan .qrcode-wrapper { display: none; width: 180px; height:
-            195px; line-height: normal; background: white; font-size: 10px; text-align:
-            center; padding: 10px 5px; position: relative; z-index: 10000; top: -7px;
-            left: -13px; border-radius: 5px; box-shadow: 0 0 5px #dddddd; color: #666666;
-            } #J_ModulePintuan li .btn-pintuan .qrcode-wrapper .trangle { position:
-            absolute; top: -6px; left: 48px; width: 0; height: 0; border-left: 5px
-            solid transparent; border-right: 5px solid transparent; border-bottom:
-            6px solid white; } #J_ModulePintuan li .btn-pintuan .qrcode-wrapper .qrcode
-            { width: 180px; height: 180px; margin-bottom: 2px; } #J_ModulePintuan .modal-pintuan-rule
-            { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-            margin: auto; height: 300px; width: 400px; padding: 16px 20px; z-index:
-            20001; background-color: white; border-radius: 6px; font-size: 14px; }
-            #J_ModulePintuan .modal-pintuan-rule .head-title { margin-bottom: 17px;
-            text-align: center; color: #333333; } #J_ModulePintuan .modal-pintuan-rule
-            .content { height: 260px; overflow-y: auto; } #J_ModulePintuan .modal-pintuan-rule
-            .content .title { color: #333333; } #J_ModulePintuan .modal-pintuan-rule
-            .content .desc { color: #666666; margin-bottom: 10px; } #J_ModulePintuan
-            .modal-pintuan-rule .m-icon-close { position: absolute; right: 11px; top:
-            11px; font-size: 12px; color: #999999; cursor: pointer; } #J_ModulePintuan
-            .modal-mask { display: none; position: fixed; top: 0; left: 0; height:
-            100%; width: 100%; background-color: black; opacity: 0.4; z-index: 20000;
-            } .media_screen_1200 #J_ModulePintuan li { width: 31.3%; } .media_screen_1200
-            #J_ModulePintuan li .name { width: 140px; }
-        </style>
-        <style type="text/css">
-            #J_ModuleNavModal .mask { position: fixed; top: 0; left: 0; z-index: 99999;
-            background: black; opacity: 0.4; width: 100%; height: 100%; } #J_ModuleNavModal
-            .wrapper { position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin:
-            auto; z-index: 100000; height: 323px; width: 610px; padding: 80px 0; border-radius:
-            10px; background: white; } #J_ModuleNavModal .wrapper .m-icon-close { position:
-            absolute; top: 21px; right: 21px; font-size: 19px; color: #999999; cursor:
-            pointer; } #J_ModuleNavModal .wrapper .header { font-family: 'PingFangSC-Medium';
-            font-size: 30px; line-height: 30px; text-align: center; margin-bottom:
-            12px; color: #333333; } #J_ModuleNavModal .wrapper .desc { font-family:
-            'PingFangSC-Regular'; font-size: 16px; line-height: 26px; text-align: center;
-            margin-bottom: 40px; color: #333333; } #J_ModuleNavModal .wrapper .qrcode-list
-            { padding: 0 70px; text-align: center; } #J_ModuleNavModal .wrapper .item
-            { display: inline-block; position: relative; vertical-align: middle; width:
-            216px; height: 216px; } #J_ModuleNavModal .wrapper .item .r { display:
-            inline-block; position: absolute; width: 23px; height: 23px; border: 1px
-            solid #d8d8d8; } #J_ModuleNavModal .wrapper .item .r1 { top: 0; left: 0;
-            border-radius: 6px 0 0 0; border-right: none; border-bottom: none; } #J_ModuleNavModal
-            .wrapper .item .r2 { top: 0; right: 0; border-radius: 0 6px 0 0; border-left:
-            none; border-bottom: none; } #J_ModuleNavModal .wrapper .item .r3 { bottom:
-            0; right: 0; border-radius: 0 0 6px 0; border-left: none; border-top: none;
-            } #J_ModuleNavModal .wrapper .item .r4 { bottom: 0; left: 0; border-radius:
-            0 0 0 6px; border-right: none; border-top: none; } #J_ModuleNavModal .wrapper
-            .item .icon { position: absolute; top: 89px; left: 89px; width: 40px; height:
-            40px; z-index: 1; } #J_ModuleNavModal .wrapper .item .img { display: inline-block;
-            position: absolute; top: 24px; left: 24px; width: 170px; height: 170px;
-            } #J_ModuleNavModal .wrapper .item .text { position: absolute; bottom:
-            -10px; left: 0; width: 100%; text-align: center; font-size: 14px; color:
-            #999999; }
-        </style>
-        <style type="text/css">
-            #J_ModuleCustomProperty { margin-right: 10px; min-height: auto; } #J_ModuleCustomProperty
-            .property-cont { font-size: 12px; } #J_ModuleCustomProperty .tag-img {
-            height: 20px; margin-right: 3px; vertical-align: middle; } #J_ModuleCustomProperty
-            .link { margin-left: 20px; } #J_ModuleCustomBanner { position: fixed; bottom:
-            0; left: 0; z-index: 1024; background: #eee; width: 100%; } #J_ModuleCustomBanner
-            img { width: 100%; } #J_ModuleCustomBanner .m-icon-close { position: absolute;
-            right: 40px; top: 10px; color: white; font-weight: bold; padding: 5px;
+        <style>
+            .but{
+                
             }
-        </style>
-        <style type="text/css">
-            .nohl { -webkit-user-select: none; -moz-user-select: none; -ms-user-select:
-            none; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-            -webkit-text-size-adjust: 100% } .shieldcaptain-warpper { max-width: 414px
-            } .shieldcaptain-warpper .desc { overflow: hidden } .shieldcaptain-warpper
-            .desc > span { color: #666; float: left; font-size: 12px } .shieldcaptain-warpper
-            .desc > a { float: right; font-size: 12px; color: #999 } .shieldcaptain-warpper
-            .img-con { position: relative; text-align: center; margin-top: 8px } .shieldcaptain-warpper
-            .img-con .success-con { position: absolute; display: none; width: 100%;
-            height: 100%; top: 0; left: 0; background-color: rgba(255, 255, 255, 0.8)
-            } .shieldcaptain-warpper .img-con .success-con p { font-size: 12px; color:
-            #333; display: block; position: absolute; text-align: center; top: 50%;
-            line-height: 32px; margin-top: -16px; width: 100% } .shieldcaptain-warpper
-            .img-con .loading-con { position: absolute; display: none; top: 0; left:
-            0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.6)
-            } .shieldcaptain-warpper .img-con .loading-con > svg { width: 74px; height:
-            74px; position: absolute; left: 50%; top: 50%; margin-left: -38px; margin-top:
-            -38px } .shieldcaptain-warpper .img-con .img-list { font-size: 0; width:
-            100%; margin: 0; padding: 0; overflow: hidden } .shieldcaptain-warpper
-            .img-con .img-list li { list-style: none; display: inline-block; vertical-align:
-            middle; width: 24.25%; background-repeat: no-repeat; background-size: auto
-            100%; cursor: pointer; transition: all ease 0.2s; margin-right: 1% } .shieldcaptain-warpper
-            .img-con .img-list li:after { content: ''; display: block; width: 100%;
-            padding-top: 100% } .shieldcaptain-warpper .img-con .img-list li:nth-child(1)
-            { background-position: 0 0 } .shieldcaptain-warpper .img-con .img-list
-            li:nth-child(2) { background-position: 33.33% 0 } .shieldcaptain-warpper
-            .img-con .img-list li:nth-child(3) { background-position: 66.66% 0 } .shieldcaptain-warpper
-            .img-con .img-list li:nth-child(4) { background-position: 100% 0; margin-right:
-            0 }
+            .but-red{
+                background: red;
+            }
         </style>
     
     </head>
@@ -898,40 +780,33 @@
                                             class="refresh-loading">
                                         </div>
                                     </div>
+
+
+
+<!-- 
                                     <div class="goods-social clearfix">
-                                        <div class=" fav  item" goodsid="0"  tid="0">
-                                            <span class=" isfav  m-icon m-icon-star ">
-                                            </span>
-                                            <span class="fav-num" onclick="house(this)">
-                                                加入收藏
-                                            </span>
-                                        </div>
-                                        <div class="share item">
-                                            <b>
-                                            </b>
-                                            分享
-                                            <div class="share-w clearfix">
-                                                <a target="_blank" href=""
-                                                class="forqzone" title="关注QQ空间" rel="nofollow">
-                                                </a>
-                                                <a target="_blank" href=""
-                                                class="forrenren" title="关注人人" rel="nofollow">
-                                                </a>
-                                                <a target="_blank" href=""
-                                                class="forsina" title="关注sina" rel="nofollow">
-                                                </a>
-                                                <a target="_blank" href="http://www.mogujie.com/group/topic/1grvy/" class="forweixin"
-                                                title="关注微信" rel="nofollow">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="report">
-                                            <a target="_blank" href=""
-                                            class="goods_report fl" rel="nofollow">
-                                                举报
-                                            </a>
-                                        </div>
+                                        <button class="fav item" goodsid="0"  tid="0" >
+                                            <span class=" isfav  m-icon m-icon-star "></span>
+                                            
+                                            
+                                        </button>
+                                     
+                                    </div> -->
+
+                                    <div class="bb">
+                                        <input type="checkbox" class="ww" gid="3">
+                                        <span class="but"  id="e">未收藏</span>
                                     </div>
+
+                                   <!--  <div class="bb">
+                                        <button class="but">未收藏</button>
+                                    </div> -->
+
+
+
+
+
+
                                     <div class="goods-extra clearfix">
                                         <div class="extra-services">
                                             <div class="fl clearfix label">
@@ -1896,6 +1771,10 @@
                                                             <b style="width: 77px;">
                                                             </b>
                                                         </span>
+                                                      <div class="title">
+                                                           好评率 描述相符
+                                                        </div>
+                                                        
                                                         <span class="numbox">
                                                             <b class="num-v">
                                                                 {{round(($arr['goodTot']/$arr['commentTot']*100))}}
@@ -2190,13 +2069,7 @@
                 };
             </script>
             <script type="text/javascript">
-                // 如果在蘑菇街APP
-                // if (MoGuDetail.util.isMGJApp) {
-                //   setTimeout(function(){
-                //       window.location.href = "mgj://detail?iid=1k12j9s";
-                //   },400)
-                // }
-                // 如果在移动设备上
+          
                 if (MoGuDetail.util.isMobile) {
                     setTimeout(function() {
                         var isJiajiagou = location.pathname.indexOf('/jiajiagou/detail/') !== -1;
@@ -2744,20 +2617,31 @@
         <div class="foot J_siteFooter" data-ptp="_foot">
         </div>
 
-         <!-- <script type="text/javascript" src="/home/js/index_002.js"> </script> -->
+         <script type="text/javascript" src="/home/js/index_002.js"> </script>
         
-         <script type="text/javascript" src="/home/js/bottom.js"> </script>
+         <!-- <script type="text/javascript" src="/home/js/bottom.js"> </script> -->
         
          <script type="text/javascript" src="/home/js/index(2).js"> </script>
         
         <script>
+               $('.ww').click(function(){
+                   var a = $(this).is(':checked');
+                   var goodsId = $(this).attr('gid');
+                   // console.log(gid);
+                   if(a){
 
-            function house(obj,uid,gid)
-            {
-                //发送ajax
-             
-            }
+                        $(this).siblings('#e').text('已收藏');
+                        var auth = '1';
+                        $.get('/home/ajaxHouse',{gid:gid,auth:auth},function(data){});
+                   } else {
+                        $(this).siblings('#e').text('未收藏');
+                        var authl = '0';
+                        $.get('/home/ajaxHouse',{gid:gid,auth:authl},function(data){});
+                   }
+               })   
         </script>
+
+
     </body>
 
 </html>

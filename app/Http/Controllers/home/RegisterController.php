@@ -43,13 +43,13 @@ class RegisterController extends Controller
         $data = DB::table('user')->insertGetId($res);
 
 		
-		 $a = $res['uname'];
-             $aa = DB::table('user')->where('uname',$a)->get();
-             foreach ($aa as $k => $v) {
-                $a2['uid'] = $v->uid;
-                $a2['born'] = ',,';
-                $arr = DB::table('user_details')->insert($a2);
-             }
+		 // $a = $res['uname'];
+   //           $aa = DB::table('user')->where('uname',$a)->get();
+   //           foreach ($aa as $k => $v) {
+   //              $a2['uid'] = $v->uid;
+   //              $a2['born'] = ',,';
+   //              $arr = DB::table('user_details')->insert($a2);
+   //           }
 
         if($data){
 
@@ -66,7 +66,7 @@ class RegisterController extends Controller
     public function ycode()
     {
     	//引入类文件
-    	// require_once('/home/lib/Ucpaas.php');
+
 
         //初始化必填
 		$options['accountsid']='154f35b6af1cdc1bd56db3e0641aaa6e';

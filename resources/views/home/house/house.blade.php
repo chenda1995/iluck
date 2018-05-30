@@ -49,34 +49,32 @@
                         低库存
                     </li>
                     <li>
-                        已失效
+                        已失效 
                     </li>
                 </ul>
+                
                 <div id="imagewall_container">
+                    @foreach($data as $v)
                     <div class="iwf goods_item" data-tradeitemid="617555070">
                         <a rel="nofollow" href="javascript:;"
                         class="img" target="_blank">
-                            <img src="%E6%88%91%E7%9A%84%E6%94%B6%E8%97%8F_files/180119_733ka43c0i2j7l90llkkdj1eg599i_640x960.jpg"
-                            alt="新百伦新款女鞋580系列复古休闲运动鞋WRT580PB/PA">
+                            <img src="{{$v->gimg}}" alt="" style="width:220px;height: 405px">
                         </a>
                         <p class="title">
                             <a rel="nofollow" href="javascript:;"
                             target="_blank" style="width:220px">
-                                新百伦新款女鞋580系列复古休闲运动鞋WRT580PB/PA
+                                {{$v->gname}}
                             </a>
                         </p>
                         <div class="goods_info">
                             <b class="price_info">
-                                ￥399.00
+                                ￥{{$v->price}}
                             </b>
-                            <span class="fav_num">
-                                33
-                                <img src="%E6%88%91%E7%9A%84%E6%94%B6%E8%97%8F_files/upload_27g4f1ch6akie83hacb676j622b9l_32x30.png"
-                                alt="">
-                            </span>
                         </div>
                     </div>
+                   @endforeach
                 </div>
+ 
             </div>
         </div>
         

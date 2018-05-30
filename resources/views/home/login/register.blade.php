@@ -14,7 +14,8 @@
         </script>
         <script type="text/javascript" async="" src="%E6%B3%A8%E5%86%8C1%E5%8F%B7%E5%BA%97_files/captcha.js">
         </script>
-        <script src="/js/jquery-1.8.3.min.js"></script>
+        <script src="/home/%E6%B3%A8%E5%86%8C1%E5%8F%B7%E5%BA%97_files/jquery-1.8.3.min.js"></script>
+        <script src="/layer/layer/layer.js"></script>
         <style>
             .login_btn { 
                 width: 330px; height: 52px; border: 0 none; border-radius:
@@ -53,16 +54,12 @@
     </head>
     
     <body>
-        <link rel="shortcut icon" href="https://passport.yhd.com/front-passport/passport/images/yhd_favicon.ico">
-
         <div class="regist_header clearfix">
             <div class="wrap">
                 <a href="/home/index" class="logo">
-                    <img src="%E6%B3%A8%E5%86%8C1%E5%8F%B7%E5%BA%97_files/login.png" alt="1号店"
-                    height="55">
+                    <img src="" height="55">
                 </a>
                 <div class="regist_header_right clearfix">
-                    <!--<a href="#" class="english_edition" id="edition" style="display:none">English</a>-->
                     <div class="help_wrap">
                         <a class="hd_menu" href="">
                             <s class="help_ico">
@@ -340,12 +337,18 @@
             $('#yzmbtn').click(function() {
                 //获取手机号
                 var phone = $('#phone').val();
-                // console.log(phone);
+                console.log(phone);
 
                 // 发送ajax
                 $.post('/home/ycode', {number: phone},function(data) {
 
-                    console.log(data);
+                    var data =  JSON.parse(data);
+                    if(data.status == 0){
+                        layer.alert('验证码发送成功');
+                    }else{
+                        layer.alert('验证码发送失败');
+                    }
+                    // console.log(data);
 
                 })
 
