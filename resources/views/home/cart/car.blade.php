@@ -1,4 +1,4 @@
-@extends('layout.home')
+@extends('layout.home1')
 
 
 @section('title',$title)
@@ -13,13 +13,14 @@
     <link href="/home/car/index_002.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="/home/car/bottom.css" media="all">
     <link href="/home/car/index.css" rel="stylesheet" type="text/css">
+    <script src="/sanji/jquery-3.2.1.min.js"></script>
     
     
       <!-- 表格 -->
       
       <!-- 表格 end -->
     </script>
-      <div class="g-wrap wrap">
+      <div class="g-wrap wrap" style="width: 1200px;margin:0 auto;">
         <ul class="clearfix cart_slide" id="cartSlide">
             <li>
                 <a href="javascript:;" url="0" class="mr55 cart_slide_item cartSlideItemAll cart_slide_item_cur  ">
@@ -105,7 +106,7 @@
                 <div class="cart_num cart_counter">
                     <span class="cart_num_reduce">
                     </span>
-                    <input class="cnt" type="text" name="quantity" value="1" class="qty" style="width: 30px;height: 23px; text-align: center;">
+                    <input class="cnt" type="text" name="quantity" value="{{$v->cnt}}" class="qty" style="width: 30px;height: 23px; text-align: center;">
                     <span class="cart_num_add">
                     </span>
                 </div>
@@ -113,7 +114,7 @@
             <td class="cart_alcenter" style="text-align: center">
                 ¥
                 <span class="xiaoji">
-                    {{$v->price}}
+                    {{$v->price*$v->cnt}}
                 </span>
             </td>
             <td class="cart-product-remove" style="text-align: center">
@@ -134,7 +135,7 @@
 
               <h5 class="mb20">您的购物车还是空的，赶快去挑选商品吧！</h5>
               <ul class="cart_empty_list">
-                  <li>去看看大家都喜欢的<a href="/home/index" class="cart_red cart_uline">潮流单品</a></li>
+                  <li>去看看大家都喜欢的<a href="/home/index" class="cart_red cart_uline ">潮流单品</a></li>
                   
               </ul>
           </div>
@@ -149,6 +150,75 @@
 
 
 
+         
+
+         
+
+
+          $('#w').click(function(){
+
+
+
+            var a = $(this).is(':checked');
+
+
+
+
+            
+
+            if(a){
+
+              
+
+              var auth = '1';
+
+              $.get('/home/car/gid',{auth:auth},function(data){
+
+              });
+            } else {
+             
+                var auth = '0';
+
+                $.get('/home/car/gid',{auth:auth},function(data){
+                });
+
+            }
+
+            
+
+            
+          })
+         
+
+
+            $('.txt').click(function(){
+
+              $(this).each(function(){
+                 var gid =  $(this).attr('cid');
+                  console.log(gid);
+                  
+               var a = $(this).is(':checked');
+
+               if(a){
+                    var auth = '1';
+                $.get('/home/car/scdz',{id:gid,auth:auth},function(data){
+                  console.log(data);
+                });
+               } else {
+                    var authl = '0';
+                $.get('/home/car/scdz',{id:gid,auth:authl},function(data){
+                  console.log(data);
+                });
+
+               }
+                
+
+                
+              })
+              
+            })
+
+
         </script>     
     
 
@@ -158,7 +228,19 @@
       
 
       <div class="cart_paybar wrap" >
-          <a href="#" class="cart_paybtn fr cart_paybtn_disable"  id="e"> 去付款</a>
+          <a href="#" class="
+
+
+         
+
+
+
+          cart_paybtn fr  cart_paybtn_disable
+
+         
+
+
+          "  id="e"> 去付款</a>
 
 
                   <div class="cart_paybar_info_cost cart_deep_red cart_bold cart_font26 cart_money fr goodsSum">
@@ -182,7 +264,7 @@
 
 
 <script>
-
+                  
 
                    $('.cart_num_add').click(function(){
 
@@ -330,46 +412,37 @@
         $('.amounts').text(num = accAdd(num,ji));
       
         
+
+         
+
+
+
+
           
          }) 
 
-          var a = document.getElementById("money").innerHTML;
-            if(a == 0){
-
-              $('#e').html(`<a href="#" class="cart_paybtn fr cart_paybtn_disable"  id="e">去付款</a>`);
-            } else {
-              $('#e').html(`<a href="##/home/car/scdz" class="cart_paybtn fr"  id="e">去付款</a>`);
-            
-               $('#e').click(function(){
-               
-               $('.txt:checked').each(function(){
-                
-                  
-                
-               var gid =  $(this).attr('cid');
-
-               console.log(gid);
-
-
-                
-                 $.get('/home/car/scdz',{id:gid},function(data){
-
-                    console.log(data);
-                  });
-               
-             });
-
-
-            })
-
-
-
-
-            }  
+         
+           ee()
             
               
           
     }
+
+
+   function ee() {  var a = document.getElementById("money").innerHTML;
+            if(a == 0){
+
+              $('#e').html(`<a href="#" class="cart_paybtn fr cart_paybtn_disable"  id="e">去付款</a>`);
+            } else {
+              $('#e').html(`<a href="/home/cardddz" class="cart_paybtn fr"  id="e">去付款</a>`);
+            
+           
+
+
+
+
+            } 
+          }
 
 
 
@@ -377,12 +450,12 @@
     $('.txt').click(function(){
 
 
-      $(this).attr('checked');
+            $(this).attr('checked');
       
        
-      $('.txt').each(function(){
+            $(this).each(function(){
 
-      if(!$(this).is(':checked')){
+          if(!$(this).is(':checked')){
 
         $('.amounts').text(0);
         $('#w').removeAttr('checked');
@@ -390,7 +463,7 @@
       if($(this).is(':checked')){
 
         $('.amounts').text(0);
-        $('#w').attr('checked',true);
+        $('#w').attr('checked');
       }
 
 
@@ -405,7 +478,9 @@
   function CheckAll(value){
 
     $(':checkbox').attr("checked",value);
-     // func()
+     
+      // var a = $(':checkbox').is("checed",value);
+      // alert(a);
 
 
      $(':checkbox').each(function(){
@@ -413,9 +488,11 @@
       if(!$(this).is(':checked')){
 
         $('.amounts').text(0);
+        ee()
       }
 
      })
+     ee()
   }
 
    $(':checkbox').click(function(){

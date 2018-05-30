@@ -9,6 +9,7 @@ use Hash;
 
 use Gregwar\Captcha\CaptchaBuilder;  
 use Session;
+use Mail;
 
 
 class LoginController extends Controller
@@ -17,6 +18,12 @@ class LoginController extends Controller
     public function login()
     {
        // dump(Session::get('code'));
+      // dd($_SERVER);
+      // 获取上一个页面
+      //session(['prevPge'=>$_SERVER['HTTP_REFERER']]);
+
+
+
     	return view('home.login.login',['title'=>'登录_iluck']);
     }
 
@@ -57,7 +64,8 @@ class LoginController extends Controller
     	$res = $request->input('uname');
     	$data = DB::table('user')->where('uname',$res)->first();
         // dd($data);
-       
+      
+
       //判断用户名
     	if(!$data){
 
@@ -86,22 +94,99 @@ class LoginController extends Controller
 
 
         session(['uid'=>$data->uid]);
+        session(['uname'=>$data->uname]);
 
-    	return redirect('home/index');
+    	return redirect('/home/index');
    		 
    }
 
-
+   // 前台退出的方法
   public function loginout(Request $request)
   {
     //删除session
-        $request->session()->forget('uid');
+        $request->session()->flush();
 
         return redirect('home/login');
   }
 
 
+  public function zhaohui()
+  {
+    // var_export($_POST);
+
+    if ($_POST) {
+      //接收数据
+
+      $email = $_POST['email'];
+      // 获取数据
+      // $data = DB::table('user')->where('email','$email')->first();
+      $data = DB::table('user',$email)->first();
+      // dd($data);
+
+      //判断数据是否正确
+      if ($data) {
+        
+          Mail::send('Mail.index',['uid'=>$data->uid],function($message) use($email){
+          $message->to($email);
+          $message->subject("找回密码");
+        });
+
+          //加载找回密码的提示页面
+          $mailArr = explode('@',$email);
+
+          // dd($mailArr);
+
+          $href = 'mail.'.$mailArr[1];
+
+          return view('home.zh')->with('href',$href);
+
+      } else {
+
+        return back();
+
+      }
+
+    } else {
+
+      return view('home.zhmm.zhmm');
+
+    }
+    
+  }
 
 
+  //重置密码
+  public function savePass($uid)
+  {
+    // var_dump($_POST);
+    //判断post是否存在 存在修改密码  不存在显示修改页面
+    if ($_POST) {
+      //判断密码是否一致
+      if ($_POST['password']==$_POST['repass']) {
+        //判断密码长度
+        if (strlen($_POST['password'])>=8 && strlen($_POST['password'])<=16) {
+          //格式化数据并且修改
+          $data = array();
+          // $data['_token'] = str_random(50);
+          $data['password'] = Hash::make($_POST['password']);
+
+          if (DB::table('user')->where('uid',$uid)->update($data)) {
+            # code...
+            return redirect('/home/login');
+          } else {
+            return back();
+          }
+
+        } else {
+          return back();
+        }
+      } else {
+        return back();
+      }
+    } else {
+
+      return view('home.savePass.save');
+    }
+  }
 }
 

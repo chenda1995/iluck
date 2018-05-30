@@ -16,11 +16,12 @@ class ShowController extends Controller
     public function index(Request $request)
     {
 
+        $arr = $request->all();
         //获取数据
         $res = DB::table('broadcast')->orderBy('bid','asc')->paginate($request->input('num',5));
 
         $num = $request->input('num');
-        return view('admin.carousel.index',['title'=>'轮播图列表','num'=>$num,'res'=>$res]);
+        return view('admin.carousel.index',['title'=>'轮播图列表','num'=>$num,'res'=>$res,'request'=>$arr,]);
     }
 
     /**
@@ -46,28 +47,28 @@ class ShowController extends Controller
 
 
         //去掉不要的字段
-         $res = $request->except('_token','cid','statics','brand');
+         // $res = $request->except('_token');
          // dump($res);
 
-        if($request->hasFile('bprofile')) {
+        if($request->hasFile('bsrc')) {
 
             $name = rand(1111,9999).time();
 
             // dump($name);
 
             //获取后缀
-            $suffix = $request->file('bprofile')->getClientOriginalExtension();
+            $suffix = $request->file('bsrc')->getClientOriginalExtension();
 
 
             //移动
-            $path = $request->file('bprofile')->move('./uploads/',$name.'.'.$suffix);
+            $path = $request->file('bsrc')->move('./uploads/',$name.'.'.$suffix);
 
             //去掉不需要的字段
-             $res = $request->except('_token','cid','statics','brand');
+             $res = $request->except('_token');
              // dump($res);
 
             //存到数据表
-            $res['bprofile'] = '/uploads/'.$name.'.'.$suffix;
+            $res['bsrc'] = '/uploads/'.$name.'.'.$suffix;
 
 
 
@@ -104,12 +105,12 @@ class ShowController extends Controller
     public function edit($id)
     {
         //
-        //获取数据
+        // //获取数据
         $res = DB::table('broadcast')->where('bid',$id)->first();
 
-        // dump($res);
+        // // dump($res);
 
-        //显示在模板
+        // //显示在模板
         return view('admin.carousel.edit',['title'=>'轮播的修改页面','res'=>$res]);
 
 
@@ -127,25 +128,25 @@ class ShowController extends Controller
     {
 
 
-        if($request->hasFile('bprofile')) {
+        if($request->hasFile('bsrc')) {
 
             $name = rand(1111,9999).time();
 
-            // dump($name);
+        //     // dump($name);
 
-            //获取后缀
-            $suffix = $request->file('bprofile')->getClientOriginalExtension();
+        //     //获取后缀
+            $suffix = $request->file('bsrc')->getClientOriginalExtension();
 
 
-            //移动
-            $path = $request->file('bprofile')->move('./uploads/',$name.'.'.$suffix);
+        //     //移动
+            $path = $request->file('bsrc')->move('./uploads/',$name.'.'.$suffix);
 
-            //去掉不需要的字段
-             $res = $request->except('_token','_method','cid','statics','brand');
-             // dump($res);
+        //     //去掉不需要的字段
+             $res = $request->except('_token','_method');
+        //      // dump($res);
 
-            //存到数据表
-            $res['bprofile'] = '/uploads/'.$name.'.'.$suffix;
+        //     //存到数据表
+            $res['bsrc'] = '/uploads/'.$name.'.'.$suffix;
 
 
 

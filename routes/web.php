@@ -24,6 +24,10 @@ Route::get('home/login','home\LoginController@login');
 Route::post('home/logindo','home\LoginController@logindo');  //登录
 Route::get('home/loginout','home\LoginController@loginout');  //退出
 Route::get('home/code','home\LoginController@code');  //验证码
+Route::any('home/zhaohui','home\LoginController@zhaohui');  //找回密码  any支持多种方法
+Route::any('home/savePass/{uid}','home\LoginController@savePass');  //修改密码
+
+
 
 Route::get('home/register','home\RegisterController@register');  //注册页面
 Route::post('home/zhuce','home\RegisterController@zhuce');  // 注册
@@ -47,7 +51,7 @@ Route::group(['middleware'=>'login'],function(){
 	// 修改管理员密码
 	Route::get('admin/pass','admin\LoginController@pass');
 	Route::post('admin/changepass','admin\LoginController@changePass');
-	
+
 
 	//用户管理
 	Route::resource('admin/user','admin\UserController');
@@ -90,6 +94,12 @@ Route::group(['middleware'=>'login'],function(){
 
     //后台轮播图
     Route::resource('admin/show','admin\ShowController');
+
+    //后台广告管理
+    Route::resource('admin/adv','admin\AdvController');
+
+    //限时抢购
+    Route::resource('admin/kill','admin\KillController');
 
 
 });
@@ -135,6 +145,8 @@ Route::group([],function(){
 
 	Route::get('home/car/jian','home\CarController@jian');
 
+	Route::get('home/car/gid','home\CarController@gid');
+
 	//购物车生成地址
 	Route::get('home/car/scdz','home\CarController@scdz');
 
@@ -144,14 +156,42 @@ Route::group([],function(){
 
 	Route::post('home/carupdatedo','home\CarController@carupdatedo');
 
+	Route::get('home/cardddz','home\CarController@dddz');
+
 	//订单
 	Route::get('home/orderindex','home\OrderController@index');
 
+	Route::get('home/orderddxq','home\OrderController@ddxq');
 
-	
+	Route::get('home/order/shouhuo','home\OrderController@shouhuo');
+
+	Route::get('home/order/xq/{id}','home\OrderController@xq');
+
+	Route::get('home/order/del','home\OrderController@del');
+
+	//订单回收
+	Route::get('home/rec/index','home\RecoveryController@index');
+
+	Route::get('home/rec/huanyuan/{id}','home\RecoveryController@huanyuan');
+
+	Route::get('home/rec/del/{id}','home\RecoveryController@del');
+
+
+
 	//商品列表页
 	Route::get('home/list/{id}','home\ListController@index');
 	//商品详情页
+
+	Route::get('home/spxq/{id}','home\SpxqController@index');
+
+
+	//我的收藏
+	Route::get('home/house','home\HouseController@index');
+
+
+	//限时抢购
+	Route::get('home/goodkill','home\GoodkillController@goodkill');
+
 	Route::get('home/spxq/{id}','home\SpxqController@index');
 
 

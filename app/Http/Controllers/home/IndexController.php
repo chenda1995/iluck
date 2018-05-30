@@ -9,12 +9,21 @@ use Common;
 
 class IndexController extends Controller
 {
-    //显示首页
+
+
+
+
+
+
     public function index()
     {
         //查询轮播图
         $show = DB::table('broadcast')->get();
         // dd($show);
+
+        //获取广告数据
+
+        $addata = DB::table('ad')->get();
 
 
         //处理左侧分类
@@ -29,23 +38,21 @@ class IndexController extends Controller
         // 格式化数据
         $data = array(
             "show"=>$show,
-            "type"=>$type
+            "type"=>$type,
+            'addata'=>$addata
 
         );
-
         //获取分类
         $res = Common::getTypeMassage(0);
       
-        return view('home.index',[
-            'res'=>$res
-        ]);
+        
 
         return view('home.index',['title'=>'商城前台首页','res'=>$res])->with($data);
 
 
     }
 
-    
+
 
 
 	//处理分类数据
@@ -56,19 +63,19 @@ class IndexController extends Controller
 
 		// 获取数据
 		foreach ($data as $k => $v) {
-			
+
 			if ($v->pid==$pid) {
-				
+
 				$newArr[$v->cid] = $v;
 				$newArr[$v->cid]->zi = $this->checkTypeData($data,$v->cid);
 			}
 		}
-		//返回数据	
+		//返回数据
 		return $newArr;
 	}
 
 
-   
+
 
 
 }

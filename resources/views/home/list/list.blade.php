@@ -166,7 +166,9 @@
                                 target="_blank">
                                     找相似
                                 </a>
+
                                 <a rel="nofollow" href="/home/spxq/{{$v->gid}}"
+
                                 class="img pagani_log_link J_dynamic_imagebox loading_bg_120 J_loading_success"
                                 target="_blank" suffix-model="goods_dpr" suffix-ratio="3:4" img-src="http://s3.mogucdn.com/mlcdn/c45406/180414_7efke8aee07jfd02j3cae4ba5kl13_640x960.jpg"
                                 need-remove="no" data-log-bkey="..0" data-ext-acm="3.ms.1_4_1lxe82g.15.1343-76374-69000.0Q42TqRE3L6pK.sd_117_116_116-swt_15-imt_6-c_1_3_361422889_0_0_3-t_0Q42TqRE3L6pK-lc_3-fcid_50249-pid_180-pit_1-bid_15-idx_0-dm1_5002"
@@ -238,17 +240,8 @@
                 }
             })();
         </script>
-        <!-- <script src="/home/js/mwp.pc.js"> -->
-        </script>
-        <!-- <script type="text/javascript" src="/home/js/doT.js"> -->
-        </script>
-        <!-- <script type="text/javascript" src="/home/js/imageLazyload.js"> -->
-        </script>
-        <!-- this page js-->
-        <!-- <script src="/home/js/pc_selection_wall.js"> -->
-        </script>
-        <!-- <script src="/home/js/index.js"> -->
-        </script>
+
+        
         <script>
             (function(i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;

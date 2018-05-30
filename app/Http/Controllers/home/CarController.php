@@ -8,12 +8,48 @@ use DB;
 
 class CarController extends Controller
 {
-    public function index()
+    public function index($id)
 	{
-		$res = DB::table('car')->orderBy('id','asc')->get();
 		
 
-		return view('home.cart.car',['title'=>'iluck购物车','res'=>$res]);
+
+
+		
+		$res = DB::table('car')->where('uid',session('uid'))->orderBy('id','asc')->get();
+
+		
+			
+
+		
+		$sum = 0 ;
+		foreach ($res as $k => $v) {
+			//var_dump($v->price*$v->cnt);
+			$a =  $v->price*$v->cnt;
+
+			$sum += $a;
+
+
+			
+
+		
+
+
+
+
+		
+
+			
+
+
+		}
+		
+
+		
+		
+
+		
+
+		return view('home.cart.car',['title'=>'iluck购物车','res'=>$res,'sum'=>$sum]);
 	}
 
 	public function del(Request $request)
@@ -62,26 +98,39 @@ class CarController extends Controller
 
 	public function scdz(Request $request)
 	{
-		$arr = $request->all();
 
-		//var_dump($arr);
+		 $arr = $request->all();
+		// var_dump($arr);
 
-		$a['auth'] =  '1';
-		$b['auth'] = '0';
-		
-		session(['uid'=>'85']);
-		$res = DB::table('car')->where('uid',session('uid'))->update($b);
-		  $arr = DB::table('car')->where($arr)->update($a);
+		 $id = $arr['id'];
+		 $auth['auth'] = $arr['auth'];
 
-		  //var_dump($res);
+		 DB::table('car')->where('id',$id)->update($auth);
+
+
+
 		  
 
 
 		
 
-		 return view('home.cart.car2',['title'=>'确认订单']);
+
+
+		 // return view('home.cart.car2',['title'=>'确认订单']);
+
 
 		
+	}
+	//全选或反选
+	public function gid(Request $request)
+	{
+		$arr = $request->all();
+		 //var_dump($arr);
+
+		 
+		 $auth['auth'] = $arr['auth'];
+
+		 DB::table('car')->where('uid',session('uid'))->update($auth);
 	}
 
 	public function cardizhi(Request $request)
@@ -123,5 +172,10 @@ class CarController extends Controller
 
         	return back();
         }
+    }
+
+    public function dddz()
+    {
+    	return view('home.cart.car2',['title'=>'确认订单']);
     }
 }

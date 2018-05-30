@@ -608,9 +608,10 @@ ins{
 	z-index: 2;
 }
 .slide-show{
-	width: 5100px;
+	width: 5250px;
 	list-style: none;
 	position: absolute;
+    margin-left:0px;
 	
 }
 .slide-show li{
