@@ -20,7 +20,7 @@ class TypeController extends Controller
         select(DB::raw('*,concat(path,cid) as paths'))->
         orderBy('paths')->
         where('cname','like','%'.$request->input('search').'%')->
-        paginate(5);
+        paginate(15);
 
         foreach($res as $k => $v){
             //获取path路径
@@ -79,7 +79,7 @@ class TypeController extends Controller
         
             $res['path'] = $data->path.$data->cid.',';
         }
-        
+
         $data = DB::table('goods_type')->insert($res);
 
         if($data){
@@ -130,10 +130,12 @@ class TypeController extends Controller
     {
         //
         $res = $request->except('_token','_method');
+        $path = $request->file('tpic')->store('public/type');
+        $res['tpic'] = str_replace('public', 'storage', $path);   
 
         $data = DB::table('goods_type')->where('cid',$id)->update($res);
 
-        if(isset($res['status'])) {
+        if(isset($res['onlystatus'])) {
             return ['code' => 1];
 
         }

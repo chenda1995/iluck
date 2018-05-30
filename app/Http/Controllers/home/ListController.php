@@ -24,7 +24,7 @@ class ListController extends Controller
             	$item->gpic = json_decode($item->gpic);
            		return $item;         
         	}); 
-        	// print_r($goods);die;
+        	// print_r($type);die;
         	
 			return view('home.list.list',[
     		'title'=>'商品列表',

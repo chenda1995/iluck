@@ -35,7 +35,7 @@
                                             <input type="text" id="user-weibo" name="cname">
                                         </div>
                                     </div>
-                                
+
                                     <div class="am-form-group">
                                         <label for="user-intro" class="am-u-sm-3 am-form-label">状态</label>
                                         <div class="am-u-sm-9">

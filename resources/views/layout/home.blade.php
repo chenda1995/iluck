@@ -101,43 +101,31 @@
 
 
     </div>
+
+    <?php
+        $res = DB::table('user')->where('uid',session('uid'))->first();
+        // dd($res);
+    ?>
   
     <div class="head">
        <div class="head-top">
-          <ul>
-
-          <li class="gouwuche">
-
-                <a class="gwc" href="/home/cart">
-                    购物车
-                    
-                </a>
-          </li>
-
-          <li class="dingdan"><a class="dd" href="/home/orderindex">我的订单</a></li>
-          <li >
-
-=
-            
+        <ul>
+            <li><a href="/home/cart">购物车&nbsp;<span>|</span></a></li>
+            <li><a href="/home/orderindex">我的订单&nbsp;<span>|</span></a></li>
+          
             @if(session('uid'))
-                <li><a href="/home/loginout">退出</a></li>
-
-                <li><a href="/home/userdetails" style="color: red">
-
-                    
-                    欢迎
-
-                    <span>|</span> </a></li>
-            @else
+                <li><a href="/home/loginout">退出&nbsp;<span>|</span></a></li>
+                <li><a href="/home/userdetails" style="color: red">欢迎{{$res->uname}}&nbsp;</a></li>
+             @else
                 <li><a href="/home/login">请登录</a></li>
             @endif
-            
+                
 
             </a>
-        </li>
-          <li ><a class="zc" href="/home/register">注册</a></li>
+         
+            <li ><a class="zc" href="/home/register">注册</a></li>
 
-          </ul>
+        </ul>
 
 
         </div>
