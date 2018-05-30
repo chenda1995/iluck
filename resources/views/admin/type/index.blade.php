@@ -159,6 +159,7 @@
                            data :{ 
                                 _method : 'PUT',
                                 status : sta,
+                                onlystatus : 1
                             },
                            success: function(data, textStatus, jqXHR ){                      
                                 if (data.code > 0){

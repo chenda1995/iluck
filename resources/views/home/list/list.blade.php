@@ -35,12 +35,12 @@
                         <div class="sp_topbanner clearfix" id="sp_topbanner">
                             <div class="sp_top_nav">
                                 <ul class="nav_list">
-                                    <li class="on">
+                                    <li>
                                         <a href="1">
                                             上衣
                                         </a>
                                     </li>
-                                    <li>
+                                    <li >
                                         <a href="40">
                                             裙子
                                         </a>
@@ -107,18 +107,18 @@
                                         </dt>
                                         <dd>
                                             <a class="cat_img" href="http://list.mogujie.com/book/clothing/51831?mt=12.848.r82919.3253#sp_topbanner">
-                                                <img src="170822_2i5g2ge52lc9ld5ckb7e6jkd60f1d_160x160.jpg">
+                                                <img src="{{ URL::asset($v->tpic)}}">
                                             </a>
-                                            @foreach($v->type as $kk=>$vv)
                                             <ul>
+                                            @foreach($v->type as $kk=>$vv)
                                                 <li>
                                                     <a href="http://list.mogujie.com/book/clothing/50273?mt=12.848.r82960.3253#sp_topbanner"
                                                     class="pagani_log_link" data-log-bkey="">
                                                     {{$vv->cname}}
                                                     </a>
                                                 </li>                                              
-                                            </ul>
                                             @endforeach
+                                            </ul>
                                         </dd>
                                     </div>
                                  @endforeach
@@ -260,7 +260,19 @@
             ga('send', 'pageview');
         </script>
        
+        <script>
 
+            var lis = $('.nav_list li')
+            for (var i = 0; i < lis.length; i++) {
+                lis[i].onmousedown =  function () { 
+                    $(this).addClass('on'); 
+                };
+                   
+                lis[i].onmousout = function () { 
+                    $(this).removeClass('on'); 
+                };
+            }
+        </script>  
 
 
 @endsection
