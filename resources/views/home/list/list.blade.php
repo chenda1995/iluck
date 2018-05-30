@@ -7,126 +7,18 @@
 
         <!--## PC公用Logo & 搜索-->
         <!-- 中间区域 -->
-        <div class="header_mid clearfix">
-            <div class="wrap">
-                <a rel="nofollow" href="http://www.mogujie.com/" class="logo" title="蘑菇街首页"
-                style="background-image: none;">
-                    <img src="/home/商品列表_files/170904_1fj9406416501i4lkabcc0hjb8341_480x180.png"
-                    alt="蘑菇街，我的买手街">
-                </a>
-                <div class="normal-search-content">
-                </div>
-                <div class="mid_fr">
-                    <img src="/home/商品列表_files/180510_0hk5cb4l87bjlc65k0253jfclk2b3_440x180.png"
-                    alt="蘑菇街，我的买手街">
-                </div>
-            </div>
-        </div>
+        
         <input type="hidden" id="J_searchbar_flag" value="show">
         <!--页面内容-->
       
-        <div id="body_wrapp">
+        <div id="body_wrapp" style="margin-top: 115px;">
             <div class="wrap">
                 <!--隐藏域不要了,用来拼接_b_key的前一位.的-->
                 <!--<input type="hidden" id="pagani_log_partc" value="jiadian_0" />
                 -->
                 <div id="condition_box">
                     <div id="search_condition_box">
-                        <div class="sp_topbanner clearfix" id="sp_topbanner">
-                            <div class="sp_top_nav">
-                                <ul class="nav_list">
-                                    <li class="on">
-                                        <a href="1">
-                                            上衣
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="40">
-                                            裙子
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="70">
-                                            裤子
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="99">
-                                            内衣
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="127">
-                                            鞋子
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="205">
-                                            包包
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="279">
-                                            配饰
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="169">
-                                            男友
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="242">
-                                            美妆
-                                        </a>
-                                    </li>
-                                   
-                                    <li>
-                                        <a href="313">
-                                            家居
-                                        </a>
-                                    </li>
-                                
-                                  
-                                </ul>
-                            </div>
-                            <div class="sp_type_nav" data-ptp="_cate">
-                                <a class="right_img" target="_blank" href="http://list.mogujie.com/book/clothing/10054926?acm=3.mce.1_10_1h11s.874..2EfNHqRE3KJTT.pos_0-m_397228-sd_119">
-                                    <img src="/home/商品列表_files/180306_7dk8a09l7b577e3icc724194ah1k0_200x240.jpg">
-                                </a>
-                                <div class="type_sections">
-                                 
-                                    @foreach($type as $k=>$v)
-                                    <div class="type_section first">
-                                        
-                                       <dt>
-                                            <a href="http://list.mogujie.com/book/clothing/51831?mt=12.848.r82919.3253#sp_topbanner">
-                                                {{$v->cname}}
-                                            </a>
-                                        </dt>
-                                        <dd>
-                                            <a class="cat_img" href="http://list.mogujie.com/book/clothing/51831?mt=12.848.r82919.3253#sp_topbanner">
-                                                <img src="170822_2i5g2ge52lc9ld5ckb7e6jkd60f1d_160x160.jpg">
-                                            </a>
-                                            @foreach($v->type as $kk=>$vv)
-                                            <ul>
-                                                <li>
-                                                    <a href="http://list.mogujie.com/book/clothing/50273?mt=12.848.r82960.3253#sp_topbanner"
-                                                    class="pagani_log_link" data-log-bkey="">
-                                                    {{$vv->cname}}
-                                                    </a>
-                                                </li>                                              
-                                            </ul>
-                                            @endforeach
-                                        </dd>
-                                    </div>
-                                 @endforeach
-
-                                  
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                     <h3 class="sub_title" id="category_all">
                         衬衫
@@ -167,12 +59,10 @@
                                     找相似
                                 </a>
 
-                                <a rel="nofollow" href="/home/spxq/{{$v->gid}}"
+                                <a  gid="{{$v->gid}}"  href="/home/spxq/{{$v->gid}}"
 
-                                class="img pagani_log_link J_dynamic_imagebox loading_bg_120 J_loading_success"
-                                target="_blank" suffix-model="goods_dpr" suffix-ratio="3:4" img-src="http://s3.mogucdn.com/mlcdn/c45406/180414_7efke8aee07jfd02j3cae4ba5kl13_640x960.jpg"
-                                need-remove="no" data-log-bkey="..0" data-ext-acm="3.ms.1_4_1lxe82g.15.1343-76374-69000.0Q42TqRE3L6pK.sd_117_116_116-swt_15-imt_6-c_1_3_361422889_0_0_3-t_0Q42TqRE3L6pK-lc_3-fcid_50249-pid_180-pit_1-bid_15-idx_0-dm1_5002"
-                                data-ptp-customc="">
+                                class="qwe img pagani_log_link J_dynamic_imagebox loading_bg_120 J_loading_success"
+                                 >
                                     <img class="J_dynamic_img fill_img" src="{{ URL::asset($v->gpic[0]) }}"
                                     alt="">
                                 </a> 
@@ -202,6 +92,20 @@
                                 
                             </div>
                     @endforeach
+
+                   <!--  <script>
+                        
+                            $('.qwe').click(function(){
+                                $(this).each(function(){
+                                   var gid = $(this).attr('gid');
+                                   
+                                   $.get('/home/cardo1',{gid:gid},function(data){
+                            
+                                   });
+                                })
+                            })
+
+                    </script> -->
                        </div>
                     </div>
                 </div>

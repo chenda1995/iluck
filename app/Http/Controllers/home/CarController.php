@@ -5,15 +5,17 @@ namespace App\Http\Controllers\home;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use DB;
+use Session;
 
 class CarController extends Controller
 {
-    public function index($id)
+    public function index()
 	{
 		
 
+		
 
-
+		
 		
 		$res = DB::table('car')->where('uid',session('uid'))->orderBy('id','asc')->get();
 
@@ -21,27 +23,7 @@ class CarController extends Controller
 			
 
 		
-		$sum = 0 ;
-		foreach ($res as $k => $v) {
-			//var_dump($v->price*$v->cnt);
-			$a =  $v->price*$v->cnt;
-
-			$sum += $a;
-
-
-			
-
-		
-
-
-
-
-		
-
-			
-
-
-		}
+	
 		
 
 		
@@ -49,7 +31,7 @@ class CarController extends Controller
 
 		
 
-		return view('home.cart.car',['title'=>'iluck购物车','res'=>$res,'sum'=>$sum]);
+		return view('home.cart.car',['title'=>'iluck购物车','res'=>$res]);
 	}
 
 	public function del(Request $request)

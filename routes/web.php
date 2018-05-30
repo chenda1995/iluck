@@ -37,9 +37,7 @@ Route::post('home/ycode','home\RegisterController@ycode');  //手机验证码
 
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'home\IndexController@go');
 
 //后台控制组
 
@@ -134,6 +132,14 @@ Route::group([],function(){
 
 
 	Route::get('home/dizhi/auth','home\AddressController@auth');
+
+	//生成购物车
+	Route::get('home/cardo1','home\CardoController@cardo1');
+
+	Route::get('home/cardo2','home\CardoController@cardo2');
+
+	Route::get('home/cardo','home\CardoController@cardo');
+
 
 
 	//购物车

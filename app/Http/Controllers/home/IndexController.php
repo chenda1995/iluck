@@ -73,6 +73,10 @@ class IndexController extends Controller
 		//返回数据
 		return $newArr;
 	}
+    public function go ()
+    {
+         return redirect('/home/index');
+    }
 
 
 

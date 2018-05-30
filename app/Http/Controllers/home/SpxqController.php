@@ -23,6 +23,7 @@ class SpxqController extends Controller
     	$goods->gpic = json_decode($goods->gpic);
     	$goods->size = explode(',', $goods->size);
     	$goods->color = explode('，', $goods->color);
+        // $cardo = DB::table('car')
     	
     	// var_dump($goods);die;
     	return view('home.spxq.spxq',[
