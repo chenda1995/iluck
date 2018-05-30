@@ -2947,17 +2947,18 @@
             // $('.pic-box').html($('.pic-box').text());
         </script>
         <script type="text/javascript">
-            var imgs = document.getElementById('listimgs').getElementsByTagName('img');
-            var bigImg = document.getElementById('J_BigImg');
+
+            var imgs =  $("#listimgs img");
 
             for (var i = 0; i < imgs.length; i++) {
                 
                 imgs[i].onmouseover = function(){
+                    
                     //获取当前的img里面src的值
-                    var limgs = this.getAttribute('src');
-
+                    var limgs = this.src;
+                    
                     $(this).parent().addClass('c');
-                    bigImg.setAttribute('src',limgs);
+                    $('#J_BigImg').attr('src',limgs);
                 }
 
                 imgs[i].onmouseout = function(){
