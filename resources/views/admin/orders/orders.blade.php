@@ -65,7 +65,7 @@
                                                 <th>订单金额</th>
                                                 <th>订单数量</th>
                                                 <th>订单时间</th>
-                                                <th>订单状态</th>
+                                               
                                                 <th>订单操作</th>
                                             </tr>
                                         </thead>
@@ -81,28 +81,7 @@
                                                 <td>{{$v->sum}}</td>
                                                 <td>{{$v->cnt}}</td>
                                                 <td>{{date('Y-m-d H:i:s',$v->otime)}}</td>
-                                                <td>
-                                                    @if($v->status == 1)
-
-                                                    <a class="w"  href="" >点击发货</a>
-
-                                                    @endif
-
-                                                    @if($v->status == 2)
-
-                                                    <span style="color:yellow">等待收货</span>
-
-                                                    @endif
-                                                    @if($v->status == 3)
-
-                                                    <span style="color:#99cc33;">交易完成</span>
-
-                                                    @endif
-
-
-
-
-                                                    </td>
+                                                
                                                 <td>
                                                   <div class="tpl-table-black-operation">
                                                         <a href="/admin/orders/{{$v->oid}}/edit">

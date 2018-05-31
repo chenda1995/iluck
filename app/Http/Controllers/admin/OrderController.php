@@ -12,7 +12,7 @@ class OrderController extends Controller
     public function del($id)
     {
 		session(['id'=>'1']);
-    	$res = DB::table('orders')->where('oid',$id)->update(['auth' => 1]);
+    	$res = DB::table('orders')->where('oid',$id)->delete();
 
     	if($res){
     		return redirect('admin/orders');
@@ -35,6 +35,27 @@ class OrderController extends Controller
 
             echo 2;
     	}
+    }
+    public function status(Request $request)
+    {
+        $id = $request->all();
+
+        $id = $id['id'];
+
+
+
+        $status['status'] = '2';
+
+        DB::table('orders_details')->where('id',$id)->update($status);
+    }
+
+
+    
+    public function delete(Request $request)
+    {
+        $id = $request->all();
+        $id = $id['id'];
+        DB::table('orders_details')->where('id',$id)->delete();
     }
     	 
 }

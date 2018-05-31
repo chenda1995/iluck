@@ -60,9 +60,9 @@
                                 <dd>
                                 @foreach($v->type as $kk=>$vv)
                                     @if($kk==0) 
-                                    <ul class="clearfix" style="  font-size: 12px;float:left;display:inline;">
+                                    <ul class="clearfix" >
                                         @foreach($vv->type as $kkk=>$vvv)
-                                        <li><a href="list/{{$v->cid}}">{{$vvv->cname}}</a></li>
+                                        <li style="  float:left;"><a href="list/{{$v->cid}}">{{$vvv->cname}}</a></li>
                                         @endforeach   
                                     </ul> 
                                  </dd>
@@ -72,14 +72,14 @@
                                     <ul class="clearfix">
 
                                         @foreach($vv->type as $kkk=>$vvv)
-                                        <li><a href="list/{{$v->cid}}">{{$vvv->cname}}</a></li>
+                                        <li style="  float:left;"><a href="list/{{$v->cid}}">{{$vvv->cname}}</a></li>
                                         @endforeach  
                                     </ul>  
                                 <dt><a href="#">女神最爱</a></dt>
                                     @elseif($kk==2)
                                     <ul class="clearfix">
                                         @foreach($vv->type as $kkk=>$vvv)
-                                        <li><a href="list/{{$v->cid}}">{{$vvv->cname}}</a></li>
+                                        <li style="  float:left;"><a href="list/{{$v->cid}}">{{$vvv->cname}}</a></li>
                                         @endforeach   
                                     </ul>  
                                     @endif  

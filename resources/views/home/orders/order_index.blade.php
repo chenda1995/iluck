@@ -128,7 +128,7 @@ type="text/css">
                                     </p>
                                 </td>
                                 <td class="status" rowspan="1">
-                                    <p class="p">
+                                    <p class="ppp">
                                         @if($v1->status == '1')
                                         等待发货
                                         @endif
@@ -137,7 +137,7 @@ type="text/css">
                                         @endif
                                         @if($v1->status == '3')
                                         交易完成
-                                        <a href="/home/pingjia/{{$v1->gid}}">|去评价吧</a>
+                                        <a href="/home/pingjia/{{$v1->gid}}">|去评价</a>
                                         @endif
                                     </p>
                                     <a href="/home/order/xq/{{$v1->id}}"
@@ -171,7 +171,7 @@ type="text/css">
     <script src="/sanji/jquery-3.2.1.min.js"></script>
    
     <script>
-        $('.order-link').click(function(){
+        $('.order-remove').click(function(){
             $(this).each(function(){
 
                 var res = confirm('确定删除吗??');
@@ -196,16 +196,24 @@ type="text/css">
             //alert(123);
             $(this).each(function(){
 
-                var id = $(this).attr('gid');
+                var hid = $(this).attr('gid');
 
-                var gid = $(this).attr('cid');
 
-                console.log(gid);
 
-                $.get('/home/order/shouhuo',{id:id},function(data){
+                $(this).parent('.ppp').html(`交易完成<a href='/home/pingjia'>&nbsp;|去评价</a>`);
+
+                //alert(id);
+
+                
+
+                //console.log(hid);
+
+                $.get('/home/order/shouhuo',{id:hid},function(data){
                     //console.log(data);
+
                 })
-            $(this).parent('.p').html("交易完成<a href='/home/pingjia/{{$gid}}'>&nbsp;|去评价</a>");
+
+            
 
             })
         })

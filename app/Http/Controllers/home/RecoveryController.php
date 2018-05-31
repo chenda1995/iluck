@@ -38,4 +38,18 @@ class RecoveryController extends Controller
     		back();
     	}
     }
+
+    public function delete(Request $request)
+    {
+        $id = $request->all();
+        
+        DB::table('orders_details')->where($id)->delete();
+    }
+
+    public function huan(Request $request)
+    {
+        $id = $request->all();
+        $auth['auth'] = '0';
+        DB::table('orders_details')->where($id)->update($auth);
+    }
 }

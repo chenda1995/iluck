@@ -92,7 +92,7 @@
                                 </ul>
                             </div>
                             <div class="sp_type_nav" data-ptp="_cate">
-                                <a class="right_img" target="_blank" href="http://list.mogujie.com/book/clothing/10054926?acm=3.mce.1_10_1h11s.874..2EfNHqRE3KJTT.pos_0-m_397228-sd_119">
+                                <a class="right_img" target="_blank" href="#">
                                     <img src="/home/商品列表_files/180306_7dk8a09l7b577e3icc724194ah1k0_200x240.jpg">
                                 </a>
                                 <div class="type_sections">
@@ -106,13 +106,13 @@
                                             </a>
                                         </dt>
                                         <dd>
-                                            <a class="cat_img" href="http://list.mogujie.com/book/clothing/51831?mt=12.848.r82919.3253#sp_topbanner">
+                                            <a class="cat_img" href="">
                                                 <img src="{{ URL::asset($v->tpic)}}">
                                             </a>
                                             <ul>
                                             @foreach($v->type as $kk=>$vv)
                                                 <li>
-                                                    <a href="http://list.mogujie.com/book/clothing/50273?mt=12.848.r82960.3253#sp_topbanner"
+                                                    <a href="#"
                                                     class="pagani_log_link" data-log-bkey="">
                                                     {{$vv->cname}}
                                                     </a>

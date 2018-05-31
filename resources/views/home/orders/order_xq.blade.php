@@ -148,11 +148,11 @@
                                         等待发货
                                         @endif
                                         @if($v->status == '2')
-                                        <a href="#" class="shouhuo" gid="{{$v->id}}">>>确认收货<<</a>
+                                        <a href="#" class="sshouhuo" gid="{{$v->id}}">>>确认收货<<</a>
                                         @endif
                                         @if($v->status == '3')
                                         交易完成
-                                        <a href="#">|去评价吧</a>
+                                        <a href="#">|去评价</a>
                                         @endif
                                     </span>
                                 </div>
@@ -198,18 +198,23 @@
 </div>
 </div>
 </div>
+<script src="/sanji/jquery-3.2.1.min.js"></script>
   <script>
-        $('.shouhuo').click(function(){
-            $(this).each(function(){
+
+
+        $('.sshouhuo').click(function(){
+            
 
                 var id = $(this).attr('gid');
 
-                $.get('/home/order/shouhuo',{id:id},function(data){
-                    console.log(data);
-                })
-            $(this).parent('.wait_pay').html('交易完成<a href="#">&nbsp;|去评价吧</a>');
+               // alert(id);
 
-            })
+                $.get('/home/order/shouhuo',{id:id},function(data){
+                    //console.log(data);
+                })
+            $(this).parent('.wait_pay').html('交易完成<a href="#">&nbsp;|去评价</a>');
+
+            
         })
 
 

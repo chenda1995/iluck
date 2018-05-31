@@ -55,8 +55,7 @@
     <!--订单-->
     <div style="left: 0px;" class="sidebar-item mgj-my-cart">
         <a target="_blank" href="/home/orderindex" rel="nofollow">
-            <i class="s-icon">
-            </i>
+            
             <div class="s-txt">
                 我的订单
             </div>
@@ -88,7 +87,10 @@
         </div>
     </div>
 </div>
-
+<?php
+        $res = DB::table('user')->where('uid',session('uid'))->first();
+        // dd($res);
+    ?>
 <div id="header" class="site-top-nav J_sitenav" data-ptp="_head" >
     <div class="wrap">
         <a href="/home/index" rel="nofollow" class="home fl">
@@ -96,41 +98,27 @@
         </a>
         <ul class="header-top">
             <li class="s1 has-icon user-meta">
-                <a rel="nofollow" href="javascript:;">
+                 @if(session('uid'))
+                 <a href="/home/userdetails" style="color: red">
+
+                    
+                    欢迎
+
+                    <span>|</span> <?php echo $res->uname; ?> </a>
+                    <a href="/home/loginout">退出</a>
+                    @else
+                <a rel="nofollow" href="/home/login">
                     登录
                 </a>
+                 @endif
                 <a rel="nofollow" href="#" target="_blank">
                 </a>
                 <i class="icon-delta">
                 </i>
-                <ol class="ext-mode" id="menu-personal">
-                    <li class="s2">
-                        <a target="_blank" rel="nofollow" href="/home/userdetails">
-                            个人设置
-                        </a>
-                    </li>
-                    <li class="s2">
-                        <a rel="nofollow" href="/home/loginout">
-                            退出
-                        </a>
-                    </li>
-                </ol>
+                
             </li>
-          
-            <li class="s1 has-icon has-line user-fav">
-                <a rel="nofollow" href="javascript:;">
-                    我的收藏
-                </a>
-                <i class="icon-delta">
-                </i>
-                <ul class="ext-mode">
-                    <li class="s2">
-                        <a target="_blank" rel="nofollow" href="">
-                            收藏的商品
-                        </a>
-                    </li>
-                </ul>
-            </li>
+                  
+            
                     
                     
             <li class="s1 myorder has-line">

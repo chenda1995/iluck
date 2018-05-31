@@ -90,17 +90,6 @@ class CarController extends Controller
 		 DB::table('car')->where('id',$id)->update($auth);
 
 
-
-		  
-
-
-		
-
-
-
-		 // return view('home.cart.car2',['title'=>'确认订单']);
-
-
 		
 	}
 	//全选或反选
@@ -148,7 +137,7 @@ class CarController extends Controller
 
     	if($res){
 
-    	   return redirect('/home/car/scdz');
+    	   return redirect('home/cardddz');
 
         } else {
 

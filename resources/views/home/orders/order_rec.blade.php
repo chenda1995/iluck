@@ -52,18 +52,21 @@ type="text/css">
     <div id="orderWrap">
         <div class="order-operate">
             <label>
-                <input type="checkbox" class="order-check-all checkall" name="checkall">
-                全选
+                <script src="/sanji/jquery-3.2.1.min.js"></script>
+                <button id="all">反选</button>
+                
+
             </label>
-            <a class="delete order-delete-all" href="javascript:;" data-url="/trade/order/deleterecycleorder">
-                批量永久删除
-            </a>
-            <a class="recover order-recover-all" href="javascript:;" data-url="/trade/order/recoveryrecycleorder">
-                批量还原
-            </a>
+            <button id="pall"> 批量永久删除</button>
+               
+           
+            <button id="huanyuan">批量还原</button>
+                
+            
         </div>
+        
         @foreach($order as $v)
-        <div class="order-list">
+        <div class="eordr-list" cid="{{$v->id}}">
             <div class="order-section finished" data-payid="77265909793570">
             	
                 <table class="order-table">
@@ -182,6 +185,44 @@ type="text/css">
         @endforeach
     </div>
 </div>
-         
+  
+        <script>
+       
+      
+        //反选
+        $('#all').click(function(){
+            $(':checkbox').each(function(){
+                this.checked = !this.checked;
+            })
+        })
+        //批量删除
+        $('#pall').click(function(){
+            $(':checkbox:checked').each(function(){
+
+            var cid = $(this).parents('.eordr-list').attr('cid');
+
+            $.get('/home/rec/delete',{id:cid},function(data){
+                //console.log(data);
+            })
+
+
+            })
+
+            
+            $(':checkbox:checked').parents('.eordr-list').remove();
+
+        })
+        $('#huanyuan').click(function(){
+            $(':checkbox:checked').each(function(){
+                var gid = $(this).parents('.eordr-list').attr('cid');
+                 $.get('/home/rec/huan',{id:gid},function(data){
+                //console.log(data);
+            })
+
+            })
+            $(':checkbox:checked').parents('.eordr-list').remove();
+        })
+       
+    </script>       
 
 @endsection

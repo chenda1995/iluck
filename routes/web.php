@@ -68,6 +68,10 @@ Route::group(['middleware'=>'login'],function(){
 
 	Route::resource('admin/orders','admin\OrdersController');
 
+	Route::get('admin/order/status','admin\OrderController@status');
+
+	Route::get('admin/order/delete','admin\OrderController@delete');
+
 
 	//评论管理
 	Route::get('admin/comment','admin\CommentController@index');
@@ -172,6 +176,10 @@ Route::group([],function(){
 	Route::get('home/rec/huanyuan/{id}','home\RecoveryController@huanyuan');
 
 	Route::get('home/rec/del/{id}','home\RecoveryController@del');
+
+	Route::get('home/rec/delete','home\RecoveryController@delete');
+
+	Route::get('home/rec/huan','home\RecoveryController@huan');
 
 
 

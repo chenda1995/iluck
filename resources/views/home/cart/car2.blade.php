@@ -101,14 +101,18 @@
                     </div>
                 </div>
             </div>
-            <!-- footer显示价格 -->
+        
             <div>
                 <div class="cart_paybar">
+                    <form action="/home/orderddxq" method="get" >
 
-                    <a href="/home/orderddxq" class="cart_surebtn fr">
-                        确认去付款 &gt;
+                        <button class="fr" style="height: 50px;width: 150px; background: red; color:#eee;font-size: 16px;">确认付款 &gt;</button>
+
+                    
+                        
 
                     </a>
+                    </form>
                 </div>
             </div>
         </div>
