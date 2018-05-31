@@ -130,7 +130,11 @@
                                 </a>
                             </li>
                             
-                            
+                            <li class="s2">
+                                <a target="_blank" rel="nofollow" href="/home/history">
+                                    历史足迹
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li class="s1 myorder has-line">

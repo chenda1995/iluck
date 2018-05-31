@@ -19,14 +19,14 @@
                             收藏的店铺
                         </a>
                     </li>
-                    <li class="on">
+                    <li >
                         <a href="javascript:;">
                             收藏的商品
                         </a>
                     </li>
-                    <li>
+                    <li class="on">
                         <a href="javascript:;">
-                            足迹
+                           我的足迹
                         </a>
                     </li>
                 </ul>

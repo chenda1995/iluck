@@ -5,13 +5,13 @@ namespace App\Http\Controllers\home;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use DB;
+use Session;
 
 class SpxqController extends Controller
 {
     //
-    public function index($gid)
+    public function index(Request $request,$gid)
     {
-    	 
     	//查询商品对应评论
     	$commentTot = DB::table('user_evaluate')->where('gid',$gid)->count();
 
@@ -23,8 +23,21 @@ class SpxqController extends Controller
     	$goods->gpic = json_decode($goods->gpic);
     	$goods->size = explode(',', $goods->size);
     	$goods->color = explode('，', $goods->color);
-    	
-    	// var_dump($goods);die;
+
+    	//存储浏览历史信息
+		$history = Session::get('history');
+
+		if (empty($history)){
+		    $history = [];
+			$history[$goods->gid] = [
+			    'gpic'  =>  $goods->gpic,
+			    'gname'  =>  $goods->gname,
+			    'price'  =>  $goods->price,
+			];
+		}
+	
+		Session::put('history', $history); 
+
     	return view('home.spxq.spxq',[
     		'title'=>'商品详情',
     		'goods'=>$goods

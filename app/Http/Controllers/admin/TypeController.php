@@ -130,14 +130,22 @@ class TypeController extends Controller
     {
         //
         $res = $request->except('_token','_method');
-        $path = $request->file('tpic')->store('public/type');
-        $res['tpic'] = str_replace('public', 'storage', $path);   
+     
+        if (!empty($request->file('tpic'))) {
+            $path = $request->file('tpic')->store('public/type');
+            $res['tpic'] = str_replace('public', 'storage', $path);  
+        }
 
+        if (isset($res['onlystatus'])) {
+            unset($res['onlystatus']);
+            $ajaxflage = 1;
+        }
         $data = DB::table('goods_type')->where('cid',$id)->update($res);
 
-        if(isset($res['onlystatus'])) {
-            return ['code' => 1];
+        //修改上下架状态
+        if(!empty($ajaxflage)) {
 
+            return ['code' => 1];
         }
 
         if($data){

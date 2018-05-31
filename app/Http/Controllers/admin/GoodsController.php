@@ -157,11 +157,10 @@ class GoodsController extends Controller
      */
    public function update(Request $request, $id)
     {   
-
+      
         $res = $request->except('_token','_method');
         $file = $request->file('gpic');
         $imgs = [];
-
         if(!empty($file)) {
 
             foreach ($file as $k => $v) {
@@ -183,9 +182,16 @@ class GoodsController extends Controller
             $res['tid'] = end($tid);
         }
         
+        if (isset($res['onlystatus'])) {
+            unset($res['onlystatus']);
+            $ajaxflage = 1;
+        }
 
         $data = DB::table('goods')->where('gid',$id)->update($res);
-        if(isset($res['onlystatus'])) {
+
+        //修改上下架状态
+        if(!empty($ajaxflage)) {
+
             return ['code' => 1];
         }
 
