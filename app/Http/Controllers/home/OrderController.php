@@ -106,7 +106,9 @@ class OrderController extends Controller
 	{
 		$id = $request->all();
 
-		var_dump($id);
+        
+
+		//var_dump($id);
 
 		$a['status'] = '3';
 

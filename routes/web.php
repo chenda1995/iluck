@@ -199,6 +199,14 @@ Route::group([],function(){
 	Route::get('home/goodkill','home\GoodkillController@goodkill');
 
 	Route::get('home/spxq/{id}','home\SpxqController@index');
+	
+
+	//商品评价
+	Route::get('home/pingjia/{gid}/{id}','home\PingjiaController@pingjia');
+
+	Route::post('home/pjdo','home\PingjiaController@pjdo');
+
+	Route::get('home/gai','home\PingjiaController@gai');
 
 
 

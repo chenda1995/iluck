@@ -33,7 +33,7 @@ class RegisterController extends Controller
 
         $res['addtime'] = time();
 
-        $res['state'] = 1;
+        $res['state'] = 0;
 
         $res['password'] = Hash::make($request->input('password'));
 

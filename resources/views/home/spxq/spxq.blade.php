@@ -464,6 +464,7 @@
                                                     <!--<h3 class="am-comment-title">评论标题</h3>-->
                                                     <div class="am-comment-meta">
                                                         <!-- 评论元数据 -->
+                                                        <span class="am-text-middle" style="color: #FDC724;font-size:18px">{{str_repeat("★",$com->start)}}{{str_repeat("☆",5-$com->start)}}</span>
                                                         <a href="#link-to-user" class="am-comment-author">{{$com->uname}}</a>
                                                         <!-- 评论者 -->
                                                         评论于

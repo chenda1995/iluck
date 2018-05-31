@@ -7,6 +7,8 @@
 
 @section('content')
 
+{{session('gid')}}
+
 <link href="/home/orders/index.css" rel="stylesheet" type="text/css">
 <link href="/home/orders/index.css-1220b6f4.css" rel="stylesheet"
 type="text/css">
@@ -137,9 +139,14 @@ type="text/css">
                                         @endif
                                         @if($v1->status == '3')
                                         交易完成
-                                        <a href="/home/pingjia/{{$v1->gid}}">|去评价</a>
+                                        <a href="/home/pingjia/{{$v1->gid}}/{{$v1->id}}" did="{{$v1->id}}">|去评价</a>
+                                        @endif
+                                        @if($v1->status == '4')
+                                        交易完成|已评价
+                                        
                                         @endif
                                     </p>
+                                    
                                     <a href="/home/order/xq/{{$v1->id}}"
                                     class="order-link go-detail-link" target="_blank" gid="{{$v1->id}}">
                                         订单详情
@@ -155,20 +162,9 @@ type="text/css">
                                     </ul>
                                 </td>
                             </tr>
-                             <?php   $gid = $v1->gid; }?>
-                        </tbody>
-                    </table>
-                </div>
-                
-                
-            </div>
-            
-        </div>
-      
-       <?php } ?> 
-    </div>
-    
-    <script src="/sanji/jquery-3.2.1.min.js"></script>
+
+
+                            <script src="/sanji/jquery-3.2.1.min.js"></script>
    
     <script>
         $('.order-remove').click(function(){
@@ -198,9 +194,11 @@ type="text/css">
 
                 var hid = $(this).attr('gid');
 
+                
+                
 
 
-                $(this).parent('.ppp').html(`交易完成<a href='/home/pingjia'>&nbsp;|去评价</a>`);
+                $(this).parent('.ppp').html('交易完成<a href="/home/pingjia/{{$v1->gid}}/{{$v1->id}}">&nbsp;|去评价</a>');
 
                 //alert(id);
 
@@ -220,5 +218,21 @@ type="text/css">
 
 
     </script>
+                             <?php   
+
+                              } ?>
+                        </tbody>
+                    </table>
+                </div>
+                
+                
+            </div>
+            
+        </div>
+      
+       <?php } ?> 
+    </div>
+    
+    
 
 @endsection

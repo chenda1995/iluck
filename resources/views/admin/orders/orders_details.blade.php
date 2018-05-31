@@ -25,9 +25,9 @@
                                     <table width="100%" class="am-table am-table-compact am-table-striped tpl-table-black " id="example-r">
                                         <thead>
                                             <tr>
-                                                <th>订单号</th>
-                                                <th>商品名称</th>
-                                                <th width="100px">商品</th>
+                                                <th style="width: 100px;">订单号</th>
+                                                <th style="width: 150px;">商品名称</th>
+                                                <th>商品</th>
                                                 <th>价格</th>
                                                 <th>数量</th>
                                                 <th>大小</th>
@@ -44,7 +44,7 @@
                                             <tr class="gradeX">
                                                 <td>{{$v->oid}}</td>
                                                 <td>{{$v->gname}}</td>
-                                                <td width="100px">{{$v->gpic}}</td>
+                                                <td width="100px"> <img src="/{{$v->gpic}}" alt="" width="70px" height="90px"> </td>
                                                 <td>{{$v->price}}</td>
                                                 <td>{{$v->cnt}}</td>
                                                 <td>{{$v->size}}</td>
