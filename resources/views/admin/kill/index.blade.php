@@ -50,15 +50,6 @@
                                         原价
                                     </th>
                                     <th>
-                                        数量
-                                    </th>
-                                    <th>
-                                        开始时间
-                                    </th>
-                                    <th>
-                                        结束时间
-                                    </th>
-                                    <th>
                                         商品图片
                                     </th>
 
@@ -74,7 +65,7 @@
                                         {{$v->gkid}}
                                     </td>
 
-                                    <td class="am-text-middle">
+                                    <td class="am-text-middle" style="width:250px;">
                                         {{$v->gktitle}}
                                     </td>
 
@@ -86,30 +77,20 @@
                                         {{$v->gkoprice}}
                                     </td>
 
-                                    <td class="am-text-middle">
-                                        {{$v->gknum}}
-                                    </td>
-
-                                    <td class="am-text-middle">
-                                        {{$v->begintime}}
-                                    </td>
-
-                                    <td class="am-text-middle">
-                                        {{$v->endtime}}
-                                    </td>
 
                                      <td class="am-text-middle">
-                                        <img src="{{$v->gksrc}}" alt="" style="width: 126px;">
+                                        <img src="{{$v->gksrc}}" alt="" style="width: 135px;">
                                     </td>
 
 
 
                                     <td class="am-text-middle">
-                                        <div class="tpl-table-black-operation">
+                                        <div class="">
                                             <a href="/admin/kill/{{$v->gkid}}/edit" id="bj">
-                                                <i class="am-icon-pencil">
+                                               <!--  <i class="am-icon-pencil">
                                                 </i>
-                                                修改
+                                                修改 -->
+                                                <button class='btn btn-primary'>修改</button>
                                             </a>
 
                                             <form action="/admin/kill/{{$v->gkid}}" method='post' style='display:inline'>
@@ -117,7 +98,7 @@
 
                                             {{method_field('DELETE')}}
 
-                                                <button class='tpl-table-black-operation-del' onclick="return confirm('你确认要删除吗？');">删除</button>
+                                                <button class='btn btn-danger' onclick="return confirm('你确认要删除吗？');">删除</button>
 
                                             </form>
 

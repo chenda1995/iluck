@@ -26,7 +26,7 @@ $(function(){
 
 	}
 	setInterval(function(){
-		ShowCountDown(2018,5,29,'divdown1');
+		ShowCountDown(2018,6,2,'divdown1');
 	},1000); 
 })
 

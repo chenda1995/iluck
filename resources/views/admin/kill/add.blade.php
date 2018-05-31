@@ -51,29 +51,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="am-form-group">
-                                        <label for="user-name" class="am-u-sm-3 am-form-label">数量 </label>
-                                        <div class="am-u-sm-9">
-                                            <input type="text" name="gknum" class="tpl-form-input" id="user-name" placeholder="请输原价">
-                                        </div>
-                                    </div>
 
-
-                                    <div class="am-form-group">
-                                        <label for="user-name" class="am-u-sm-3 am-form-label">开始时间 </label>
-                                        <div class="am-u-sm-9">
-
-                                            <input type="text" name="begintime" class="am-form-field tpl-form-no-bg" placeholder="开始时间" data-am-datepicker="" readonly="">
-                                        </div>
-                                    </div>
-
-                                     <div class="am-form-group">
-                                        <label for="user-name" class="am-u-sm-3 am-form-label">结束时间 </label>
-                                        <div class="am-u-sm-9">
-
-                                            <input type="text" name="endtime" class="am-form-field tpl-form-no-bg" placeholder="结束时间" data-am-datepicker="" readonly="">
-                                        </div>
-                                    </div>
 
 
                                     <div class="am-form-group">

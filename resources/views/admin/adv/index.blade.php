@@ -69,11 +69,9 @@
 
 
                                     <td class="am-text-middle">
-                                        <div class="tpl-table-black-operation">
+                                        <div class="">
                                             <a href="/admin/adv/{{$v->adid}}/edit" id="bj">
-                                                <i class="am-icon-pencil">
-                                                </i>
-                                                修改
+                                                <button class='btn btn-primary'>修改</button>
                                             </a>
 
                                             <form action="/admin/adv/{{$v->adid}}" method='post' style='display:inline'>
@@ -81,7 +79,7 @@
 
                                             {{method_field('DELETE')}}
 
-                                                <button class='tpl-table-black-operation-del' onclick="return confirm('你确认要删除吗？');">删除</button>
+                                                <button class='btn btn-danger' onclick="return confirm('你确认要删除吗？');">删除</button>
 
                                             </form>
 
