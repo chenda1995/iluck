@@ -18,14 +18,14 @@
                         <div class="am-form-group">
                             <label for="user-phone" class="am-u-sm-3 am-form-label">商品分类 <span class="tpl-form-line-small-title"></span></label>
                             <div class="am-u-sm-9">
-                               <select data-am-selected="{searchBox: 1}" style="display: none;" name="tpath">
+                               <select data-am-selected="{maxHeight: 300}" style="display: none;" name="tpath">
                                     <option value="0">请选择</option>
                                     @foreach($type as $k=>$v)
                                     <option value="{{$v->path}}{{$v->cid}}">{{$v->cname}}</option>
                                     @endforeach
                                 </select>
                                 <span style="padding-left: 20px;padding-right: 20px;">品牌分类</span>
-                                <select data-am-selected="{searchBox: 1}" style="display: none;" name="bid">
+                                <select  data-am-selected="{maxHeight: 300}" style="display: none;" name="bid">
                                     <option value="0">请选择</option>
                                     @foreach($brand as $k=>$v)
                                     <option value="{{$v->bid}}">{{$v->bname}}</option>

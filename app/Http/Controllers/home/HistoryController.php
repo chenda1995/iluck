@@ -11,9 +11,7 @@ class HistoryController extends Controller
     //
     public function index(Request $request)
     {
-    	$arr = $request->session()->get('history');
-    	print_r($request->session());die;
-    	
-    	return view('home.history.history');
+    	$res = session('history');
+    	return view('home.history.history',['res'=>$res]);
     }
 }

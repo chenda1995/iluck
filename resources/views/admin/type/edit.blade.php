@@ -19,7 +19,7 @@
                                     <div class="am-form-group">
                                         <label for="user-phone" class="am-u-sm-3 am-form-label">父级分类 <span class="tpl-form-line-small-title"></span></label>
                                         <div class="am-u-sm-9">
-                                            <select data-am-selected="{searchBox: 1}" style="display: none;" name="pid" size="5">
+                                            <select data-am-selected="{maxHeight: 300}" style="display: none;" name="pid" size="5">
 			                                    <option value="0">请选择</option>
 			                                    @foreach($res as $k=>$v)
 			                                    <option value="{{$v->cid}}" @if($info->pid == $v->cid) selected @endif >{{$v->cname}}</option>
