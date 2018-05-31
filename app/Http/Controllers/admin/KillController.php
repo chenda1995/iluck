@@ -18,7 +18,7 @@ class KillController extends Controller
 
         $arr = $request->all();
         $res = DB::table('goods_kill')->
-        where('gktitle','like','%'.$request->input('search').'%')->orderBy('gkid','asc')->paginate($request->input('num',5));
+        where('gktitle','like','%'.$request->input('search').'%')->orderBy('gkid','asc')->paginate($request->input('num',2));
 
         $num = $request->input('num');
         $search = $request->input('search');
@@ -100,7 +100,7 @@ class KillController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Resp
      */
     public function edit($id)
     {

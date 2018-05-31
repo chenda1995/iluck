@@ -46,6 +46,7 @@ class ShowController extends Controller
     {
 
 
+
         //去掉不要的字段
          // $res = $request->except('_token');
          // dump($res);
@@ -126,6 +127,8 @@ class ShowController extends Controller
      */
     public function update(Request $request, $id)
     {
+
+
 
 
         if($request->hasFile('bsrc')) {

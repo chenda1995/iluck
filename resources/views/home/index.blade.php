@@ -50,9 +50,39 @@
             float:left;
             display:inline;
 
-        }
+
+        
     </style>
                @foreach($res as $k=>$v)
+
+                                <dt><a href="#">流行元素</a></dt>
+                                <dd>
+                                    <ul class="clearfix">
+                                        <li><a href="#">太空棉</a></li>
+                                        <li><a href="#">廓形</a></li>
+                                        <li><a href="#">条纹</a></li>
+                                        <li><a href="#">格子</a></li>
+                                        <li><a href="#">印花</a></li>
+                                        <li><a class="red" href="#">流苏</a></li>
+                                        <li><a href="#">字母</a></li>
+                                        <li><a href="#">蕾丝</a></li>
+                                        <li><a href="#">波点</a></li>
+                                        <li><a href="#">纯色</a></li>
+                                        <li><a href="#">前短后长</a></li>
+                                    </ul>
+                                </dd>
+                                <div class="xiao-banner"><a href="#"><img src="/home/sycss/home/sycss/image/xiao-banner1.jpg"  /></a></div>
+
+                            </dl>
+                    </div>
+                <li class="li">
+                    <dl>
+                        <dt class="dt"><a class="a" href="#">上衣</a></dt>
+                        <dd class="dd"><a class="a red" href="#">冬季热卖</a><ins></ins><a class="a" href="#">棉衣</a><ins></ins><a class="a" href="#">必备内搭</a></dd>
+                    </dl>
+                </li>
+            </ul>
+
             <ul class="ul">
               <div class="left-tanchuang left-tanchuang2">
                             <dl>
@@ -139,7 +169,7 @@
                 <li>:</li>
                 <li></li>
             </ul>
-            <a href="/home/goodkill" target="_blank"><img src="/home/sycss/image/main1-daojishi_640x640.jpg" alt="" /></a>
+            <a href="/home/goodkill" target="_blank"><img src="/home/抢购首页_files/2654_6d9ek464120he9ddc717e4jbek53g_640x960.jpg_280x999.webp" alt="" /></a>
         </div>
         <div class="two">
             <a href="#"><img src="/home/sycss/image/main1-two.png" /></a>

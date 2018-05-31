@@ -7,22 +7,7 @@
 
         <!--## PC公用Logo & 搜索-->
         <!-- 中间区域 -->
-        <div class="header_mid clearfix">
-            <div class="wrap">
-                <a rel="nofollow" href="http://www.mogujie.com/" class="logo" title="蘑菇街首页"
-                style="background-image: none;">
-                    <img src="/home/商品列表_files/170904_1fj9406416501i4lkabcc0hjb8341_480x180.png"
-                    alt="蘑菇街，我的买手街">
-                </a>
-                <div class="normal-search-content">
-                </div>
-                <div class="mid_fr">
-                    <img src="/home/商品列表_files/180510_0hk5cb4l87bjlc65k0253jfclk2b3_440x180.png"
-                    alt="蘑菇街，我的买手街">
-                </div>
-            </div>
-        </div>
-        <input type="hidden" id="J_searchbar_flag" value="show">
+       
         <!--页面内容-->
       
         <div id="body_wrapp">
@@ -92,9 +77,7 @@
                                 </ul>
                             </div>
                             <div class="sp_type_nav" data-ptp="_cate">
-                                <a class="right_img" target="_blank" href="#">
-                                    <img src="/home/商品列表_files/180306_7dk8a09l7b577e3icc724194ah1k0_200x240.jpg">
-                                </a>
+                               
                                 <div class="type_sections">
                                  
                                     @foreach($type as $k=>$v)
