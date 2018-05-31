@@ -25,16 +25,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="am-u-sm-12 am-u-md-6 am-u-lg-3">
-                                    <div class="am-form-group tpl-table-list-select">
-                                        <select data-am-selected="{btnSize: 'sm'}" >
-                                              <option value="option1">所有类别</option>      
-												@foreach($res as $k=>$v)
-			                                    <option value="{{$v->cid}}">{{$v->cname}}</option>
-			                                    @endforeach
-                                            </select>
-                                    </div>
-                                </div>
+                                
                             	<form action="/admin/type" method="get">
 	                                <div class="am-u-sm-12 am-u-md-12 am-u-lg-3">
 	                                    <div class="am-input-group am-input-group-sm tpl-form-border-form cl-p">

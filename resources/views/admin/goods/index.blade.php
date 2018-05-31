@@ -55,12 +55,12 @@
             	                                            <td class="">{{$v->stock}}</td>
             							                    <td class=" ">
             							                    	@if($v->status==1)
-            							                    	<button type="button" class="am-btn am-btn-default am-btn-danger" onclick="upstat({{$v->gid}},0)" style="font-size: 1.2rem">下架</button>
+            							                    	<button type="button" class="am-btn am-btn-default am-btn-danger" id="{{$v->gid}}" onclick="upstat({{$v->gid}},0)" style="font-size: 1.2rem">下架</button>
             							                    	@else
-            							                    	<button type="button"  class="am-btn am-btn-default am-btn-success" onclick="upstat({{$v->gid}},1)" style="font-size: 1.2rem">上架</button>
+            							                    	<button type="button"  class="am-btn am-btn-default am-btn-success" id="{{$v->gid}}" onclick="upstat({{$v->gid}},1)" style="font-size: 1.2rem">上架</button>
             							                    	@endif
             							                    </td>
-                                                <td>
+                                                            <td>
                                                     <div class="tpl-table-black-operation">
                                                         <a href="/admin/goods/{{$v->gid}}/edit">
                                                             <i class="am-icon-pencil"></i> 修改
@@ -164,11 +164,17 @@
                            data :{ 
                            		_method : 'PUT',
                                 status : sta,
-                                onlystatus : 1
+                                onlystatus : 1,
                             },
-                           success: function(data, textStatus, jqXHR ){                      
+                           success: function(data, textStatus, jqXHR ){   
+                           console.log(data);                   
                                 if (data.code > 0){
-                                location.reload();
+                                 if(sta == 0){
+                                        $("#"+id).parent('td').html('<button type="button" class="am-btn am-btn-default am-btn-success" id="'+id+'" onclick="upstat('+id+',1)" style="font-size: 1.2rem">上架<tton>');   
+                                    }else{
+                                         $("#"+id).parent('td').html('<button type="button" class="am-btn am-btn-default am-btn-danger" id="'+id+'" onclick="upstat('+id+',0)" style="font-size: 1.2rem">下架<tton>');   
+
+                                    }
                                 // $("#"+[图片]data.id).remove();
                                 }
                             }
